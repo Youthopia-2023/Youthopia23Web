@@ -1,9 +1,10 @@
-import "./Home.css"
+import "./Home.css";
+import Main from "../../components/home-compo/main";
 
 function Home() {
   return (
     <div>
-      This is home page
+      <Main />
     </div>
   )
 }
