@@ -1,9 +1,10 @@
 import "./Events.css"
+import IndividualEvent from "../../components/HomeCarousel/IndividualEvent"
 
 function Events() {
   return (
     <div>
-      This is events page
+      <IndividualEvent />
     </div>
   )
 }
