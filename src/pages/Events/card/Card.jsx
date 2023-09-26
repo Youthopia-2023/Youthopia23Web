@@ -1,22 +1,25 @@
 import './Card.css';
 
-export default function Card(){
+export default function Card(props){
     return(
-        <div className='card'>
+        <div className='card' id={props.id}>
             <div className='image'>
                 <p className='revealing_soon'>REVEALING</p>
                 <p className='revealing_soon'>SOON</p>
             </div>
-            <div className='event-name'>Name of the Event</div>
+            <div className='content'>
+            <div className='event-name'>{props.name}</div>
             <div className='detail'>
                 <p>Venue</p>
-                <p>Date</p>
+                <p>{props.date}</p>
             </div>
             <div className='detail'>
-            <p>Price</p>
-                <p>Time</p>
+            <p>{props.price}</p>
+                <p>{props.time}</p>
             </div>
-            <button className='register' oncClick='#'>
+            </div>
+            
+            <button className='register'>
                 Register Now
             </button>
         </div>

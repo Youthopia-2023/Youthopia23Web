@@ -15,9 +15,10 @@
 .secNavBar {
     margin: 10px 10px 10px 25%;
     color: #F8F8F8;
+    display: flex;
 }
 
-.secNavBar>a {
+.secNavBar>.a {
     color: #F8F8F8;
     margin: 70px;
     font-size: 32px;

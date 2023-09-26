@@ -1,0 +1,155 @@
+{
+    "events": {
+      "Technical": [
+        {
+          "name": "Tech Expo 2023",
+          "date": "2023-10-15",
+          "time": "10:00 AM - 4:00 PM",
+          "venue": "Tech Center, Room 101",
+          "price": "$10",
+          "description": "Explore the latest tech innovations and startups."
+        },
+        {
+          "name": "Coding Challenge",
+          "date": "2023-10-20",
+          "time": "2:00 PM - 5:00 PM",
+          "venue": "Computer Lab, Building A",
+          "price": "Free",
+          "description": "Test your coding skills in this coding competition."
+        },
+        {
+          "name": "AI Workshop",
+          "date": "2023-11-05",
+          "time": "11:00 AM - 1:00 PM",
+          "venue": "AI Lab, Engineering Building",
+          "price": "$20",
+          "description": "Learn about artificial intelligence and machine learning."
+        },
+        {
+          "name": "Hackathon 2023",
+          "date": "2023-11-18",
+          "time": "9:00 AM - 6:00 PM",
+          "venue": "Innovation Hub, Room 303",
+          "price": "$25",
+          "description": "Join the annual coding hackathon and build amazing projects."
+        },
+        {
+          "name": "Web Development Workshop",
+          "date": "2023-12-02",
+          "time": "10:30 AM - 12:30 PM",
+          "venue": "Web Lab, IT Department",
+          "price": "$15",
+          "description": "Hands-on workshop on web development technologies."
+        },
+        {
+          "name": "Networking Conference",
+          "date": "2023-12-10",
+          "time": "1:00 PM - 5:00 PM",
+          "venue": "Networking Center, Room 202",
+          "price": "$30",
+          "description": "Connect with industry professionals and expand your network."
+        }
+      ],
+      "Informal": [
+        {
+          "name": "Movie Night",
+          "date": "2023-10-14",
+          "time": "7:00 PM - 10:00 PM",
+          "venue": "Student Center, Auditorium",
+          "price": "Free",
+          "description": "Enjoy a movie night with friends and popcorn."
+        },
+        {
+          "name": "Game Tournament",
+          "date": "2023-10-21",
+          "time": "3:00 PM - 6:00 PM",
+          "venue": "Gaming Zone, Recreation Center",
+          "price": "$5",
+          "description": "Compete in various video game tournaments."
+        },
+        {
+          "name": "Karaoke Party",
+          "date": "2023-11-04",
+          "time": "8:00 PM - 11:00 PM",
+          "venue": "Karaoke Lounge, Building B",
+          "price": "Free",
+          "description": "Sing your heart out at the karaoke party."
+        },
+        {
+          "name": "Painting Workshop",
+          "date": "2023-11-12",
+          "time": "11:00 AM - 2:00 PM",
+          "venue": "Art Studio, Fine Arts Department",
+          "price": "$10",
+          "description": "Learn to create beautiful paintings with expert guidance."
+        },
+        {
+          "name": "Cooking Class",
+          "date": "2023-12-01",
+          "time": "6:30 PM - 8:30 PM",
+          "venue": "Culinary Lab, Hospitality Building",
+          "price": "$15",
+          "description": "Master the art of cooking with our culinary experts."
+        },
+        {
+          "name": "Outdoor Picnic",
+          "date": "2023-12-08",
+          "time": "12:00 PM - 3:00 PM",
+          "venue": "University Park, Picnic Area",
+          "price": "Free",
+          "description": "Enjoy a day of fun, games, and delicious food outdoors."
+        }
+      ],
+      "Cultural": [
+        {
+          "name": "Cultural Festival 2023",
+          "date": "2023-10-28",
+          "time": "3:00 PM - 10:00 PM",
+          "venue": "Cultural Center, Main Hall",
+          "price": "$10",
+          "description": "Experience a celebration of diverse cultures with music, dance, and food."
+        },
+        {
+          "name": "Art and Craft Exhibition",
+          "date": "2023-11-10",
+          "time": "10:00 AM - 5:00 PM",
+          "venue": "Art Gallery, Cultural Complex",
+          "price": "Free",
+          "description": "Explore stunning art and craft creations by local artists."
+        },
+        {
+          "name": "Dance Showcase",
+          "date": "2023-11-19",
+          "time": "6:00 PM - 9:00 PM",
+          "venue": "Dance Studio, Performing Arts Center",
+          "price": "$8",
+          "description": "Watch captivating dance performances by talented artists."
+        },
+        {
+          "name": "Drama Play: 'The Journey'",
+          "date": "2023-11-30",
+          "time": "7:30 PM - 9:30 PM",
+          "venue": "Drama Theater, Performing Arts Center",
+          "price": "$12",
+          "description": "A gripping drama that takes you on an emotional journey."
+        },
+        {
+          "name": "Cultural Cuisine Night",
+          "date": "2023-12-05",
+          "time": "6:00 PM - 9:00 PM",
+          "venue": "Cultural Center, Dining Hall",
+          "price": "$15",
+          "description": "Savor delectable dishes from around the world."
+        },
+        {
+          "name": "Folk Music Concert",
+          "date": "2023-12-15",
+          "time": "4:00 PM - 7:00 PM",
+          "venue": "Open-Air Amphitheater",
+          "price": "$10",
+          "description": "Enjoy soulful folk music performances under the stars."
+        }
+      ]
+    }
+  }
+  
