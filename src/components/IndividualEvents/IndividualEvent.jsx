@@ -1,6 +1,6 @@
 import React from 'react'
 import "./IndividualEvent.css"
-import logo from "../../assets/logo.png"
+import logo from "../../assets/Youthopia.svg"
 const IndividualEvent = (props) => {
   return (
     <div className='individualEvent'>

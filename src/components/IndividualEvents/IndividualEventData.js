@@ -11,5 +11,6 @@ export default [
         head: "Dio Brandon",
         fees: "50",
         imgUrl: tech
-    }
+    },
+
 ]

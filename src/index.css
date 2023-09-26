@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Stellar";
+    src: local("Stellar"),
+     url("./fonts/Stellar-FreeForPersonalUse/Stellar-Medium.otf") format("truetype");
+    font-weight: bold;
+   }

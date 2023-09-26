@@ -1,22 +1,25 @@
 import "./Events.css"
-import IndividualEvent from "../../components/IndividualEvents/IndividualEvent"
-import data from "../../components/IndividualEvents/IndividualEventData"
 
+
+import Youthopia from '../../assets/youthopia.png'
+
+import Card from "./card/Card"
 
 function Events() {
-  const entries = data.map(entry => {
-    return(
-      <IndividualEvent 
-         key = {entry.id}
-         {...entry}
-      
-      />
-    )
-  }) 
 
   return (
-    <div>
-      {entries}
+    <div className="events">
+      <img className="youImg" src={Youthopia} alt="Image not foud" />
+      <div className="secNavBar">
+        <a href="/events">Technical</a>
+        <a href="/events/cultural">Cultural</a>
+        <a href="/events/informal">Informal</a>
+      </div>
+      <div className="card-Container">
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
     </div>
   )
 }
