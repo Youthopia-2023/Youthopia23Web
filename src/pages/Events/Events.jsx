@@ -17,6 +17,9 @@ function Events() {
         <Card/>
         <Card/>
         <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
       </div>
     </div>
   )
