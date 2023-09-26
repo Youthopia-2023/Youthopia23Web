@@ -1,5 +1,5 @@
 import "./PageNotFound.css"
-import logo from "../../assets/youthopia.svg"
+import logo from "../../assets/Youthopia.svg"
 import image404 from "../../assets/image404.png"
 import { useNavigate } from "react-router"
 
