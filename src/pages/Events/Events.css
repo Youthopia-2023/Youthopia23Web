@@ -4,6 +4,8 @@
     width: 100%;
     background-size: 100% 100%;
     font-family: Stellar;
+    position: fixed;
+    overflow: scroll;
 }
 .youImg{
     margin: 10px 10px 10px 38%;
@@ -47,3 +49,8 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 } */
+.card-Container{
+    display: flex;
+    
+    
+}

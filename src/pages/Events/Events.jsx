@@ -1,6 +1,8 @@
 import "./Events.css"
-import { BrowserRouter,Route } from "react-router-dom"
+
 import Youthopia from '../../assets/youthopia.png'
+
+import Card from "./card/Card"
 
 function Events() {
   return (
@@ -11,7 +13,11 @@ function Events() {
         <a href="/events/cultural">Cultural</a>
         <a href="/events/informal">Informal</a>
       </div>
-      
+      <div className="card-Container">
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
     </div>
   )
 }
