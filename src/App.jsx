@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 function App() {
 
   return (
@@ -14,7 +15,8 @@ function App() {
             <Route path="/about" element={<About/>} />
             <Route path="/events" element={<Events/>} />
             <Route path="/gallery" element={<Gallery/>} />
-            <Route path="*" element={<h1>404 Not Found</h1>} />
+            <Route path="*" element={<PageNotFound/>} />
+            
           </Routes>
         </Router>
     </>
