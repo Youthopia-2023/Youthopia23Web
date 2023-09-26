@@ -27,6 +27,9 @@ const HomeCarousel = () => {
                         <div className="CarouselCard"></div>
                         <div className="CarouselCard"></div>
                         <div className="CarouselCard"></div>
+                        <div className="CarouselCard"></div>
+                        <div className="CarouselCard"></div>
+                        <div className="CarouselCard"></div>
                 </OwlCarousel>
             </div>
             <div className="swipe">
