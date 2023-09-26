@@ -1,10 +1,12 @@
 import "./Events.css"
 
+
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
 
 function Events() {
+
   return (
     <div className="events">
       <img className="youImg" src={Youthopia} alt="Image not foud" />
