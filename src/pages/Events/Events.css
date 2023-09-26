@@ -1,41 +1,59 @@
-.events{
+.events {
     background-image: url('../../assets/background.png');
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;
     font-family: Stellar;
+    position: fixed;
+    overflow-y: scroll;
 }
-.youImg{
+
+.youImg {
     margin: 10px 10px 10px 38%;
 }
-.secNavBar{
+
+.secNavBar {
     margin: 10px 10px 10px 25%;
     color: #F8F8F8;
 }
-.secNavBar>a{
+
+.secNavBar>a {
     color: #F8F8F8;
     margin: 70px;
     font-size: 32px;
     position: relative;
+
     &::after {
         content: '';
         position: absolute;
-        width: 0; /* Initially, the underline has no width */
-        height: 4px; /* You can adjust the height as needed */
+        width: 0;
+        /* Initially, the underline has no width */
+        height: 4px;
+        /* You can adjust the height as needed */
         bottom: -20px;
         left: 50%;
-        background-color: #E8257D; /* Underline color */
-        transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Transition for width and left position with easing */
-    transform: translateX(-50%); /* Center the underline */
-    transform-origin: 50% 50%;}
-    &:hover::after{
+        background-color: #E8257D;
+        /* Underline color */
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        /* Transition for width and left position with easing */
+        transform: translateX(-50%);
+        /* Center the underline */
+        transform-origin: 50% 50%;
+    }
+
+    &:hover::after {
         width: 80%;
     }
 }
-.secNavBar>a:link,:hover,:active,::before{
+
+.secNavBar>a:link,
+.secNavBar:hover,
+.secNavBar:active,
+.secNavBar::before {
     text-decoration: none;
     color: #F8F8F8;
 }
+
 /* .secNavBar>a:hover::after{
   content: '';
   width: 100%;
@@ -47,3 +65,8 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 } */
+.card-Container {
+    display: flex;
+
+
+}
