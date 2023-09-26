@@ -36,7 +36,7 @@
 }
 .secNavBar>a:link,:hover,:active,::before{
     text-decoration: none;
-    color: #F8F8F8;
+    /* color: #F8F8F8; */
 }
 /* .secNavBar>a:hover::after{
   content: '';
@@ -50,7 +50,14 @@
   transition: transform 0.25s ease-out;
 } */
 .card-Container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(10rem,0.5fr));
+    grid-auto-rows: auto;
+    grid-row-gap: 0;
+    grid-gap: 1rem;
+    margin-left: 10%;
+    margin-top: 5%;
+    
     
     
 }
