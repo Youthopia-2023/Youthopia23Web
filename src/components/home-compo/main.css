@@ -4,8 +4,15 @@
     background-image: url(../../assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+    filter: contrast(1);
 }
 
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -15,7 +22,22 @@
 
 .inner-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+}
+
+.clg-logo {
+    margin: 10px;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.center {
+    align-self: center;
+}
+
+.right {
+    align-self: flex-end;
 }

@@ -8,6 +8,7 @@ import img5 from "../../assets/25_years_logo.png"
 function Main() {
   return (
     <div className="main-page">
+      <div className="main-container">
       <div className="logo-container">
         <div className="logo">
           {/* Logo 1 */}
@@ -19,17 +20,18 @@ function Main() {
         </div>
         <div className="logo">
           <div className="inner-container">
-          <div className="clg-logo">
+          <div className="clg-logo left">
             <img src={img3} alt="Logo 3"></img>
           </div>
-          <div className="clg-logo">
-            <img src={img4} alt="Logo 3"></img>
+          <div className="clg-logo center">
+            <img src={img4} alt="Logo 4"></img>
           </div>
-          <div className="clg-logo">
-            <img src={img5} alt="Logo 3"></img>
+          <div className="clg-logo right">
+            <img src={img5} alt="Logo 5"></img>
           </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
