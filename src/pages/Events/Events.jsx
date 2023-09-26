@@ -1,12 +1,15 @@
 import "./Events.css"
 import data from './dummy/data.json'
 
+
+
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
 import { useEffect, useState } from "react"
 
 function Events() {
+
   const [cat,setCat]=useState("Technical");
   
   const card=data.events[cat].map((event,index)=>{
