@@ -1,6 +1,7 @@
 import "./Events.css"
 
 
+
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
