@@ -10,7 +10,7 @@
     justify-content: space-between;
     width: 100vw;
     font-family: Stellar;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 
 a {
@@ -26,15 +26,15 @@ a {
 
 .buttonsNav {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 .clickme1 {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: transparent;
     color: white;
     font-family: Stellar;
-    font-size: 0.875rem;
+    font-size: 0.975rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -45,11 +45,11 @@ a {
 }
 
 .clickme2 {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     background-color: transparent;
     color: white;
     font-family: Stellar;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
