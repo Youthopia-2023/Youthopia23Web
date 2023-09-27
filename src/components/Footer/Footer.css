@@ -10,17 +10,17 @@
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .footer>.footerSocials {
-    margin-top: 0.6rem;
     display: flex;
     gap: 0.3rem;
 }
 
 .footer>.footerSocials>.text {
     color: #FFF;
-    font-family: Stellar;
+    
     font-size: 1.02038rem;
     font-style: normal;
     font-weight: 500;
@@ -38,4 +38,121 @@
     cursor: pointer;
     height: 1rem;
     width: 1rem;
+}
+
+.footer>.rowTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100vw;
+    padding: 0 2rem;
+}
+
+.footer>.rowTwo>.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 25rem;
+}
+
+.footer>.rowTwo>.address>.addressIcon>img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.footer>.rowTwo>.address>.addressText {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer>.rowTwo>.address>.addressText>.mainHeading {
+    color: #FFF;
+    
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer>.rowTwo>.address>.addressText>.subAddress {
+    color: #FFF;
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    margin-left: 1.8rem;
+}
+
+.footer>.rowTwo>.contactMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer>.rowTwo>.contactMobile>svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.footer>.lastRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 2rem;
+    margin-top: 8rem;
+}
+
+.footer>.lastRow>.leftLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>.lastRow>.leftLogo>img {
+    width: 5.60688rem;
+    height: 3.34488rem;
+}
+
+.footer>.lastRow>div>.line {
+    width: 2rem;
+    height: 0.1rem;
+    transform: rotate(90deg);
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.footer>.lastRow>.copyrights {
+    max-width: 10rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.03125rem */
+    letter-spacing: 0.06875rem;
+}
+
+.footer>.lastRow>.rightLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>.lastRow>.rightLogo>img {
+    width: 5.60688rem;
+    height: 3.34488rem;
 }
