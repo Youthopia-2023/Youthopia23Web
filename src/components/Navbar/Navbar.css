@@ -1,7 +1,8 @@
 #navbar {
     height: 60px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 999;
     padding: 0px 2rem;
     display: flex;
@@ -9,6 +10,7 @@
     justify-content: space-between;
     width: 100vw;
     font-family: Stellar;
+    backdrop-filter: blur(10px);
 }
 
 a {
@@ -39,6 +41,7 @@ a {
     outline: none;
     border: 1px solid #FFF;
     border-radius: 1.10306rem;
+    cursor: pointer;
 }
 
 .clickme2 {
@@ -52,4 +55,5 @@ a {
     line-height: normal;
     outline: none;
     border: none;
+    cursor: pointer;
 }
