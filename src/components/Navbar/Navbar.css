@@ -1,0 +1,55 @@
+#navbar {
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+    padding: 0px 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    font-family: Stellar;
+}
+
+a {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buttonsNav {
+    display: flex;
+    gap: 2rem;
+}
+
+.clickme1 {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: Stellar;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    border: 1px solid #FFF;
+    border-radius: 1.10306rem;
+}
+
+.clickme2 {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: Stellar;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    border: none;
+}
