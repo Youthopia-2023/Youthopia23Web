@@ -11,6 +11,7 @@
     align-items: center;
     font-family: sans-serif;
     overflow-x: hidden;
+    
 
 }
 
@@ -20,6 +21,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-top: 8vh;
 }
 
 .logo{
