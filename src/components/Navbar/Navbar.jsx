@@ -9,7 +9,6 @@ function Navbar() {
                 <Link to="/">Home</Link>
                 <Link to="/events"> Events</Link>
                 <Link to="/gallery"> Gallery </Link>
-                <Link to="/about"> About us</Link>
             </div>
             <div className="buttonsNav">
                 <button className="clickme1"> Log in </button>

@@ -1,8 +1,5 @@
 import "./Events.css"
 import data from './dummy/data.json'
-
-
-
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
