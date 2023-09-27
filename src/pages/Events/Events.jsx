@@ -1,22 +1,42 @@
 import "./Events.css"
+import data from './dummy/data.json'
+
+
 
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
+import { useEffect, useState } from "react"
 
 function Events() {
+
+  const [cat,setCat]=useState("Technical");
+  
+  const card=data.events[cat].map((event,index)=>{
+    return(
+    <Card
+      key={`${cat}-${index}`}
+      name={event.name}
+      date={event.date}
+      time={event.time}
+      price={event.price}
+    />
+  )})
+  
+  function handleChange(category){
+    setCat(cat=>category)
+  }
+  
   return (
     <div className="events">
       <img className="youImg" src={Youthopia} alt="Image not foud" />
       <div className="secNavBar">
-        <a href="/events">Technical</a>
-        <a href="/events/cultural">Cultural</a>
-        <a href="/events/informal">Informal</a>
+        <div onClick={()=>handleChange("Technical")} className="a">Technical</div>
+        <div onClick={()=>handleChange("Cultural")} className="a">Cultural</div>
+        <div onClick={()=>handleChange("Informal")} className="a">Informal</div>
       </div>
       <div className="card-Container">
-        <Card/>
-        <Card/>
-        <Card/>
+        {card}
       </div>
     </div>
   )
