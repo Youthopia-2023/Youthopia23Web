@@ -5,6 +5,7 @@ import About from './pages/About/About';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
+import Login from './pages/Login/Login';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/events" element={<Events/>} />
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="*" element={<PageNotFound/>} />
+            <Route path='/login' element={<Login/>}/>
             
           </Routes>
         </Router>

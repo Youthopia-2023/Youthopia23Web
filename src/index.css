@@ -4,3 +4,7 @@
      url("./fonts/Stellar-FreeForPersonalUse/Stellar-Medium.otf") format("truetype");
     font-weight: bold;
    }
+@font-face {
+    font-family: "Stellar-Light";
+    src: url("./fonts/Stellar-FreeForPersonalUse/Stellar-light.otf");
+}
