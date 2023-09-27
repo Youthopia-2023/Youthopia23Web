@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery/Gallery';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import EventInfo from './pages/EventInfo/EventInfo';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 function App() {
 
   return (
@@ -21,8 +22,8 @@ function App() {
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/eventinfo" element={<EventInfo />} />
             <Route path="*" element={<PageNotFound/>} />
-
           </Routes>
+          <Footer/>
         </Router>
     </>
   )
