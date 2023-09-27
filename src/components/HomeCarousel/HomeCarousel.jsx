@@ -11,7 +11,7 @@ const HomeCarousel = () => {
         <div className="homeCarousel">
             <div className="topBar">
                 <div className="topBarLeft">Top Events</div>
-                <div className="topBarRight">Register Now</div>
+                <div className="topBarRight">Registration Opening Soon</div>
             </div>
             <div className="carousel">
 

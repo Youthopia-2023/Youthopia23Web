@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    font-family: Stellar;
+    
     backdrop-filter: blur(10px);
 }
 
@@ -33,7 +33,9 @@ a {
     padding: 0.5rem 1rem;
     background-color: transparent;
     color: white;
-    font-family: Stellar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
@@ -48,7 +50,9 @@ a {
     padding: 0.5rem 1rem;
     background-color: transparent;
     color: white;
-    font-family: Stellar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;

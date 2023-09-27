@@ -1,12 +1,9 @@
 import "./Events.css"
 import data from './dummy/data.json'
-
-
-
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 function Events() {
 
@@ -30,8 +27,10 @@ function Events() {
     />
   )})
   
+
   
   function handleChange(category){
+
     setCat(cat=>category)
   }
   

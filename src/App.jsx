@@ -8,7 +8,9 @@ import Gallery from './pages/Gallery/Gallery';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import EventInfo from './pages/EventInfo/EventInfo';
 import Navbar from './components/Navbar/Navbar';
+
 import IndividualEvent from './components/IndividualEvents/IndividualEvent';
+
 
 function App() {
 
@@ -23,11 +25,14 @@ function App() {
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/eventinfo" element={<EventInfo />} />
             <Route path="*" element={<PageNotFound/>} />
+
             {/* <Route path='/login' element={<Login/>}/> */}
             <Route path='/IndividualEvent' element={<IndividualEvent/>}/>
             
 
+
           </Routes>
+          <Footer/>
         </Router>
     </>
   )
