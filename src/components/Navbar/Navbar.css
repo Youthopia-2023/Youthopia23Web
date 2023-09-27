@@ -23,6 +23,9 @@ a {
     line-height: normal;
 }
 
+.active {
+    color: red;
+}
 .buttonsNav {
     display: flex;
     gap: 2rem;
