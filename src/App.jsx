@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
+
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import EventInfo from './pages/EventInfo/EventInfo';
 function App() {
@@ -16,9 +17,9 @@ function App() {
             <Route path="/about" element={<About/>} />
             <Route path="/events" element={<Events/>} />
             <Route path="/gallery" element={<Gallery/>} />
-            <Route path="/eventinfo" element={<EventInfo />} />
+                          <Route path="/eventinfo" element={<EventInfo />} />
             <Route path="*" element={<PageNotFound/>} />
-            
+
           </Routes>
         </Router>
     </>
