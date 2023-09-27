@@ -1,31 +1,36 @@
 .main-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(../../assets/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(../../assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: brightness(140%);
     overflow: hidden;
     filter: contrast(1);
+    padding-top: 60px;
 }
 
-.main-container {
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-}
 .logo-container {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center; 
-    justify-content: center; 
+    justify-content: space-between; 
 }
 
 .inner-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 560px;
+    margin-top: 20px;
 }
 
+.youthopia {
+    width: 1100px;
+    height: 400px;
+}
 .clg-logo {
     margin: 10px;
 }
@@ -40,4 +45,28 @@
 
 .right {
     align-self: flex-end;
+}
+
+.rndm-images .star-1 {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+}
+
+.rndm-images .star-2 {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+
+.rndm-images .star-3 {
+    position: absolute;
+    top: 18%;
+    right: 20%;
+}
+
+.rndm-images .lines {
+    position: absolute;
+    top: 50%;
+    left: 0;
 }

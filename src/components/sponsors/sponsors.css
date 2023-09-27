@@ -1,0 +1,49 @@
+.main-sponsor {
+    height: 42vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,25,191,1) 33%, rgba(186,24,88,1) 60%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.main-container {
+    height: 42vh;
+    width: 100vw;
+    background: linear-gradient(271deg, rgba(0, 0, 0, 0.51) 0.89%, rgba(0, 0, 0, 0.00) 104.06%);
+    box-shadow: 0px 4px 100px 300px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: #fff;
+}
+
+.arrow {
+    margin-top: 20px;
+}
+
+.sponsor-grid {
+    width: 100vw;
+    height: 26vh;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grids {
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sponsor-logo {
+    width: 100%;
+    height: 90%;
+    margin: 5px 0;
+}
