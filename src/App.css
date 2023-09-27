@@ -1,9 +1,12 @@
-/* import "../" */
+@font-face {
+  font-family: bhai;
+  src: url("./fonts/Stellar-FreeForPersonalUse/Stellar-Regular.otf");
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: bhai;
 }
 
 ::-webkit-scrollbar{
