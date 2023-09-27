@@ -12,3 +12,16 @@
     font-weight: 600;
     color:#fff ;
 }
+
+.logo-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 300px;
+    height: 140px;
+}

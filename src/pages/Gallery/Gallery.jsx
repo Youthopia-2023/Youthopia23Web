@@ -1,9 +1,14 @@
 import "./Gallery.css"
+import logo from "../../assets/Youthopia.svg"
 import gimage1 from "../../assets/gridimg1.jpg";
 import gimage2 from "../../assets/gridimg2.jpg";
 const Gallery = () => {
 	return (
 		<div className="bg-[#0B0A1B] py-10 gallery">
+			      <div className="logo-wrapper">
+        <img className='logo' src={logo}></img>
+      </div>
+
       	<h3 className="heading">A NIGHT TO REMEBER YOUR ENTIRE LIFE </h3>
 			<div className="flex flex-col md:flex-row items-center justify-center px-5 md:px-10 w-full">
 				{/* First Column Images */}
@@ -15,6 +20,8 @@ const Gallery = () => {
 					</div>
 					<img className="h-96 w-auto mt-10" src={gimage1} alt="galleryImage" />
 				</div>
+
+				
 
 				{/* Second Column Images */}
 				<div className="flex flex-col mt-8 md:mt-0 md:ml-10">
