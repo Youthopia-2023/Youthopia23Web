@@ -8,7 +8,7 @@ import Gallery from './pages/Gallery/Gallery';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import EventInfo from './pages/EventInfo/EventInfo';
 import Navbar from './components/Navbar/Navbar';
-
+import Footer from './components/Footer/Footer'
 import IndividualEvent from './components/IndividualEvents/IndividualEvent';
 
 
