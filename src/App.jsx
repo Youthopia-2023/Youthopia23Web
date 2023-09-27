@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
+import Footer from './components/Footer/Footer';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
+          <Footer/>
         </Router>
     </>
   )

@@ -1,0 +1,37 @@
+.container{
+    background-color: black;
+}
+.head,.icons{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    color:white;
+
+}
+.image{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftCorner{
+display: flex;
+justify-self: flex-start;
+gap: 40px;
+padding:20px;
+}
+
+.rightCorner{
+display: flex;
+justify-self: flex-end;
+gap:40px;
+padding: 20px;
+}
