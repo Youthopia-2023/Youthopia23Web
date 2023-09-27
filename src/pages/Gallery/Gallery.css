@@ -1,0 +1,14 @@
+.gallery{
+    background-image:  url("../../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color:#fff ;
+}
