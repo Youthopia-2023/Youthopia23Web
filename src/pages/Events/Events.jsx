@@ -1,29 +1,36 @@
 import "./Events.css"
 import data from './dummy/data.json'
-
-
-
 import Youthopia from '../../assets/youthopia.png'
 
 import Card from "./card/Card"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 function Events() {
 
   const [cat,setCat]=useState("Technical");
   
   const card=data.events[cat].map((event,index)=>{
+    console.log(event)
     return(
     <Card
-      key={`${cat}-${index}`}
-      name={event.name}
-      date={event.date}
-      time={event.time}
-      price={event.price}
+    id={event.id}
+    name={event.name}
+    venue={event.venue}
+    date={event.date}
+    time={event.time}
+    discription={event.description}
+    Coordinator={event.coordinator}
+    head={event.head}
+    fees={event.price}
+    imgUrl={event.imgUrl}
+    category={event.category}
     />
   )})
   
+
+  
   function handleChange(category){
+
     setCat(cat=>category)
   }
   
