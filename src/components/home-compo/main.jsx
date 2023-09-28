@@ -13,18 +13,18 @@ function Main() {
   return (
     <div className="main-page">
       <div className="logo-container">
-        <div className="logo">
+        <div className="RowOne">
           <img src={img1} alt="Logo 1" />
         </div>
-        <div className="logo">
+        <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
         </div>
-        <div className="logo">
+        <div className="RowThree">
           <div className="inner-container">
             <div className="clg-logo left">
               <img src={img3} alt="Logo 3"></img>
             </div>
-            <div className="clg-logo center">
+            <div className="clg-logo-center">
               <img src={img4} alt="Logo 4"></img>
             </div>
             <div className="clg-logo right">

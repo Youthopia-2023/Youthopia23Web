@@ -7,54 +7,45 @@
     filter: brightness(140%);
     overflow: hidden;
     filter: contrast(1);
-    padding-top: 60px;
 }
 
 .logo-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
     align-items: center; 
     justify-content: center; 
+    margin-top: 30px;
 }
 
-.logo {
-    align-items: center;
+.RowTwo {
     display: flex;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
     justify-content: center;
+}
+
+.RowTwo img {
+    height: 50vh;
 }
 
 .inner-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 500px;
-    margin-top: 120%;
-    margin-left: -50px;
-}
-
-.youthopia {
-    width: 1100px;
-    height: 400px;
-    margin-top: 180px;
+    width: 100vw;
 }
 
 .clg-logo {
     margin: 10px;
 }
 
-/* .left {
-    align-self: flex-start;
+.inner-container .clg-logo-center {
+    margin-right: 50px;
 }
-
-.center {
-    align-self: center;
-}
-
-.right {
-    align-self: flex-end;
-} */
 
 .rndm-images .star-1 {
     position: absolute;
