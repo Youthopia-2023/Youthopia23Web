@@ -11,7 +11,6 @@ import ellipse from "../../assets/Ellipse.svg";
 
 
 const SignUp = () => {
-  const [checked, setChecked] = useState(false);
   return (
   
     <div className='signUp-container'>
@@ -33,8 +32,7 @@ const SignUp = () => {
                     <input type="password" placeholder="Password" />
                     <input type="password" placeholder="Confirm Password"/>
                     <label >
-                    <input type="checkbox" defaultChecked={checked}
-                           onChange={() => setChecked(!checked)}/>
+                    <input type="checkbox" />
                     I agree to this terms and condition
                     </label>
                     <input type="submit" />
