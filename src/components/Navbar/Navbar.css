@@ -9,8 +9,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    font-family: Stellar;
-    /* backdrop-filter: blur(10px); */
 }
 
 a {
