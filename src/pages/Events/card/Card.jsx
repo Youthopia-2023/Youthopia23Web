@@ -4,6 +4,19 @@ import { Link } from "react-router-dom";
 
 
 export default function Card(props) {
+    const style={
+        margin: '30px 0 0 20%', 
+    fontFamily: 'Stellar',
+    fontSize: '10px',
+    height: '50px',
+    color: 'black',
+    fontSize: '22px',
+    width: '80%',
+    borderRadius: '8px',
+    bottom: '50px',
+    backgroundColor: '#f8f8f8',
+    border: '2px solid BsSlack',
+    }
   const datatopass={
         id: props.id,
       name:props.name,
@@ -39,10 +52,14 @@ export default function Card(props) {
 
       <Link
         to='/IndividualEvent'  // Assuming you have a route for individual events
-        className="register"
+        
         state={datatopass}
+        
       >
+        <p className="register">
         Register Now
+        </p>
+        
       </Link>
         
     </div>

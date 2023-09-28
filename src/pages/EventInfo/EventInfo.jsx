@@ -1,6 +1,7 @@
 import React from 'react'
 import IndividualEvent from "../../components/IndividualEvents/IndividualEvent"
 import data from "../../components/IndividualEvents/IndividualEventData"
+import Navbar from "../../components/Navbar/Navbar"
 
 
 const EventInfo = () => {
@@ -16,6 +17,7 @@ const EventInfo = () => {
     
   return (
     <div className='eventinfo'>
+      <Navbar />
       {entries}
     </div>
   )
