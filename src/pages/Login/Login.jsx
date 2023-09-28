@@ -6,21 +6,18 @@ export default function Login(){
         <div className="LoginContainer">
             <div className="Login">
                 <img src={Youthopia} alt="" />
-                <p>SIGN UP</p>
+                <p>Login</p>
                 <form action="#">
-                    <div className="name">
-                        <input type="text" placeholder="First Name" />
-                        <input type="text" placeholder="Last Name" />
+                    <div className="login-details">
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
                     </div>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <input type="password" placeholder="Confirm Password"/>
                     <label >
                     <input type="checkbox" />
                     I agree to this terms and conditions
                     </label>
-                    <input type="submit" />
                 </form>
+                <button className="login-btn">Login</button>
             </div>
         </div>
     )

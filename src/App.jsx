@@ -2,6 +2,8 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
+import SignUp from './pages/SignUp/SignUp';
+import Login from './pages/Login/Login';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
 
@@ -24,6 +26,8 @@ function App() {
             <Route path="/events" element={<Events/>} />
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/eventinfo" element={<EventInfo />} />
+            <Route path="/signUp" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
             <Route path="*" element={<PageNotFound/>} />
 
             {/* <Route path='/login' element={<Login/>}/> */}
