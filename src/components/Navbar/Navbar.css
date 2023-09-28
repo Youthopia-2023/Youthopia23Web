@@ -1,4 +1,4 @@
-#navbar {
+.navbar  {
     height: 60px;
     background-color: transparent;
     position: fixed;
@@ -9,8 +9,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    font-family: Stellar;
-    /* backdrop-filter: blur(10px); */
+    /* transition: background-color 0.5s ease-in-out; */
+}
+
+.navbar.blurred{
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 a {

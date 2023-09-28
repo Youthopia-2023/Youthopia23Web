@@ -17,10 +17,10 @@
 
 .logo-wrapper{
     width: 100%;
-    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
     margin-top: 8vh;
 }
 
@@ -31,9 +31,9 @@
 
 .event-wrapper{
     width: 90%;
-    height: 80%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
 }
 

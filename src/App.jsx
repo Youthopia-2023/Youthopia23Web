@@ -28,9 +28,6 @@ function App() {
 
             {/* <Route path='/login' element={<Login/>}/> */}
             <Route path='/IndividualEvent' element={<IndividualEvent/>}/>
-            
-
-
           </Routes>
           <Footer/>
         </Router>
