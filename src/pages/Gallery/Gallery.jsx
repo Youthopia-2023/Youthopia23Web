@@ -30,7 +30,7 @@ const Gallery = () => {
 				</div>
 			</div>
 
-			<div className="flex flex-col w-full justify-center items-center">
+			<div className="flex flex-col w-full justify-center ">
 				<div className="max-w-[1269px]">
 					{/* Second Row */}
 					<div className="px-5 md:px-10 py-10 ">
