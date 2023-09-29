@@ -33,7 +33,7 @@ function Navbar() {
                 <NavLink to="/about" activeClassName="active"> About us</NavLink>
             </div>
             <div className="buttonsNav">
-                <button className="clickme1"> Log in </button>
+                <button  className="clickme1"> Log in </button>
                 <button className="clickme2"> Signup</button>
             </div>
 

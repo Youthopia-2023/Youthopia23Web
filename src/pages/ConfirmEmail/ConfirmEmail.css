@@ -1,4 +1,4 @@
-.LoginContainer{
+.confirm-container{
     background-image: url(../../assets/background.png);
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     padding: 0;
 
 }
-.Login{
+.confirm{
     position: relative;
     background-color: rgba(0, 0, 0, 0.71);
     border-radius: 138px;
@@ -25,48 +25,13 @@
     margin-top: 40px;
     /* margin: 0vh 20vh 0vh 25vh; */
 }
-.Login>form{
-    display: flex;
-    flex-direction: column;
+
+.confirm-text{
     width: 60%;
-    margin-top: 30px;
-
-}
-input{
-    background-color: transparent;
-    width: 58%;
-    padding-left: 20px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 30px;
-    font-family: Stellar;
-    font-size: 24px;
-    border: 2px solid #f8f8f8;
-}
-.login-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-label{
-    display: flex;
-    font-size: 15px;
-    font-family: Stellar-Light;
-    margin-top: 20px;
-    margin-left: 30%;
-}
-label>input{
-    margin-top: 0%;
-    background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    border-radius: 50%;
-    height: 18px;
-    width: 18px;
+    text-align: center;
 }
 
-.login-btn{
+.confirm-btn{
     border-radius: 35px;
     border: 1px solid #FFF;
     width: 130px;
