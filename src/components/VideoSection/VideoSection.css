@@ -11,6 +11,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .main-container p {
@@ -25,8 +26,8 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    width: 60vw;
-    height: 48vh;
+    width: 50%;
+    height: 100%;
 }
 
 .video-container {
