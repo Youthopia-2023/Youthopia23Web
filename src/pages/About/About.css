@@ -1,0 +1,133 @@
+.about-container-1, .about-container-2, .about-container-3,
+.about-container-4, .about-container-5, .about-container-6,
+.about-container-7 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/GroupNew.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(140%);
+    overflow: hidden;
+    filter: contrast(1);
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.about-container-8 {
+    height: 40vh;
+    width: 100vw;
+    background-image: url(../../assets/GroupNew.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(140%);
+    overflow: hidden;
+    filter: contrast(1);
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.youthopia-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    height: 120px;
+}
+
+.youthopia-logo img {
+    height: 120px;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading p {
+    font-size: 30.28px;
+    font-weight: 700;
+}
+
+.box-1, .box-2, .box-3,
+.box-4, .box-5, .box-6,
+.box-7, .box-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: #fff;
+}
+
+.box-1, .box-2, .box-3,
+.box-4, .box-5, .box-6,
+.box-7, .box-8 .sub-hd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.box-1, .box-2, .box-3,
+.box-4, .box-5, .box-6,
+.box-7, .box-8 .sub-hd p {
+    font-size: 19px;
+}
+
+.box-1 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+}
+
+.box-2 .convenors-cnt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 29vh;
+}
+
+.box-3 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27vh;
+}
+
+.box-4 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+} 
+
+.box-5 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27vh;
+} 
+
+.box-6 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 29vh;
+}
+
+.box-7 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27vh;
+} 
+
+.box-8 .convenors-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 29vh;
+}
