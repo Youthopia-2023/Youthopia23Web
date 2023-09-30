@@ -51,18 +51,36 @@
     position: absolute;
     top: 65%;
     right: 5%;
+    animation-name: twinkle-1;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
 }
 
 .rndm-images .star-2 {
     position: absolute;
     top: 12%;
     left: 8%;
+    animation-name: twinkle-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .rndm-images .star-3 {
     position: absolute;
     top: 18%;
     right: 20%;
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.rndm-images .star-4 {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    animation-name: twinkle-1;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
 }
 
 .rndm-images .lines {
@@ -70,3 +88,171 @@
     top: 50%;
     left: 0;
 }
+
+.RowTwo{
+    padding: 0 1rem;
+    max-width: 950px;
+    position: relative;
+}
+
+.elipse{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 0;
+}
+
+
+.elipse> div{
+width: 40%;
+position: relative;
+}
+
+.elipse> div >img{
+    width: 100%;
+    height: auto;
+}
+
+.elipse> div >div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; */
+}
+
+.elipse> div >div>div{
+    animation: xAxis 3s infinite ease-in;
+    height: 100%;
+}
+
+.elipse> div >div>div>div{
+    width: 100%;
+    height: 100%;
+    animation: yAxis 3s infinite ease-out;
+}
+
+.elipse> div >div>div>div> img{
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+.elipse2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 0;
+}
+
+.elipse2> div{
+width: 40%;
+position: relative;
+}
+
+.elipse2> div >img{
+    width: 100%;
+    height: auto;
+}
+
+.elipse2> div >div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; */
+}
+
+.elipse2> div >div>div{
+    animation: xAxis2 2.8s infinite ease-in;
+    height: 100%;
+}
+
+.elipse2> div >div>div>div{
+    width: 100%;
+    height: 100%;
+    animation: yAxis2 2.8s infinite ease-out;
+}
+
+.elipse2> div >div>div>div> img{
+    width: 20px;
+    height: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+
+.youthopia{
+    width: 100%;
+}
+
+@keyframes twinkle-1 {
+    50% {
+      transform: scale(0.9);
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes xAxis {
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateX(calc(-100% + 40px));
+        /* opacity: 0.8; */
+        /* scale: 0.8; */
+      }
+  }
+  
+  @keyframes yAxis {
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateY(calc(100% - 40px));
+        /* scale: 0.8; */
+      }
+  }
+
+
+  @keyframes xAxis2 {
+    50% {
+        animation-timing-function: ease-in;
+        transform: translateX(calc(-100% + 20px));
+      }
+  }
+  
+  @keyframes yAxis2 {
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateY(calc(100% - 20px));
+      }
+  }

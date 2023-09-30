@@ -7,7 +7,11 @@ import img5 from "../../assets/25_years_logo.svg";
 import star1 from "../../assets/Group 22.svg";
 import star2 from "../../assets/Group 6647.svg";
 import star3 from "../../assets/Star 4.svg";
+import star4 from "../../assets/Star5.svg";
+import elipse from "../../assets/Ellipse.png"
 import lines from "../../assets/Group 23.svg";
+import ball from "../../assets/ball.png"
+import balls from "../../assets/balls.png"
 
 function Main() {
   return (
@@ -18,6 +22,26 @@ function Main() {
         </div>
         <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
+          <div className="elipse">
+            <div>
+            <img src={elipse} alt="elipse"/>
+           <div> 
+            <div>
+              <div><img src={ball} alt="ball" /></div>
+            </div>
+           </div>
+            </div>
+          </div>
+          <div className="elipse2">
+            <div>
+            <img src={elipse} alt="elipse"/>
+           <div> 
+            <div>
+              <div><img src={balls} alt="ball" /></div>
+            </div>
+           </div>
+            </div>
+          </div>
         </div>
         <div className="RowThree">
           <div className="inner-container">
@@ -37,6 +61,7 @@ function Main() {
         <img src={star1} alt="star-1" className="star-1"></img>
         <img src={star2} alt="star-2" className="star-2"></img>
         <img src={star3} alt="star-3" className="star-3"></img>
+        <img src={star4} alt="star-4" className="star-4"></img>
         <img src={lines} alt="lines" className="lines"></img>
       </div>
     </div>
