@@ -11,10 +11,9 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding-bottom: 1rem;
 }
 
 .CS-container img {
-    height: 100vh;
+    height: 90vh;
     width: 90vw;
 }
