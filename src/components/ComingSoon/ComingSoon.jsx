@@ -1,5 +1,5 @@
 import './ComingSoon.css';
-import comingSoon from '../../assets/comingSoon.svg';
+import comingSoon from '../../assets/ComingSoon.svg';
 
 function ComingSoon() {
     return(
