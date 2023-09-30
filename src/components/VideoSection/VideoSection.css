@@ -1,0 +1,39 @@
+.main-container {
+    background: url('../../assets/Rectangle12382.png');
+    background-size:cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container p {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 60vw;
+    height: 48vh;
+}
+
+.video-container {
+    height: 36vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    display: flex;
+}

@@ -1,0 +1,12 @@
+.CS-container {
+    background: url('../../assets/ComingSoon.svg');
+    background-size:cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+}

@@ -18,6 +18,11 @@
     border-radius: 16px;
 }
 
+.convenor .img-box img {
+    width: 170px;
+    height: 180px;
+    border-radius: 16px;
+}
 .convenor p {
     color: #fff;
     font-weight: 500;

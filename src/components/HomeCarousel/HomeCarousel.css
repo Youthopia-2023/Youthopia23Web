@@ -1,20 +1,21 @@
 .homeCarousel{
     height: 80vh;
     width: 100vw;
-    background-image: url("../../assets/background.png");
+    background-image: url("../../assets/Rectangle12382.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: #000;
 }
 
 .topBar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: #fff;
     margin-top: 5rem;
     padding: 0 4rem;
     width: 100%;
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    color: white;
+    color: #fff;
     width: 100%;
     margin-bottom: 1rem;
     padding-right: 2rem;
