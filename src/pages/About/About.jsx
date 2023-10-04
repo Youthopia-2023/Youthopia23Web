@@ -1,6 +1,7 @@
 import "./About.css";
 import youthopia from "../../assets/Youthopia.svg";
 import AboutUsImgBox from "../../components/AboutUsImgBox/AboutUsImgBox";
+import varchas from "../../assets/aboutImg/Vachaspati.jpg"
 
 function About() {
   return (
@@ -18,7 +19,7 @@ function About() {
           </div>
           <div className="convenors-cnt">
             <AboutUsImgBox />
-            <AboutUsImgBox />
+            <AboutUsImgBox img={varchas} name={"Vachaspati"}/>
           </div>
           <div className="sub-hd">
             <p>Co-Convenor</p>

@@ -1,11 +1,11 @@
-import IndividualEvent from "../../../components/IndividualEvents/IndividualEvent";
+// import IndividualEvent from "../../../components/IndividualEvents/IndividualEvent";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
 
 export default function Card(props) {
-    const style={
-        margin: '30px 0 0 20%', 
+  const style = {
+    margin: '30px 0 0 20%',
     fontFamily: 'Stellar',
     fontSize: '10px',
     height: '50px',
@@ -16,21 +16,21 @@ export default function Card(props) {
     bottom: '50px',
     backgroundColor: '#f8f8f8',
     border: '2px solid BsSlack',
-    }
-  const datatopass={
-        id: props.id,
-      name:props.name,
-      venue:props.venue,
-      date:props.date,
-      time:props.time,
-      discription:props.discription,
-      Coordinator:props.Coordinator,
-      head:props.head,
-      fees:props.fees,
-      imgUrl:props.imgUrl,
-      category:props.category,
-    }
-  
+  }
+  const datatopass = {
+    id: props.id,
+    name: props.name,
+    venue: props.venue,
+    date: props.date,
+    time: props.time,
+    discription: props.discription,
+    Coordinator: props.Coordinator,
+    head: props.head,
+    fees: props.fees,
+    imgUrl: props.imgUrl,
+    category: props.category,
+  }
+
   console.log(props)
   return (
     <div className="card" id={props.id}>
@@ -52,16 +52,16 @@ export default function Card(props) {
 
       <Link
         to='/IndividualEvent'  // Assuming you have a route for individual events
-        
+
         state={datatopass}
-        
+
       >
         <p className="register">
-        Register Now
+          Register Now
         </p>
-        
+
       </Link>
-        
+
     </div>
   );
 }

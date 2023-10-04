@@ -1,10 +1,12 @@
 import "./AboutUsImgBox.css";
 
-function AboutUsImgBox() {
+function AboutUsImgBox(props) {
   return (
     <div className="convenor">
-      <div className="img-box"></div>
-      <p>XYZ</p>
+      <div className="img-box">
+        <img src={props.img} alt="" />
+      </div>
+      <p>{props.name}</p>
     </div>
   );
 }

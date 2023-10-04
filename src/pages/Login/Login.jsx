@@ -1,4 +1,3 @@
-import React from "react";
 import './Login.css';
 import Youthopia from '../../assets/youthopia.png'
 import star1 from "../../assets/Star 4.svg";
