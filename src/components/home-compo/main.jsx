@@ -22,7 +22,7 @@ function Main() {
         </div>
         <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
-          <div className="elipse">
+          {/* <div className="elipse">
             <div>
             <img src={elipse} alt="elipse"/>
            <div> 
@@ -41,7 +41,7 @@ function Main() {
             </div>
            </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="RowThree">
           <div className="inner-container">
