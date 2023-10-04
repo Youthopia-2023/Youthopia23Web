@@ -1,6 +1,6 @@
 import './VideoSection.css';
 // import playicon from "../../assets/PlayIcon.svg";
-import testVideo from "../../assets/test.mp4"
+import testVideo from "../../assets/test2.mp4"
 
 function VideoSection() {
   return (
