@@ -19,7 +19,7 @@ const Registration = () => {
         <img src={line} alt="star-3" className="line-4"></img>
         <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-        <img src={Youthopia} alt="" />
+        <img className='youthopia-logo' src={Youthopia} alt="" />
 
         <p className='registre-text'>REGISTRATION WILL BE OPEN SOON!</p>
          <button className="registre-btn">Back to Homepage</button>
