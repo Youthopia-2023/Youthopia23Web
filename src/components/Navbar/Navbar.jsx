@@ -29,7 +29,7 @@ function Navbar() {
             <div className="links">
                 <NavLink exact to="/" activeClassName="active">Home</NavLink>
                 <NavLink to="/events" activeClassName="active"> Events</NavLink>
-                <NavLink to="/gallery" activeClassName="active"> Gallery </NavLink>
+                {/* <NavLink to="/gallery" activeClassName="active"> Gallery </NavLink> */}
                 <NavLink to="/about" activeClassName="active"> About us</NavLink>
             </div>
             <div className="buttonsNav">
