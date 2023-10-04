@@ -1,9 +1,23 @@
-.about-container-1, .about-container-2, .about-container-3,
+.about-container-1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/image102.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(140%);
+    overflow: hidden;
+    filter: contrast(1);
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.about-container-2, .about-container-3,
 .about-container-4, .about-container-5, .about-container-6,
 .about-container-7 {
     height: 100vh;
     width: 100vw;
-    background-image: url(../../assets/GroupNew.svg);
+    background-image: url(../../assets/image103.svg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(140%);
