@@ -11,6 +11,7 @@ import star2 from "../../assets/Group 6647.svg";
 import star3 from "../../assets/Star 4.svg";
 import line from "../../assets/Line 4.svg";
 import ellipse from "../../assets/Ellipse.svg";
+import { Link } from "react-router-dom";
 
 
 function Events() {
@@ -68,7 +69,7 @@ function Events() {
   <img src={Youthopia} alt="" />
 
   <p className='registre-text'>REGISTRATION WILL BE OPEN SOON!</p>
-   <button className="registre-btn">Back to Homepage</button>
+   <Link to="/"><button className="registre-btn">Back to Homepage</button></Link>
 
 
   </div>
