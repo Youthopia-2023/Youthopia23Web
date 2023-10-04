@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer'
 import IndividualEvent from './components/IndividualEvents/IndividualEvent';
 import VerifyEmail from './pages/VerifyEmail/VerifyEmail';
 import ConfirmEmail from './pages/ConfirmEmail/ConfirmEmail';
+import Registration from './pages/Registration/Registration';
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/verify" element={<VerifyEmail />} />
             <Route path="/confirm" element={<ConfirmEmail />} />
+            <Route path="/register" element={<Registration />} />
+
             <Route path="*" element={<PageNotFound/>} />
 
             {/* <Route path='/login' element={<Login/>}/> */}
