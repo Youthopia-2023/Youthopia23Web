@@ -1,5 +1,4 @@
 import "./Gallery.css"
-import logo from "../../assets/Youthopia.svg"
 import GH1 from "../../assets/Gallery/GH1.png"
 import GH2 from "../../assets/Gallery/GH2.png"
 import GH3 from "../../assets/Gallery/GH3.png"
@@ -7,6 +6,8 @@ import GH4 from "../../assets/Gallery/GH4.png"
 import GH5 from "../../assets/Gallery/GH5.png"
 import GS1 from "../../assets/Gallery/GS1.png"
 import GS2 from "../../assets/Gallery/GS2.png"
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 // import GS3 from "../../assets/Gallery/GS3.png"
 // import GS4 from "../../assets/Gallery/GS4.png"
 // import GV1 from "../../assets/Gallery/GV1.png"
@@ -14,6 +15,7 @@ import GS2 from "../../assets/Gallery/GS2.png"
 const Gallery = () => {
 	return (
 		<div className="bg-[#0B0A1B] py-10 gallery">
+			<Navbar/>
 			{/* <div className="logo-wrapper">
 				<img className='logo' src={logo}></img>
 			</div> */}
@@ -92,6 +94,7 @@ const Gallery = () => {
 
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };

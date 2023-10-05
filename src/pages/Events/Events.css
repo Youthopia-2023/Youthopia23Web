@@ -5,9 +5,7 @@
     width: 100%;
     background-size: 100% 100%;
     font-family: Stellar;
-    
     overflow-y: scroll;
-
 }
 
 .youImg {
@@ -101,6 +99,7 @@
     height: 100vh;
     margin: 0;
     padding: 0;
+    flex-direction: column;
 
 }
 .registre{

@@ -12,6 +12,8 @@ import star3 from "../../assets/Star 4.svg";
 import line from "../../assets/Line 4.svg";
 import ellipse from "../../assets/Ellipse.svg";
 import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 
 function Events() {
@@ -45,36 +47,36 @@ function Events() {
   // }
 
   return (
-  //   <div className="events">
-  //     <img className="youImg" src={Youthopia} alt="Image not foud" />
-  //     <div className="secNavBar">
-  //       <div onClick={() => handleChange("Technical")} className="a">Technical</div>
-  //       <div onClick={() => handleChange("Cultural")} className="a">Cultural</div>
-  //       <div onClick={() => handleChange("Informal")} className="a">Informal</div>
-  //     </div>
-  //     <div className="card-Container">
-  //       {card}
-  //     </div>
-  //   </div>
-  // )
-  <div className='registre-container'>
-  <div className="registre">
-  <img src={star1} alt="star-1" className="star-1"></img>
-  <img src={star1} alt="star-1" className="star-1"></img>
-  <img src={star2} alt="star-2" className="star-2"></img>
-   <img src={star3} alt="star-3" className="star-3"></img>
-  <img src={line} alt="star-3" className="line-4"></img>
-  <img src={ellipse} alt="star-3" className="ellipse"></img>
-
-  <img src={Youthopia} alt="" />
-
-  <p className='registre-text'>REGISTRATION WILL BE OPEN SOON!</p>
-   <Link to="/"><button className="registre-btn">Back to Homepage</button></Link>
-
-
-  </div>
-
-</div>
+    //   <div className="events">
+    //     <img className="youImg" src={Youthopia} alt="Image not foud" />
+    //     <div className="secNavBar">
+    //       <div onClick={() => handleChange("Technical")} className="a">Technical</div>
+    //       <div onClick={() => handleChange("Cultural")} className="a">Cultural</div>
+    //       <div onClick={() => handleChange("Informal")} className="a">Informal</div>
+    //     </div>
+    //     <div className="card-Container">
+    //       {card}
+    //     </div>
+    //   </div>
+    // )
+    <>
+    <Navbar/>
+    <div className='registre-container'>
+      <div className="registre">
+        <img src={star1} alt="star-1" className="star-1"></img>
+        <img src={star1} alt="star-1" className="star-1"></img>
+        <img src={star2} alt="star-2" className="star-2"></img>
+        <img src={star3} alt="star-3" className="star-3"></img>
+        <img src={line} alt="star-3" className="line-4"></img>
+        <img src={ellipse} alt="star-3" className="ellipse"></img>
+        <img src={Youthopia} alt="" />
+        <p className='registre-text'>REGISTRATION WILL BE OPEN SOON!</p>
+        <Link to="/"><button className="registre-btn">Back to Homepage</button></Link>
+      </div>
+    </div>
+    <Footer/>
+    </>
+    
   )
 }
 

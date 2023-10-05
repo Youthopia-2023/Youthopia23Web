@@ -8,8 +8,6 @@ import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import EventInfo from './pages/EventInfo/EventInfo';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer'
 import IndividualEvent from './components/IndividualEvents/IndividualEvent';
 import VerifyEmail from './pages/VerifyEmail/VerifyEmail';
 import ConfirmEmail from './pages/ConfirmEmail/ConfirmEmail';
@@ -21,7 +19,6 @@ function App() {
   return (
     <>
         <Router>
-          <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
@@ -39,7 +36,6 @@ function App() {
             {/* <Route path='/login' element={<Login/>}/> */}
             <Route path='/IndividualEvent' element={<IndividualEvent/>}/>
           </Routes>
-          <Footer/>
         </Router>
     </>
   )

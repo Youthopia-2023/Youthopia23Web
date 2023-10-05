@@ -1,3 +1,5 @@
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
 import youthopia from "../../assets/Youthopia.svg";
 import AboutUsImgBox from "../../components/AboutUsImgBox/AboutUsImgBox";
@@ -58,209 +60,215 @@ import tanishq from "../../assets/aboutImg/Tanishq .jpg"
 
 function About() {
   return (
-    <>
-      <div className="about-container-1">
-        <div className="youthopia-logo">
-          <img src={youthopia} alt="youthopia"></img>
-        </div>
-        <div className="heading">
-          <p>MEET OUR TEAM</p>
-        </div>
-        <div className="box-1">
-          <div className="sub-hd">
-            <p>Convenor</p>
+    <div className="about">
+      <Navbar />
+      <div className="mainBody">
+        <div className="innerDiv">
+          <div className="about-container">
+            <div className="youthopia-logo">
+              <img src={youthopia} alt="youthopia"></img>
+            </div>
+            <div className="heading">
+              <p>MEET OUR TEAM</p>
+            </div>
+            <div className="box">
+              <div className="sub-hd">
+                <p>Convenor</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={wamiq} name={'Wamiq Khan'} />
+                <AboutUsImgBox img={varchas} name={'Vachaspati Kumar Mishra'} />
+              </div>
+              <div className="sub-hd">
+                <p>Co-Convenor</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={soumya} name={'Soumya Nilay'} />
+                <AboutUsImgBox img={aryan} name={'Aryan Rastogi'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={wamiq} name={'Wamiq Khan'} />
-            <AboutUsImgBox img={varchas} name={'Vachaspati Kumar Mishra'}/>
-          </div>
-          <div className="sub-hd">
-            <p>Co-Convenor</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={soumya} name={'Soumya Nilay'} />
-            <AboutUsImgBox img={aryan} name={'Aryan Rastogi'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-2">
-        <div className="box-2">
-          <div className="sub-hd">
-            <p>Organising</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Organising</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={priyanshi} name={'Priyanshi Kansal'} />
+                <AboutUsImgBox img={sourab} name={'Saurabh Kumar Singh'} />
+              </div>
+              <div className="sub-hd">
+                <p>Event Management</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={jatin} name={'Jatin Sharma'} />
+                <AboutUsImgBox img={vipul} name={'Vipul Saxena'} />
+                <AboutUsImgBox img={akshat} name={'Akshat Dabral'} />
+                <AboutUsImgBox img={anubhav} name={'Anubhav Kashyap'} />
+              </div>
+              <div className="sub-hd">
+                <p>Cultural</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={nehal} name={'Nehal Nagarkoti'} />
+                <AboutUsImgBox img={kushagra} name={'Kushagra Nigam'} />
+                <AboutUsImgBox img={gladson} name={'Gladson Biju Thomas'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={priyanshi} name={'Priyanshi Kansal'} />
-            <AboutUsImgBox img={sourab} name={'Saurabh Kumar Singh'} />
-          </div>
-          <div className="sub-hd">
-            <p>Event Management</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={jatin} name={'Jatin Sharma'} />
-            <AboutUsImgBox img={vipul} name={'Vipul Saxena'} />
-            <AboutUsImgBox img={akshat} name={'Akshat Dabral'} />
-            <AboutUsImgBox img={anubhav} name={'Anubhav Kashyap'} />
-          </div>
-          <div className="sub-hd">
-            <p>Cultural</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={nehal} name={'Nehal Nagarkoti'} />
-            <AboutUsImgBox img={kushagra} name={'Kushagra Nigam'} />
-            <AboutUsImgBox img={gladson} name={'Gladson Biju Thomas'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-3">
-        <div className="box-3">
-          <div className="sub-hd">
-            <p>Singing</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Singing</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={andrew} name={'Andrew Joseph'} />
+                <AboutUsImgBox img={divyanshi} name={'Divyanshi'} />
+              </div>
+              <div className="sub-hd">
+                <p>Dancing</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={armaan} name={'Armaanjot Singh'} />
+                <AboutUsImgBox img={vaishnavi} name={'Vaishnavi'} />
+                <AboutUsImgBox img={shrishti} name={'Shrishti Panwar'} />
+              </div>
+              <div className="sub-hd">
+                <p>Fashionista</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={bist} name={'Manasvi Bist'} />
+                <AboutUsImgBox img={danish} name={'Danish Siddiqui'} />
+                <AboutUsImgBox img={sameer} name={'Sameer Patel'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={andrew} name={'Andrew Joseph'} />
-            <AboutUsImgBox img={divyanshi} name={'Divyanshi'} />
-          </div>
-          <div className="sub-hd">
-            <p>Dancing</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={armaan} name={'Armaanjot Singh'} />
-            <AboutUsImgBox img={vaishnavi} name={'Vaishnavi'} />
-            <AboutUsImgBox img={shrishti} name={'Shrishti Panwar'} />
-          </div>
-          <div className="sub-hd">
-            <p>Fashionista</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={bist} name={'Manasvi Bist'} />
-            <AboutUsImgBox img={danish} name={'Danish Siddiqui'} />
-            <AboutUsImgBox img={sameer} name={'Sameer Patel'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-4">
-        <div className="box-4">
-          <div className="sub-hd">
-            <p>PR/Publicity</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>PR/Publicity</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={aman} name={'Aman Kumar'} />
+                <AboutUsImgBox img={avantika} name={'Avantika Rajput'} />
+                <AboutUsImgBox img={devishree} name={'Devishree Rana'} />
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={maanav} name={'Maanav Aryan'} />
+                <AboutUsImgBox img={medha} name={'Medha Tiwari'} />
+              </div>
+              <div className="sub-hd">
+                <p>Sound & Lightning</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={som} name={'S Kartikye'} />
+                <AboutUsImgBox />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={aman} name={'Aman Kumar'} />
-            <AboutUsImgBox img={avantika} name={'Avantika Rajput'} />
-            <AboutUsImgBox img={devishree} name={'Devishree Rana'} />
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={maanav} name={'Maanav Aryan'} />
-            <AboutUsImgBox img={medha} name={'Medha Tiwari'} />
-          </div>
-          <div className="sub-hd">
-            <p>Sound & Lightning</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={som} name={'S Kartikye'} />
-            <AboutUsImgBox />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-5">
-        <div className="box-5">
-          <div className="sub-hd">
-            <p>Photography & Videography</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Photography & Videography</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={amit} name={'Amit Nautiyal'} />
+                <AboutUsImgBox img={vidit} name={'Vidit Sharma'} />
+                <AboutUsImgBox img={pradhyum} name={'Pradumn Kala'} />
+                <AboutUsImgBox img={anesha} name={'Anusha Malvyia'} />
+              </div>
+              <div className="sub-hd">
+                <p>Literary & Theater</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={rudrika} name={'Rudrika Singh'} />
+                <AboutUsImgBox img={mallika} name={'Mallika Agarwal'} />
+              </div>
+              <div className="sub-hd">
+                <p>Informal</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={rahul} name={'Rahul Adhikari'} />
+                <AboutUsImgBox img={aamir} name={'Aamir Qaisheer'} />
+                <AboutUsImgBox img={shriya} name={'Shriya Shrivastava'} />
+                <AboutUsImgBox img={prashant} name={'Prashant Rajan'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={amit} name={'Amit Nautiyal'} />
-            <AboutUsImgBox img={vidit} name={'Vidit Sharma'} />
-            <AboutUsImgBox img={pradhyum} name={'Pradumn Kala'} />
-            <AboutUsImgBox img={anesha} name={'Anusha Malvyia'} />
-          </div>
-          <div className="sub-hd">
-            <p>Literary & Theater</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={rudrika} name={'Rudrika Singh'} />
-            <AboutUsImgBox img={mallika} name={'Mallika Agarwal'} />
-          </div>
-          <div className="sub-hd">
-            <p>Informal</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={rahul} name={'Rahul Adhikari'} />
-            <AboutUsImgBox img={aamir} name={'Aamir Qaisheer'} />
-            <AboutUsImgBox img={shriya} name={'Shriya Shrivastava'} />
-            <AboutUsImgBox img={prashant} name={'Prashant Rajan'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-6">
-        <div className="box-6">
-          <div className="sub-hd">
-            <p>Fine Arts</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Fine Arts</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={tashu} name={'Tashu Mittal'} />
+                <AboutUsImgBox img={shubhangi} name={'Shubhangi Sharma'} />
+              </div>
+              <div className="sub-hd">
+                <p>Design</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={harshit} name={'Harshit Gupta'} />
+                <AboutUsImgBox img={ekta} name={'Ekta Soni'} />
+              </div>
+              <div className="sub-hd">
+                <p>Sponsor</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={aayushi} name={'Aayushi Kaushik'} />
+                <AboutUsImgBox img={harshitm} name={'Harshit Munjal'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={tashu} name={'Tashu Mittal'} />
-            <AboutUsImgBox img={shubhangi} name={'Shubhangi Sharma'} />
-          </div>
-          <div className="sub-hd">
-            <p>Design</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={harshit} name={'Harshit Gupta'} />
-            <AboutUsImgBox img={ekta} name={'Ekta Soni'} />
-          </div>
-          <div className="sub-hd">
-            <p>Sponsor</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={aayushi} name={'Aayushi Kaushik'} />
-            <AboutUsImgBox img={harshitm} name={'Harshit Munjal'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-7">
-        <div className="box-7">
-        <div className="sub-hd">
-            <p>Content & Creative Writing</p>
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Content & Creative Writing</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={tanul} name={'Tanul Khare'} />
+                <AboutUsImgBox img={shoib} name={'Shoib Ali'} />
+              </div>
+              <div className="sub-hd">
+                <p>Anchoring</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={prashantm} name={'Prashant Mishra'} />
+                <AboutUsImgBox img={shreya} name={'Shreya Malik'} />
+              </div>
+              <div className="sub-hd">
+                <p>Technical</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={sanskar} name={"Sanskar Saxena"} />
+                <AboutUsImgBox img={shashank} name={"Shashank Rawat"} />
+                <AboutUsImgBox img={manish} name={'Manish Adhikari'} />
+              </div>
+            </div>
           </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={tanul} name={'Tanul Khare'} />
-            <AboutUsImgBox img={shoib} name={'Shoib Ali'} />
-          </div>
-          <div className="sub-hd">
-            <p>Anchoring</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={prashantm} name={'Prashant Mishra'} />
-            <AboutUsImgBox img={shreya} name={'Shreya Malik'} />
-          </div>
-          <div className="sub-hd">
-            <p>Technical</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={sanskar} name={"Sanskar Saxena"}/>
-            <AboutUsImgBox img={shashank} name={"Shashank Rawat"}/>
-            <AboutUsImgBox img={manish} name={'Manish Adhikari'} />
-          </div>
-        </div>
-      </div>
 
-      <div className="about-container-8">
-        <div className="box-8">
-        <div className="sub-hd">
-            <p>Lan Gaming</p>
-          </div>
-          <div className="convenors-cnt">
-            <AboutUsImgBox img={adit} name={'Adit Vaid'} />
-            <AboutUsImgBox img={ayushi} name={'Ayushi Kumar'} />
-            <AboutUsImgBox img={tanishq} name={'Tanishq Singh'} />
+          <div className="about-container">
+            <div className="box">
+              <div className="sub-hd">
+                <p>Lan Gaming</p>
+              </div>
+              <div className="convenors-cnt">
+                <AboutUsImgBox img={adit} name={'Adit Vaid'} />
+                <AboutUsImgBox img={ayushi} name={'Ayushi Kumar'} />
+                <AboutUsImgBox img={tanishq} name={'Tanishq Singh'} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

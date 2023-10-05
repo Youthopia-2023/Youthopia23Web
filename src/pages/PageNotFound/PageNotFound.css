@@ -2,13 +2,15 @@
     background-image: url("../../assets/background-blur.png");
     height: 100vh;
     width: 100%;
+    background-color: black;
+    filter: contrast(1);
     background-size: 100% 100%;
     font-family: Stellar;
-    position: fixed;
     /* overflow-y: scroll; */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .pageNotFound>.card404 {
@@ -63,4 +65,38 @@
     line-height: normal;
     margin-bottom: 1rem;
     cursor: pointer;
+}
+
+.pageNotFound>.star-1{
+    position: absolute;
+    top: 5%;
+    right: 20%;
+
+}
+
+.pageNotFound>.star-3{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    width: 25px;
+}
+
+.pageNotFound>.star-2{
+    position: absolute;
+    bottom: 5%;
+    left: 23%;
+
+}
+
+.pageNotFound>.line-4{
+    position: absolute;
+    bottom: 34%;
+    right: 9%;
+}
+
+.pageNotFound>.ellipse{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+
 }
