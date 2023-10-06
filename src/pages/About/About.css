@@ -1,11 +1,11 @@
 .about>.mainBody{
-    background-image: url("../../assets/backgroungAbout/image102.svg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(140%);
+    /* filter: brightness(140%); */
     overflow-y: hidden;
     height: 100vh;
-    background-color: black;
+    background-color: black !important;
     background-position: center;
     display: flex;
     flex-direction: column;

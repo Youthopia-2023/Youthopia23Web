@@ -1,4 +1,4 @@
-import tech from "../../assets/tech.jpg"
+// import tech from "../../assets/tech.jpg"
 export default [
     {
         id: 1,
@@ -10,7 +10,6 @@ export default [
         CoOrdinatore: "Jason Drexter",
         head: "Dio Brandon",
         fees: "50",
-        imgUrl: tech
     },
 
 ]
