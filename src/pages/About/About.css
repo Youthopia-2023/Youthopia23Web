@@ -1,5 +1,6 @@
 .about>.mainBody{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.png');
+    /* background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/AboutBg.svg'); */
+    background-image: url('../../assets/AboutBg.svg');
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: brightness(140%); */
