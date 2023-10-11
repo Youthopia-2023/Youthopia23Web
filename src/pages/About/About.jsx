@@ -56,6 +56,7 @@ import manish from "../../assets/aboutImg/Manish Adhikari.png"
 import adit from "../../assets/aboutImg/Adit.png"
 import ayushi from "../../assets/aboutImg/ayushi kumar.png"
 import tanishq from "../../assets/aboutImg/Tanishq .png"
+import karan from "../../assets/aboutImg/karan.png"
 
 
 function About() {
@@ -165,7 +166,7 @@ function About() {
               </div>
               <div className="convenors-cnt">
                 <AboutUsImgBox img={som} name={'S Kartikye'} />
-                <AboutUsImgBox />
+                <AboutUsImgBox img={karan} name={"Karan Singh"}/>
               </div>
             </div>
           </div>

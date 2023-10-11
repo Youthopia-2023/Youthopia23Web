@@ -3,7 +3,6 @@
     background-image: url('../../assets/AboutBg.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* filter: brightness(140%); */
     overflow-y: hidden;
     height: 100vh;
     background-color: black !important;
