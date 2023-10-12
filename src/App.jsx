@@ -1,5 +1,6 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import SignUp from './pages/SignUp/SignUp';
@@ -19,26 +20,26 @@ function App() {
 
   return (
     <>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/events" element={<Events/>} />
-            <Route path="/gallery" element={<Gallery/>} />
-            <Route path="/eventinfo" element={<EventInfo />} />
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/verify" element={<VerifyEmail />} />
-            <Route path="/confirm" element={<ConfirmEmail />} />
-            <Route path="/register" element={<Registration />} />
-            <Route path="/profile" element={<Profile/>} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/eventinfo" element={<EventInfo />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/verify" element={<VerifyEmail />} />
+          <Route path="/confirm" element={<ConfirmEmail />} />
+          <Route path="/register" element={<Registration />} />
+          <Route path="/profile" element={<Profile />} />
 
-            <Route path="*" element={<PageNotFound/>} />
+          <Route path="*" element={<PageNotFound />} />
 
-            {/* <Route path='/login' element={<Login/>}/> */}
-            <Route path='/IndividualEvent' element={<IndividualEvent/>}/>
-          </Routes>
-        </Router>
+          {/* <Route path='/login' element={<Login/>}/> */}
+          <Route path='/IndividualEvent' element={<IndividualEvent />} />
+        </Routes>
+      </Router>
     </>
   )
 }
