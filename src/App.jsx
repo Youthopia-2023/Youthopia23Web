@@ -39,7 +39,7 @@ function App() {
           <Route path="/register" element={<Registration />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/ticket" element={<Ticket/>} />
-          <Route path="/register" element={<Register/>}/>
+          <Route path="/registration" element={<Register/>}/>
 
 
           <Route path="*" element={<PageNotFound />} />
