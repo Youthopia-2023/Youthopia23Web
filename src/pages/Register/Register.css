@@ -1,0 +1,114 @@
+body{
+    background-image: url('../../assets/background.png');
+    height:400px ;
+    
+    
+}
+.eventDet{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    
+}
+.youthopia{
+    margin: 10vh 0px 0px 38%;
+}
+.poster{
+    background-color: white;
+    height: 250px;
+    width: 206px;
+    border-radius: 5px;
+}
+.heading{
+    
+    height: fit-content;
+}
+.partDet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.register{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.71);
+    border-radius: 138px;
+    height: fit-content;
+    padding: 10vh;
+    width: 80%;
+    
+    
+    
+    font-family: Stellar;
+    font-size: 32px;
+    color: #f8f8f8;
+    margin-top: 40px;
+}
+.register form{
+    width:95%;
+}
+.register p{
+    position: relative;
+    left: 5%;
+    
+}
+.horiLine{
+    margin-bottom: 40px;
+    width: 85%;
+    position: relative;
+    left: 5%;
+}
+.register input{
+    border-radius: 10px;
+    border-width: 1px;
+    margin-left: 5%;
+    width: 85%;
+}
+.register label{
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: 900;
+}
+.register .reg{
+    background-color: white;
+    color: black;
+    width: 20%;
+}
+.register .Ind{
+    width: 90%;
+    margin-left: 5%;
+}
+.register .Counter{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin-left: 5%;
+    
+}
+.register .Counter button{
+    margin: 10px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    color: black;
+    border-radius: 5px;
+    font-size: 24px;
+}
+.register .Counter p{
+    margin-top: 10px;
+    margin-right: 25px;
+    padding-left: 20px;
+    margin-left: 0;
+    padding-top: 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+}
