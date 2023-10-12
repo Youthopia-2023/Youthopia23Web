@@ -166,7 +166,7 @@ function About() {
               </div>
               <div className="convenors-cnt">
                 <AboutUsImgBox img={som} name={'S Kartikye'} />
-                <AboutUsImgBox img={karan} name={"Karan Singh"}/>
+                <AboutUsImgBox img={karan} name={"Karan Singh"} />
               </div>
             </div>
           </div>
@@ -266,9 +266,9 @@ function About() {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
