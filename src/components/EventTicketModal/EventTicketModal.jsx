@@ -1,5 +1,5 @@
 // EventTicketModal.js
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Modal from "react-modal";
 import { FaDownload } from "react-icons/fa";
 import "./EventTicketModal.css";

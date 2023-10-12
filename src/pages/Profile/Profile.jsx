@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./Profile.css";
 import star1 from "../../assets/Star 4.svg";
 import star2 from "../../assets/Group 6647.svg";
