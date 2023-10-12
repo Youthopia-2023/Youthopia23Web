@@ -8,9 +8,12 @@ import ellipse from "../../assets/Ellipse.svg";
 import Youthopia from "../../assets/youthopia.png";
 import ProfileImg from "../../assets/ProfileDmyImg.svg";
 import EventButton from "../../components/EventButton/EventButton";
-
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 const Profile = () => {
   return (
+    <>
+    <Navbar />
     <div className="profile">
       <div className="profile-container">
         <img src={star1} alt="star-1" className="star-1"></img>
@@ -44,6 +47,8 @@ const Profile = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
