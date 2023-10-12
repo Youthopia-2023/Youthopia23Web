@@ -22,9 +22,6 @@ const ConfirmEmail = () => {
         <p className='confirm-text'>To confirm your email address check your email and click the link to activate your account</p>
          <button className="confirm-btn">Verify</button>
 
-
-
-
         </div>
       
     </div>

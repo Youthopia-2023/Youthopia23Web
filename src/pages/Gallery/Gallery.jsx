@@ -1,5 +1,4 @@
 import "./Gallery.css"
-import logo from "../../assets/Youthopia.svg"
 import GH1 from "../../assets/Gallery/GH1.png"
 import GH2 from "../../assets/Gallery/GH2.png"
 import GH3 from "../../assets/Gallery/GH3.png"
@@ -7,35 +6,38 @@ import GH4 from "../../assets/Gallery/GH4.png"
 import GH5 from "../../assets/Gallery/GH5.png"
 import GS1 from "../../assets/Gallery/GS1.png"
 import GS2 from "../../assets/Gallery/GS2.png"
-import GS3 from "../../assets/Gallery/GS3.png"
-import GS4 from "../../assets/Gallery/GS4.png"
-import GV1 from "../../assets/Gallery/GV1.png"
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
+// import GS3 from "../../assets/Gallery/GS3.png"
+// import GS4 from "../../assets/Gallery/GS4.png"
+// import GV1 from "../../assets/Gallery/GV1.png"
 
 const Gallery = () => {
 	return (
 		<div className="bg-[#0B0A1B] py-10 gallery">
-			      <div className="logo-wrapper">
-        <img className='logo' src={logo}></img>
-      </div>
-
-      	<h3 className="heading">A NIGHT TO REMEBER YOUR ENTIRE LIFE </h3>
+			<Navbar/>
+			{/* <div className="logo-wrapper">
+				<img className='logo' src={logo}></img>
+			</div> */}
 			<div className="flex flex-col md:flex-row items-center justify-center px-5 md:px-10 w-full">
 				{/* First Column Images */}
 				<div className="flex flex-col">
 					<img className=" w-auto h-3/5 mt-10 rounded-2xl m-10" src={GH1} alt="galleryImage" />
 				</div>
 
-				
-
 				{/* Second Column Images */}
-				
-			</div>
-			<div className="flex mt-8 md:mt-0 md:ml-10 h-96 justify-center">
-						<img className="h-96 mr-10" src={GS1} alt="" />
-						<img className="h-96 ml-10" src={GS2} alt="" />
-						<img className="h-96 ml-10" src={GS2} alt="" />
 
-				</div>
+			</div>
+			
+
+
+			<h3 className="heading mb-8">BE READY FOR AN AMAZING ADVENTURE </h3>
+			<div className="flex mt-8 md:mt-0 md:ml-10 h-96 justify-center">
+				<img className="h-96 mr-10" src={GS1} alt="" />
+				<img className="h-96 ml-10" src={GS2} alt="" />
+				<img className="h-96 ml-10" src={GS2} alt="" />
+
+			</div>
 
 			<div className="flex flex-col w-full justify-center ">
 				<div className="max-w-[1269px]">
@@ -88,10 +90,11 @@ const Gallery = () => {
 						alt="galleryImage"
 					/>
 
-					
-					
+
+
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };

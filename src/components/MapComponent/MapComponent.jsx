@@ -1,6 +1,6 @@
-import React from 'react'
 import ditumap from "../../assets/ditumap.png"
 import "./MapComponent.css"
+
 const MapComponent = () => {
   return (
     <div className="mapmain">

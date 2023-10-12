@@ -1,7 +1,7 @@
 import React from 'react'
 import "./IndividualEvent.css"
 import logo from "../../assets/Youthopia.svg"
-import tech from '../../assets/tech.jpg'
+// import tech from '../../assets/tech.jpg'
 import { useLocation } from 'react-router-dom'
 const IndividualEvent = () => {
   let props=useLocation();
