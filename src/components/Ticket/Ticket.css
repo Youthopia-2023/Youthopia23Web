@@ -1,0 +1,61 @@
+.rec{
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.Logos{
+    height: 3vh;
+    display: flex;
+    gap:62vh;
+    margin-left: 5vh ;
+    position: absolute;
+    z-index: 1;
+   top: 3vh;
+}
+.Ticket{
+    font-family: 'Stellar', sans-serif;
+    font-size: 1.5vw;
+    top:6vh;
+    margin-left: 55vh;
+    position: absolute;
+    z-index: 1;
+    color:white;
+}
+.Details{
+    font-family: 'Stellar', sans-serif;
+    font-size: 1vw;
+    top:10vh;
+    margin-left: 52vh;
+    line-height: 3.5vh;
+    position: absolute;
+    z-index: 1;
+    color:white;
+}
+.Textyouth {
+    color:white;
+    top:10vh;
+    position: absolute;
+    z-index: 1;
+    margin-left: 9vh;
+    height: 13vh;
+}
+
+.Line {
+    top:4vh;
+    position: absolute;
+    z-index: 1;
+    margin-left: 50vh;
+    height:19vh;
+}
+.group{
+    top: -1.5vh;
+    position: absolute;
+    z-index: 1;
+    margin-left: 35vh;
+    height: 30vh;
+    width: 15vh;
+}
+

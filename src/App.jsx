@@ -14,6 +14,7 @@ import VerifyEmail from './pages/VerifyEmail/VerifyEmail';
 import ConfirmEmail from './pages/ConfirmEmail/ConfirmEmail';
 import Registration from './pages/Registration/Registration';
 import Profile from './pages/Profile/Profile';
+import Ticket from "./components/Ticket/Ticket";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/confirm" element={<ConfirmEmail />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/ticket" element={<Ticket/>} />
 
           <Route path="*" element={<PageNotFound />} />
 
