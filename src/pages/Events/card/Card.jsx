@@ -31,17 +31,16 @@ export default function Card(props) {
     category: props.category,
   }
 
-  console.log(props)
+  // console.log(props)
   return (
     <div className="card" id={props.id}>
       <div className="image">
-        <p className="revealing_soon">REVEALING</p>
-        <p className="revealing_soon">SOON</p>
+        <img src={props.imgUrl}></img>
       </div>
       <div className="content">
         <div className="event-name">{props.name}</div>
         <div className="detail">
-          <p>Venue</p>
+          <p>{props.venue}</p>
           <p>{props.date}</p>
         </div>
         <div className="detail">
@@ -51,17 +50,11 @@ export default function Card(props) {
       </div>
 
       <Link
-        to='/IndividualEvent'  // Assuming you have a route for individual events
-
+        to="/IndividualEvent" // Assuming you have a route for individual events
         state={datatopass}
-
       >
-        <p className="register">
-          Register Now
-        </p>
-
+        <p className="register">Register Now</p>
       </Link>
-
     </div>
   );
 }
