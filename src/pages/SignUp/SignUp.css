@@ -48,11 +48,18 @@ form {
   justify-content: center;
   align-items: center;
 }
+
 .input-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.input-container .checkbox {
+  height: 15px;
+  width: 10%;
 }
 
 label {
@@ -100,8 +107,12 @@ input {
   right: -4%;
 }
 
-.ellipse{
+.signUp .ellipse{
   position: absolute;
   bottom: 30%;
   right: 4%;
+}
+
+.signUp {
+  position: block;
 }

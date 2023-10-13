@@ -84,12 +84,13 @@ class SignUpForm extends Component {
               </div>
               <div className="input-container">
                 <input
+                  className="checkbox"
                   type="checkbox"
                   name="isDitStudent"
                   checked={this.state.isDitStudent}
                   onChange={this.handleInputChange}
                 />
-                <label className="checkBox" htmlFor="isDitStudent">
+                <label htmlFor="isDitStudent">
                   Are you from DIT?
                 </label>
               </div>

@@ -77,15 +77,15 @@ function About() {
                 <p>Convenor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={wamiq} name={'Wamiq Khan'} />
-                <AboutUsImgBox img={varchas} name={'Vachaspati Kumar Mishra'} />
+                <AboutUsImgBox img={wamiq} name={'Wamiq Khan'} role={'(Convenor)'} />
+                <AboutUsImgBox img={varchas} name={'Vachaspati Kumar Mishra'} role={'(Convenor)'} />
               </div>
               <div className="sub-hd">
                 <p>Co-Convenor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={soumya} name={'Soumya Nilay'} />
-                <AboutUsImgBox img={aryan} name={'Aryan Rastogi'} />
+                <AboutUsImgBox img={soumya} name={'Soumya Nilay'} role={'(Co-Convenor)'} />
+                <AboutUsImgBox img={aryan} name={'Aryan Rastogi'} role={'(Co-Convenor)'} />
               </div>
             </div>
           </div>
@@ -97,24 +97,24 @@ function About() {
               </div>
               <div className="convenors-cnt">
                 <AboutUsImgBox img={priyanshi} name={'Priyanshi Kansal'} role={'(Scheduling & Registration)'} />
-                <AboutUsImgBox img={sourab} name={'Saurabh Kumar Singh'} />
+                <AboutUsImgBox img={sourab} name={'Saurabh Kumar Singh'} role={'(Battle Of Bands)'}/>
               </div>
               <div className="sub-hd">
                 <p>Event Management</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={jatin} name={'Jatin Sharma'} />
-                <AboutUsImgBox img={vipul} name={'Vipul Saxena'} />
-                <AboutUsImgBox img={akshat} name={'Akshat Dabral'} />
-                <AboutUsImgBox img={anubhav} name={'Anubhav Kashyap'} />
+                <AboutUsImgBox img={jatin} name={'Jatin Sharma'} role={'(Event Management Head)'} />
+                <AboutUsImgBox img={vipul} name={'Vipul Saxena'} role={'(Event Management Head)'} />
+                <AboutUsImgBox img={akshat} name={'Akshat Dabral'} role={'(Stage Management Head)'} />
+                <AboutUsImgBox img={anubhav} name={'Anubhav Kashyap'} role={'(Stage Management Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Cultural</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={nehal} name={'Nehal Nagarkoti'} />
-                <AboutUsImgBox img={kushagra} name={'Kushagra Nigam'} />
-                <AboutUsImgBox img={gladson} name={'Gladson Biju Thomas'} />
+                <AboutUsImgBox img={nehal} name={'Nehal Nagarkoti'} role={'(Cultural Head)'} />
+                <AboutUsImgBox img={kushagra} name={'Kushagra Nigam'} role={'(Cultural Head)'} />
+                <AboutUsImgBox img={gladson} name={'Gladson Biju Thomas'} role={'(Cultural Head)'} />
               </div>
             </div>
           </div>
@@ -125,24 +125,24 @@ function About() {
                 <p>Singing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={andrew} name={'Andrew Joseph'} />
-                <AboutUsImgBox img={divyanshi} name={'Divyanshi'} />
+                <AboutUsImgBox img={andrew} name={'Andrew Joseph'} role={'(Singing Head)'}/>
+                <AboutUsImgBox img={divyanshi} name={'Divyanshi'} role={'(Singing Head)'}/>
               </div>
               <div className="sub-hd">
                 <p>Dancing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={armaan} name={'Armaanjot Singh'} />
-                <AboutUsImgBox img={vaishnavi} name={'Vaishnavi'} />
-                <AboutUsImgBox img={shrishti} name={'Shrishti Panwar'} />
+                <AboutUsImgBox img={armaan} name={'Armaanjot Singh'} role={'(Dancing Head)'} />
+                <AboutUsImgBox img={vaishnavi} name={'Vaishnavi'} role={'(Dancing Head)'} />
+                <AboutUsImgBox img={shrishti} name={'Shrishti Panwar'} role={'(Dancing Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Fashionista</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={bist} name={'Manasvi Bist'} />
-                <AboutUsImgBox img={danish} name={'Danish Siddiqui'} />
-                <AboutUsImgBox img={sameer} name={'Sameer Patel'} />
+                <AboutUsImgBox img={bist} name={'Manasvi Bist'} role={'(Fashionista Head)'} />
+                <AboutUsImgBox img={danish} name={'Danish Siddiqui'} role={'(Fashionista Head)'} />
+                <AboutUsImgBox img={sameer} name={'Sameer Patel'} role={'(Fashionista Head)'} />
               </div>
             </div>
           </div>
@@ -153,20 +153,20 @@ function About() {
                 <p>PR/Publicity</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={aman} name={'Aman Kumar'} />
-                <AboutUsImgBox img={avantika} name={'Avantika Rajput'} />
-                <AboutUsImgBox img={devishree} name={'Devishree Rana'} />
+                <AboutUsImgBox img={aman} name={'Aman Kumar'} role={'(External PR Head)'} />
+                <AboutUsImgBox img={avantika} name={'Avantika Rajput'} role={'(External PR Head)'} />
+                <AboutUsImgBox img={devishree} name={'Devishree Rana'} role={'(External PR Head)'} />
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={maanav} name={'Maanav Aryan'} />
-                <AboutUsImgBox img={medha} name={'Medha Tiwari'} />
+                <AboutUsImgBox img={maanav} name={'Maanav Aryan'} role={'(Internal PR Head)'} />
+                <AboutUsImgBox img={medha} name={'Medha Tiwari'} role={'(Internal PR Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Sound & Lightning</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={som} name={'S Kartikye'} />
-                <AboutUsImgBox img={karan} name={"Karan Singh"} />
+                <AboutUsImgBox img={som} name={'S Kartikye'} role={'(Sound & Lightning Head)'} />
+                <AboutUsImgBox img={karan} name={"Karan Singh"} role={'(Sound & Lightning Head)'} />
               </div>
             </div>
           </div>
@@ -177,26 +177,26 @@ function About() {
                 <p>Photography & Videography</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={amit} name={'Amit Nautiyal'} />
-                <AboutUsImgBox img={vidit} name={'Vidit Sharma'} />
-                <AboutUsImgBox img={pradhyum} name={'Pradumn Kala'} />
-                <AboutUsImgBox img={anesha} name={'Anusha Malvyia'} />
+                <AboutUsImgBox img={amit} name={'Amit Nautiyal'} role={'(Photography & Videography Head)'} />
+                <AboutUsImgBox img={vidit} name={'Vidit Sharma'} role={'(Photography & Videography Head)'} />
+                <AboutUsImgBox img={pradhyum} name={'Pradumn Kala'} role={'(Photography & Videography Head)'} />
+                <AboutUsImgBox img={anesha} name={'Anusha Malvyia'} role={'(Photography & Videography Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Literary & Theater</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={rudrika} name={'Rudrika Singh'} />
-                <AboutUsImgBox img={mallika} name={'Mallika Agarwal'} />
+                <AboutUsImgBox img={rudrika} name={'Rudrika Singh'} role={'(Literary & Theater Head)'}/>
+                <AboutUsImgBox img={mallika} name={'Mallika Agarwal'} role={'(Literary & Theater Head)'}/>
               </div>
               <div className="sub-hd">
                 <p>Informal</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={rahul} name={'Rahul Adhikari'} />
-                <AboutUsImgBox img={aamir} name={'Aamir Qaisheer'} />
-                <AboutUsImgBox img={shriya} name={'Shriya Shrivastava'} />
-                <AboutUsImgBox img={prashant} name={'Prashant Rajan'} />
+                <AboutUsImgBox img={rahul} name={'Rahul Adhikari'} role={'(Informal Head)'}/>
+                <AboutUsImgBox img={aamir} name={'Aamir Qaisheer'} role={'(Informal Head)'}/>
+                <AboutUsImgBox img={shriya} name={'Shriya Shrivastava'} role={'(Informal Head)'}/>
+                <AboutUsImgBox img={prashant} name={'Prashant Rajan'} role={'(Informal Head)'}/>
               </div>
             </div>
           </div>
@@ -207,22 +207,22 @@ function About() {
                 <p>Fine Arts</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={tashu} name={'Tashu Mittal'} />
-                <AboutUsImgBox img={shubhangi} name={'Shubhangi Sharma'} />
+                <AboutUsImgBox img={tashu} name={'Tashu Mittal'} role={'(Fine Arts Head)'} />
+                <AboutUsImgBox img={shubhangi} name={'Shubhangi Sharma'} role={'(Fine Arts Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Design</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={harshit} name={'Harshit Gupta'} />
-                <AboutUsImgBox img={ekta} name={'Ekta Soni'} />
+                <AboutUsImgBox img={harshit} name={'Harshit Gupta'} role={'(Design Head)'} />
+                <AboutUsImgBox img={ekta} name={'Ekta Soni'} role={'(Design Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Sponsor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={aayushi} name={'Aayushi Kaushik'} />
-                <AboutUsImgBox img={harshitm} name={'Harshit Munjal'} />
+                <AboutUsImgBox img={aayushi} name={'Aayushi Kaushik'} role={'(Sponsorship Head)'} />
+                <AboutUsImgBox img={harshitm} name={'Harshit Munjal'} role={'(Sponsorship Head)'} />
               </div>
             </div>
           </div>
@@ -233,23 +233,23 @@ function About() {
                 <p>Content & Creative Writing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={tanul} name={'Tanul Khare'} />
-                <AboutUsImgBox img={shoib} name={'Shoib Ali'} />
+                <AboutUsImgBox img={tanul} name={'Tanul Khare'} role={'(Content & Creative Writing Head)'} />
+                <AboutUsImgBox img={shoib} name={'Shoib Ali'} role={'(Content & Creative Writing Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Anchoring</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={prashantm} name={'Prashant Mishra'} />
-                <AboutUsImgBox img={shreya} name={'Shreya Malik'} />
+                <AboutUsImgBox img={prashantm} name={'Prashant Mishra'} role={'(Anchoring Head)'} />
+                <AboutUsImgBox img={shreya} name={'Shreya Malik'} role={'(Anchoring Head)'} />
               </div>
               <div className="sub-hd">
                 <p>Technical</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={sanskar} name={"Sanskar Saxena"} />
-                <AboutUsImgBox img={shashank} name={"Shashank Rawat"} />
-                <AboutUsImgBox img={manish} name={'Manish Adhikari'} />
+                <AboutUsImgBox img={sanskar} name={"Sanskar Saxena"} role={'(Technical Head)'} />
+                <AboutUsImgBox img={shashank} name={"Shashank Rawat"} role={'(Technical Head)'} />
+                <AboutUsImgBox img={manish} name={'Manish Adhikari'} role={'(Technical Head)'} />
               </div>
             </div>
           </div>
@@ -260,9 +260,9 @@ function About() {
                 <p>Lan Gaming</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={adit} name={'Adit Vaid'} />
-                <AboutUsImgBox img={ayushi} name={'Ayushi Kumar'} />
-                <AboutUsImgBox img={tanishq} name={'Tanishq Singh'} />
+                <AboutUsImgBox img={adit} name={'Adit Vaid'} role={'(Lan Gaming Head)'} />
+                <AboutUsImgBox img={ayushi} name={'Ayushi Kumar'} role={'(Lan Gaming Head)'} />
+                <AboutUsImgBox img={tanishq} name={'Tanishq Singh'} role={'(Lan Gaming Head)'} />
               </div>
             </div>
           </div>
