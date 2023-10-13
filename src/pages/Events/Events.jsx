@@ -57,18 +57,26 @@ function Events() {
   }
 
   return (
+    <>
+      <Navbar />
       <div className="events">
         <img className="youImg" src={Youthopia} alt="Image not foud" />
         <div className="secNavBar">
-          <div onClick={() => handleChange("Technical")} className="a">Technical</div>
-          <div onClick={() => handleChange("Cultural")} className="a">Cultural</div>
-          <div onClick={() => handleChange("Informal")} className="a">Informal</div>
+          <div onClick={() => handleChange("Technical")} className="a">
+            Technical
+          </div>
+          <div onClick={() => handleChange("Cultural")} className="a">
+            Cultural
+          </div>
+          <div onClick={() => handleChange("Informal")} className="a">
+            Informal
+          </div>
         </div>
-        <div className="card-Container">
-          {card}
-        </div>
+        <div className="card-Container">{card}</div>
       </div>
-    )
+      <Footer />
+    </>
+  );
     // <>
     // <Navbar/>
     // <div className='registre-container'>
