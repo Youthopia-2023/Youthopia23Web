@@ -96,7 +96,7 @@ function About() {
                 <p>Organising</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={priyanshi} name={'Priyanshi Kansal'} />
+                <AboutUsImgBox img={priyanshi} name={'Priyanshi Kansal'} role={'(Scheduling & Registration)'} />
                 <AboutUsImgBox img={sourab} name={'Saurabh Kumar Singh'} />
               </div>
               <div className="sub-hd">
