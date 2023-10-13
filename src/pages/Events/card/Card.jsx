@@ -44,7 +44,7 @@ export default function Card(props) {
           <p>{props.date}</p>
         </div>
         <div className="detail">
-          <p>{props.price}</p>
+          <p>{props.fees}</p>
           <p>{props.time}</p>
         </div>
       </div>

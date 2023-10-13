@@ -27,7 +27,11 @@ function Events() {
 
   const [cat, setCat] = useState("Technical");
 
-  const card = eventdata?.data?.details.map((event, index) => {
+  
+
+  const card = eventdata?.data?.details.filter(function(event){
+    return event.category===cat;
+  }).map((event, index) => {
     return (
       <Card
         id={event.id}
