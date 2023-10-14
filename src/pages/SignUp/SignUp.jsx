@@ -16,6 +16,8 @@ import { baseUrl } from "../../url";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import storage from "../../firebase/firebase";
 function SignUp() {
   const userData = useSelector((state) => state);
   const dispatch = useDispatch();
@@ -31,6 +33,7 @@ function SignUp() {
   const [branch, setBranch] = useState("");
   const [password, setPassword] = useState("");
   const [phonenumber, setphonenumber] = useState("");
+  const [imageName, setimageName] = useState("");
 
   const imgref = useRef();
 
@@ -61,42 +64,57 @@ function SignUp() {
         reject("please upload photo of identity proof!");
         return;
       }
-      const data = {
-        firstName,
-        lastName,
-        email,
-        college: checked ? "DIT University" : college,
-        photo,
-        identityNumber,
-        year,
-        branch,
-        password,
-        checked,
-        phonenumber,
-      };
-      axios
-        .post(`${baseUrl}/auth/register`, {
-          data,
-        })
-        .then((response) => {
-          dispatch(user.setToken(response.data.token));
-          dispatch(user.setFirstName(response.data.user.firstname));
-          dispatch(user.setLastName(response.data.user.lastname));
-          dispatch(user.setPhonenumber(response.data.user.phonenumber));
-          dispatch(user.setEmail(response.data.user.email));
-          dispatch(user.setCollege(response.data.user.college));
-          dispatch(user.setYear(response.data.user.year));
-          resolve("welcome " + response.data.user.firstname);
-          resolve("Signup successful");
-        })
-        .catch((error) => {
+      const filename = Date.now() + photo.name;
+      const storageRef = ref(storage, `/identityDocuments/${filename}`);
+      const uploadTask = uploadBytesResumable(storageRef, photo);
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {},
+        (error) => {
           console.log(error);
-          if (error.response?.data?.message) {
-            reject(error.response.data.message);
-          } else {
-            reject("some error occured");
-          }
-        });
+          reject(error);
+        },
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+            const data = {
+              firstName,
+              lastName,
+              email,
+              college: checked ? "DIT University" : college,
+              photo: url,
+              identityNumber,
+              year,
+              branch,
+              password,
+              checked,
+              phonenumber,
+            };
+            axios
+              .post(`${baseUrl}/auth/register`, {
+                data,
+              })
+              .then((response) => {
+                dispatch(user.setToken(response.data.token));
+                dispatch(user.setFirstName(response.data.user.firstname));
+                dispatch(user.setLastName(response.data.user.lastname));
+                dispatch(user.setPhonenumber(response.data.user.phonenumber));
+                dispatch(user.setEmail(response.data.user.email));
+                dispatch(user.setCollege(response.data.user.college));
+                dispatch(user.setYear(response.data.user.year));
+                resolve("welcome " + response.data.user.firstname);
+                resolve("Signup successful");
+              })
+              .catch((error) => {
+                console.log(error);
+                if (error.response?.data?.message) {
+                  reject(error.response.data.message);
+                } else {
+                  reject("some error occured");
+                }
+              });
+          });
+        }
+      );
     });
   };
 
@@ -171,11 +189,18 @@ function SignUp() {
               >
                 <input
                   type="file"
-                  onChange={(e) => setphoto(e.target.value)}
+                  onChange={(e) => {
+                    setphoto(e.target.files[0]);
+                    setimageName(e.target.files[0].name);
+                  }}
                   ref={imgref}
                   style={{ display: "none" }}
                 />
-                <div>Identity proof (Aadhar, DL, etc)</div>
+                <div>
+                  {photo && imageName
+                    ? imageName
+                    : "Identity proof (Aadhar, DL, etc)"}
+                </div>
                 <AiOutlineCamera />
               </div>
               <div className="idNumber">
