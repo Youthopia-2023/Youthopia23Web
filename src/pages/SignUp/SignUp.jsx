@@ -1,5 +1,5 @@
 import "./SignUp.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Youthopia from "../../assets/youthopia.png";
 import "./SignUp.css";
 import star1 from "../../assets/Star 4.svg";
@@ -11,7 +11,15 @@ import ellipse from "../../assets/Ellipse.svg";
 import Footer from "../../components/Footer/Footer";
 import { AiOutlineCamera } from "react-icons/ai";
 import axios from "axios";
+import { user } from "../../store/store";
+import { baseUrl } from "../../url";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 function SignUp() {
+  const userData = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [checked, setChecked] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -26,53 +34,81 @@ function SignUp() {
 
   const imgref = useRef();
 
+  useEffect(() => {
+    if (userData.token) {
+      toast.success("Already signed in!");
+      navigate("/profile", { replace: true });
+    }
+  }, []);
+
+  const promise = () => {
+    return new Promise(function (resolve, reject) {
+      if (
+        !firstName ||
+        !lastName ||
+        !email ||
+        !year ||
+        !branch ||
+        !password ||
+        !phonenumber ||
+        !identityNumber ||
+        (!checked && !college)
+      ) {
+        reject("Please fill all the details!");
+        return;
+      }
+      if (!checked && !photo) {
+        reject("please upload photo of identity proof!");
+        return;
+      }
+      const data = {
+        firstName,
+        lastName,
+        email,
+        college: checked ? "DIT University" : college,
+        photo,
+        identityNumber,
+        year,
+        branch,
+        password,
+        checked,
+        phonenumber,
+      };
+      axios
+        .post(`${baseUrl}/auth/register`, {
+          data,
+        })
+        .then((response) => {
+          dispatch(user.setToken(response.data.token));
+          dispatch(user.setFirstName(response.data.user.firstname));
+          dispatch(user.setLastName(response.data.user.lastname));
+          dispatch(user.setPhonenumber(response.data.user.phonenumber));
+          dispatch(user.setEmail(response.data.user.email));
+          dispatch(user.setCollege(response.data.user.college));
+          dispatch(user.setYear(response.data.user.year));
+          resolve("welcome " + response.data.user.firstname);
+          resolve("Signup successful");
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error.response?.data?.message) {
+            reject(error.response.data.message);
+          } else {
+            reject("some error occured");
+          }
+        });
+    });
+  };
+
   const signup = () => {
-    if (
-      !firstName ||
-      !lastName ||
-      !email ||
-      !year ||
-      !branch ||
-      !password ||
-      !phonenumber ||
-      !identityNumber ||
-      (!checked && !college)
-    ) {
-      alert("Please fill all the details!");
-      return;
-    }
-    if (!checked && !photo) {
-      alert("please upload photo of identity proof!");
-      return;
-    }
-    const data = {
-      firstName,
-      lastName,
-      email,
-      college: checked ? "DIT University" : college,
-      photo,
-      identityNumber,
-      year,
-      branch,
-      password,
-      checked,
-      phonenumber,
-    };
-    axios
-      .post("http://localhost:3000/auth/register", {
-        data,
-      })
-      .then((response) => {
-        alert("Signup successful");
-        console.log(response.data);
-      })
-      .catch((error) => {
-        if (error.response.data.message) {
-          alert(error.response.data.message);
-        } else {
-          alert("some error occured");
-        }
-      });
+    toast.promise(promise(), {
+      loading: "signing up...",
+      success: (e) => {
+        navigate("/");
+        return e;
+      },
+      error: (e) => `${e}`,
+    });
   };
   return (
     <div>
