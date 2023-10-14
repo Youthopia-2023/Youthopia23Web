@@ -3,60 +3,46 @@ import Card from "./card/Card"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Youthopia from '../../assets/youthopia.png'
-// import star1 from "../../assets/Star 4.svg";
-// import star2 from "../../assets/Group 6647.svg";
-// import star3 from "../../assets/Star 4.svg";
-// import line from "../../assets/Line 4.svg";
-// import ellipse from "../../assets/Ellipse.svg";
-// import { Link } from "react-router-dom";
+import star1 from "../../assets/Star 4.svg";
+import star2 from "../../assets/Group 6647.svg";
+import star3 from "../../assets/Star 4.svg";
+import line from "../../assets/Line 4.svg";
+import ellipse from "../../assets/Ellipse.svg";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-
-
 function Events() {
   const[eventdata,setEventdata]= useState([]);
 
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await axios.get("http://localhost:3000/event/geteventdetails");
+      const data = await axios.get("http://192.168.194.83:3000/event/geteventdetails");
       setEventdata(data);
       console.log(data.data.details);
     }
     fetchdata();
   }, []);
-
   const [cat, setCat] = useState("Technical");
-
-  
-
-  const card = eventdata?.data?.details.filter(function(event){
-    return event.category===cat;
-  }).map((event, index) => {
+  const card = eventdata?.data?.details.map((event, index) => {
     return (
       <Card
-        key={index}
-        id={event.id}
+        id={index}
         name={event.event_name}
         venue={event.venue}
         date={event.date}
-        time={event.time}
-        discription={event.description}
+        time={event.end_time}
+        discription={event.event_description}
         Coordinator={event.coordinator}
-        head={event.head}
+        head={event.overall_head}
         fees={event.fees1}
         imgUrl={event.event_poster}
         category={event.category}
       />
     );
   });
-
-
-
   function handleChange(category) {
-
     setCat(cat => category)
   }
-
   return (
     <>
       <Navbar />
@@ -98,5 +84,4 @@ function Events() {
     
   
 }
-
 export default Events
