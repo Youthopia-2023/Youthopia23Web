@@ -197,3 +197,7 @@ input {
   bottom: 30%;
   right: 10%;
 }
+
+.choosefileHidden{
+  display: none;
+}
