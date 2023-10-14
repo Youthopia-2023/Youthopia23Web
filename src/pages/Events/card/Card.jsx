@@ -53,7 +53,7 @@ export default function Card(props) {
         to="/IndividualEvent" // Assuming you have a route for individual events
         state={datatopass}
       >
-        <p className="register">Register Now</p>
+        <p className="register2">Register Now</p>
       </Link>
     </div>
   );
