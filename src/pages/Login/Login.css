@@ -59,8 +59,8 @@ label{
 label>input{
     margin-top: 0%;
     background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
+    /* appearance: none;
+    -webkit-appearance: none; */
     border-radius: 50%;
     height: 18px;
     width: 18px;
