@@ -3,12 +3,16 @@ import "./IndividualEvent.css"
 import logo from "../../assets/Youthopia.svg"
 // import tech from '../../assets/tech.jpg'
 import { useLocation } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 const IndividualEvent = () => {
   let props=useLocation();
-  console.log(props)
+  // console.log(props.state)
   
   
   return (
+    <>
+    <Navbar/>
     <div className='individualEvent'>
       <div className="logo-wrapper">
         <img className='logo' src={logo}></img>
@@ -17,7 +21,7 @@ const IndividualEvent = () => {
       <div className="event-wrapper">
         <div className="event-img-wrapper">
           <div className="img-container">
-            <img className='tech' src={tech}></img>
+            <img className='tech' src={props.state.imgUrl}></img>
           </div>
         </div>
         <div className="event-info-wrapper">
@@ -32,8 +36,22 @@ const IndividualEvent = () => {
               <p>{props.state.discription}</p>
             </div>
             <div className="event-managers">
-              <h4>Event Co Ordinatore: {props.state.Coordinator}</h4>
-              <h4>Over All Head: {props.state.head} </h4>
+              <h4>Event Co Ordinatore: </h4>
+              {
+                  Object.keys(props.state.Coordinator).map(function(key,index){
+                    return (
+                      <h4 key={index}>Event Co Ordinatore: {key}, {props.state.Coordinator[key]}</h4>
+                    )
+                  })
+              }
+               <h4 >Over All Heads: </h4>
+              {
+                Object.keys(props.state.head).map((head,index)=>{
+                  return(
+                    <h4 key={index}>{head}: {props.state.head[head]} </h4>
+                  )
+                })
+              }
               <h4>Fees: {props.state.fees}₹</h4>
             </div>
 
@@ -45,6 +63,8 @@ const IndividualEvent = () => {
 
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

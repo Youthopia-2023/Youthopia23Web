@@ -18,7 +18,7 @@ function Events() {
 
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await axios.get("http://localhost:3000/event/geteventdetails");
+      const data = await axios.get("http://192.168.194.83:3000/event/geteventdetails");
       setEventdata(data);
       console.log(data.data.details);
     }
@@ -30,14 +30,14 @@ function Events() {
   const card = eventdata?.data?.details.map((event, index) => {
     return (
       <Card
-        id={event.id}
+        id={index}
         name={event.event_name}
         venue={event.venue}
         date={event.date}
-        time={event.time}
-        discription={event.description}
+        time={event.end_time}
+        discription={event.event_description}
         Coordinator={event.coordinator}
-        head={event.head}
+        head={event.overall_head}
         fees={event.fees1}
         imgUrl={event.event_poster}
         category={event.category}
