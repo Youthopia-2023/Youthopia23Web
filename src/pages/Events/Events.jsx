@@ -16,7 +16,7 @@ function Events() {
 
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await axios.get("http://192.168.194.83:3000/event/geteventdetails");
+      const data = await axios.get("https://youthopiabackend.azurewebsites.net/event/geteventdetails");
       setEventdata(data);
       console.log(data.data.details);
     }
