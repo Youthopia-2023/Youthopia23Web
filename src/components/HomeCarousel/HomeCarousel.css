@@ -1,0 +1,77 @@
+.homeCarousel{
+    height: 80vh;
+    width: 100vw;
+    background-image: url("../../assets/Rectangle12382.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000;
+}
+
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 5rem;
+    padding: 0 4rem;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+
+
+/*  */
+
+.carousel{
+    width: 100vw;
+    max-height: 580px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+  
+  .active.center {
+    overflow: hidden;
+    /* -webkit-filter: grayscale(0); 
+      filter: grayscale(0); */
+  }
+
+  .active.center .CarouselCard{
+    transform: scale(1) !important;
+    clip-path: polygon(0 13%, 100% 12%, 100% 100%, 0% 100%) !important; 
+  }
+  .active {
+    overflow: hidden;
+    transition: .6s ease;
+    /* -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%); */
+  }
+
+  .active  .CarouselCard{
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+  }
+
+  .active.center ~ div .CarouselCard {
+    /* transform: scale(0.8 ); */
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%) !important;
+  }
+
+  /*  */
+
+  .swipe{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    gap: 0.5rem;
+  }

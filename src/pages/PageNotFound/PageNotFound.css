@@ -1,0 +1,102 @@
+.pageNotFound {
+    background-image: url("../../assets/background-blur.png");
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    filter: contrast(1);
+    background-size: 100% 100%;
+    font-family: Stellar;
+    /* overflow-y: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pageNotFound>.card404 {
+    width: 60%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.71);
+    border-radius: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.pageNotFound>.card404>img {
+    width: 25rem;
+}
+
+.pageNotFound>.card404>.section404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNotFound>.card404>.section404>img {
+    width: 25rem;
+    height: auto;
+}
+
+.pageNotFound>.card404>.section404>.text404 {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 8rem;
+}
+
+.pageNotFound>.card404>.section404>.backToHome {
+    padding: 1rem 3rem;
+    border-radius: 2.1875rem;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.pageNotFound>.star-1{
+    position: absolute;
+    top: 5%;
+    right: 20%;
+
+}
+
+.pageNotFound>.star-3{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    width: 25px;
+}
+
+.pageNotFound>.star-2{
+    position: absolute;
+    bottom: 5%;
+    left: 23%;
+
+}
+
+.pageNotFound>.line-4{
+    position: absolute;
+    bottom: 34%;
+    right: 9%;
+}
+
+.pageNotFound>.ellipse{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+
+}

@@ -1,0 +1,66 @@
+.navbar  {
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 0px 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    /* transition: background-color 0.5s ease-in-out; */
+}
+
+.navbar.blurred{
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+a {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active {
+    color: red;
+}
+.buttonsNav {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.clickme1 {
+    padding: 0.6rem 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: Stellar;
+    font-size: 0.975rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    border: 1px solid #FFF;
+    border-radius: 1.10306rem;
+    cursor: pointer;
+}
+
+.clickme2 {
+    padding: 0.6rem 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: Stellar;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
