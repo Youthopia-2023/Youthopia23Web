@@ -18,7 +18,7 @@ function Main() {
     <div className="main-page">
       <div className="logo-container">
         <div className="RowOne">
-          <img src={img1} alt="Logo 1" />
+          <img className="DIT" src={img1} alt="Logo 1" />
         </div>
         <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
@@ -48,7 +48,7 @@ function Main() {
             <div className="clg-logo left">
               <img src={img3} alt="Logo 3"></img>
             </div>
-            <div className="clg-logo-center">
+            <div className="clg-logo center">
               <img src={img4} alt="Logo 4"></img>
             </div>
             <div className="clg-logo right">

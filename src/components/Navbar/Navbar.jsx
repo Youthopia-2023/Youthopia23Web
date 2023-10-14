@@ -1,17 +1,31 @@
-import { NavLink, useNavigate } from "react-router-dom"
-import "./Navbar.css"
+import { NavLink, useNavigate } from "react-router-dom";
+import "./Navbar.css";
 import { useEffect, useState } from "react";
+import { slide as Menu } from "react-burger-menu";
 
 function Navbar() {
   const navigate = useNavigate();
   const navigateToLogin = () => {
     navigate("/login");
-  }
+  };
   const navigateToSignup = () => {
     navigate("/signup");
-  }
+  };
 
   const [scrolling, setScrolling] = useState(false);
+  const [width,setWidth]=useState(window.innerWidth)
+
+  useEffect(()=>{
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  },[])
 
   useEffect(() => {
     // Add an event listener to the window to track scrolling
@@ -24,29 +38,93 @@ function Navbar() {
     };
 
     // Attach the event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  return (
-    <div className={`navbar ${scrolling ? 'blurred' : ''}`}>
-      <div className="links">
-        <NavLink exact to="/" activeClassName="active">Home</NavLink>
-        <NavLink to="/events" activeClassName="active"> Events</NavLink>
-        {/* <NavLink to="/gallery" activeClassName="active"> Gallery </NavLink> */}
-        <NavLink to="/about" activeClassName="active"> About us</NavLink>
-      </div>
-      <div className="buttonsNav">
-        <button className="clickme1" onClick={navigateToLogin}> Log in </button>
-        <button className="clickme2" onClick={navigateToSignup}> Signup</button>
-      </div>
+  function Small() {
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+
+    return (
+      <div className={`hamburger-menu `}>
+        <button
+          className={`hamburger-icon ${isOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
+        <ul className={`menu-links ${isOpen ? "open" : ""}`}>
+          <li>
+            <NavLink exact to="/" activeClassName="active">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/events" activeClassName="active">
+              {" "}
+              Events
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" activeClassName="active">
+              {" "}
+              About us
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+  
+
+
+  function Large() {
+    return (
+      <>
+      <div className="links">
+          <NavLink exact to="/" activeClassName="active">
+            Home
+          </NavLink>
+          <NavLink to="/events" activeClassName="active">
+            {" "}
+            Events
+          </NavLink>
+          {/* <NavLink to="/gallery" activeClassName="active"> Gallery </NavLink> */}
+          <NavLink to="/about" activeClassName="active">
+            {" "}
+            About us
+          </NavLink>
+        </div>
+        
+      </>
+    );
+  }
+
+  return (
+    <div className={`navbar ${scrolling ? "blurred" : ""}`}>
+      {width<720?<Small/>:<Large/>}
+      <div className="buttonsNav">
+          <button className="clickme1" onClick={navigateToLogin}>
+            {" "}
+            Log in{" "}
+          </button>
+          <button className="clickme2" onClick={navigateToSignup}>
+            {" "}
+            Signup
+          </button>
+        </div>
     </div>
-  )
+    );
 }
 
-export default Navbar
+export default Navbar;
