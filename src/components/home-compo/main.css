@@ -202,13 +202,50 @@ position: relative;
     margin-left: auto;
 }
 
+@media (max-width: 768px) {
+    .DIT {
+        margin-top: 50vh;
+    }
+    .main-page{
+        height: 120vh;
+    }
+    .clg-logo{
+        width: 60px;
+    }
+}
 
-
+@media (max-width: 1024px) {
+    .DIT {
+        margin-top: 20vh;
+    }
+    .main-page{
+        height: 120vh;
+    }
+    .clg-logo{
+        width: 60px;
+    }
+}
+@media (min-width: 1200px){
+    .main-page{
+        height: 110vh;
+    }
+}
+@media (min-width: 1600px) {
+    .main-page{
+        height:100vh
+    }
+}
+@media (min-width: 1800px) {
+    .main-page{
+        height:100vh
+    }
+}
 
 
 
 .youthopia{
     width: 100%;
+    
 }
 
 @keyframes twinkle-1 {
