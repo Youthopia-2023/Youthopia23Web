@@ -80,7 +80,7 @@ function About() {
                 <p>Organising</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Priyanshi.png" name={'Priyanshi Kansal'} role={'(Scheduling & Registration)'} />
+                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Priyanshi.png" name={'Priyanshi Kansal'} />
                 <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/sourabh singh.jpg" name={'Saurabh Kumar Singh'} />
               </div>
               <div className="sub-hd">

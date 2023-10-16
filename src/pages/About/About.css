@@ -30,6 +30,7 @@
 .youthopia-logo img {
     height: 120px;
 }
+
 .heading {
     display: flex;
     align-items: center;
@@ -66,10 +67,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 28vh;
+    min-height: 28vh;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 100px;
+    margin-top: 2rem;
 }
 
-.box .convenors-cnt {
+/* .box .convenors-cnt {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -116,7 +121,8 @@
     align-items: center;
     justify-content: center;
     height: 29vh;
-} 
+}  */
+
 .about-container {
     /* height: 126vh;
     width: 100vw; */
@@ -134,11 +140,21 @@
     justify-content: center;
     align-items: center;
     background-position: center;
+    flex-wrap: wrap;
 }
 
+
+/* @media (max-width: 768px) {
+    .mainBody{
+        flex-wrap: wrap;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
 /* 
-
-
 
 .about-container-2 {
     height: 126vh;
