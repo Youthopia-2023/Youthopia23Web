@@ -9,13 +9,58 @@ import line from "../../assets/Line 4.svg";
 import ellipse from "../../assets/Ellipse.svg";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import { useSelector } from "react-redux";
+import axios from "axios";
+import { baseUrl } from "../../url";
 
 export default function Register() {
-    const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const min = parseInt(searchParams.get("min"))
-  const max = parseInt(searchParams.get("max"));
+  //   const location = useLocation();
+  // const searchParams = new URLSearchParams(location.search);
+  const userData = useSelector((state) => state);
+  let props = useLocation();
+  const min = props.state.min;
+  const max = props.state.max;
   const [count, setCount] = useState(min);
+  const [teamName, setTeamName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [members, setMembers] = useState({});
+
+  const submitt = () => {
+    let mem = [];
+    let eventID = props.state.id;
+    {
+      Object.keys(members).map(function (key, index) {
+        mem.push(members[key]);
+      });
+    }
+    const data = {
+      teamName,
+      phone,
+      mem,
+      eventID,
+    };
+    console.log(data);
+    axios
+      .post(
+        `${baseUrl}/user/registeruser`,
+        {
+          data,
+        },
+        {
+          headers: {
+            Authorization: `bearer ${userData.token}`,
+          },
+        }
+      )
+      .then(function (response) {
+        // console.log(response);
+        alert("registered");
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert("error occured");
+      });
+  };
 
   function Counter() {
     function decrement() {
@@ -54,15 +99,26 @@ export default function Register() {
         <img src={line} alt="star-3" className="line-4"></img>
         <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-        <form action="#">
+        <form>
           <p>Participant Details</p>
           <hr className="horiLine" />
           <label htmlFor="yourName">Your Name</label>
-          <input type="text" id="yourName" placeholder="Enter Full Name" />
+          <input
+            type="text"
+            id="yourName"
+            placeholder="Enter Full Name"
+            value={teamName}
+            onChange={(e) => setTeamName(e.target.value)}
+          />
           <label htmlFor="SAPId">SAP ID</label>
           <input type="text" id="SAPID" placeholder="Enter Your SAP ID" />
           <label htmlFor="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="Phone Number" />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            onChange={(e) => setPhone(e.target.value)}
+          />
 
           <input
             className="reg"
@@ -83,23 +139,44 @@ export default function Register() {
         <img src={line} alt="star-3" className="line-4"></img>
         <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-        <form action="#">
+        <form>
           <p>Participant Details</p>
           <hr className="horiLine" />
-          <label htmlFor="yourName">Team Name</label>
-          <input type="text" id="yourName" placeholder="Team Name" />
+          <p htmlFor="yourName">Team Name</p>
+          <input
+            type="text"
+            name="yourName"
+            placeholder="Team Name"
+            value={teamName}
+            key={542354}
+            onChange={(e) => {
+              setTeamName(e.target.value);
+              e.currentTarget.click();
+            }}
+          />
           <label htmlFor="SAPId">Team Leaders Phone Number</label>
-          <input type="tel" id="SAPID" placeholder="Enter Your Phone Number" />
+          <input
+            type="tel"
+            id="SAPID"
+            placeholder="Enter Your Phone Number"
+            onChange={(e) => setPhone(e.target.value)}
+          />
           <Counter />
           {Array.from({ length: count }, (_, index) => (
             <div key={index}>
               <label htmlFor={`memberName${index}`}>
-                Team Member {index + 1} 
+                Team Member {index + 1}
               </label>
               <input
                 type="text"
                 id={`memberName${index}`}
                 placeholder={`Team Member ${index + 1}`}
+                value={members[index]}
+                onChange={(e) => {
+                  let data = members;
+                  data[index] = e.target.value;
+                  setMembers[data];
+                }}
               />
             </div>
           ))}
@@ -109,6 +186,10 @@ export default function Register() {
             type="submit"
             value="Register Now"
             placeholder="Register"
+            onClick={(e) => {
+              e.preventDefault();
+              submitt();
+            }}
           />
         </form>
       </div>
@@ -116,8 +197,13 @@ export default function Register() {
   }
   return (
     <div className="Register">
-        <Navbar/>
-      <img className="youthop" src={Youthopia} alt="" style={{margin: '100vh 0px 0px 38%;'}} />
+      <Navbar />
+      <img
+        className="youthop"
+        src={Youthopia}
+        alt=""
+        style={{ margin: "100vh 0px 0px 38%;" }}
+      />
       <div className="eventDet">
         <div className="poster"></div>
         <p className="heading">Technical Event</p>
@@ -125,11 +211,10 @@ export default function Register() {
 
       <div className="partDet">
         <div className="register">
-          
-          {(min===1 && max==1)?<IND/>:<Team/>}
+          {min === 1 && max == 1 ? <IND /> : <Team key={6364351} />}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
