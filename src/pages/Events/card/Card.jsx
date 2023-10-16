@@ -7,7 +7,6 @@ export default function Card(props) {
   const style = {
     margin: '30px 0 0 20%',
     fontFamily: 'Stellar',
-    fontSize: '10px',
     height: '50px',
     color: 'black',
     fontSize: '22px',

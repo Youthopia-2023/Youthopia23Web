@@ -202,13 +202,61 @@ position: relative;
     margin-left: auto;
 }
 
+@media (max-width: 768px) {
+    .DIT {
+        margin-top: 50vh;
+        margin-left: 12%;
+        width: 80%;
+    }
+    .main-page{
+        height: 120vh;
+    }
+    .clg-logo{
+        width: 60px;
+    }
+    .RowTwo{
+        margin-left: 10%;
+        width: 70%;
+    }
+    
+}
 
-
+@media (max-width: 1024px) {
+    .DIT {
+        margin-top: 20vh;
+    }
+    .main-page{
+        height: 120vh;
+    }
+    .clg-logo{
+        width: 60px;
+    }
+    .RowTwo{
+        margin-left: 13%;
+        
+    }
+}
+@media (min-width: 1200px){
+    .main-page{
+        height: 110vh;
+    }
+}
+@media (min-width: 1600px) {
+    .main-page{
+        height:100vh
+    }
+}
+@media (min-width: 1800px) {
+    .main-page{
+        height:100vh
+    }
+}
 
 
 
 .youthopia{
     width: 100%;
+    
 }
 
 @keyframes twinkle-1 {
