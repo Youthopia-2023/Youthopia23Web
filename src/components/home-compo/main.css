@@ -205,7 +205,8 @@ position: relative;
 @media (max-width: 768px) {
     .DIT {
         margin-top: 50vh;
-        margin-left: 4%;
+        margin-left: 12%;
+        width: 80%;
     }
     .main-page{
         height: 120vh;
@@ -215,7 +216,7 @@ position: relative;
     }
     .RowTwo{
         margin-left: 10%;
-        width: 600px;
+        width: 70%;
     }
     
 }
