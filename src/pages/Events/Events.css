@@ -1,7 +1,7 @@
 .events {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.png');
     position: relative;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     background-size: 100% 100%;
     font-family: Stellar;
@@ -9,7 +9,7 @@
 }
 
 .youImg {
-    margin: 10vh 0px 0px 38%;
+    margin: 10vh 0px 0px 0%;
 }
 
 .secNavBar {
@@ -20,7 +20,7 @@
 
 .secNavBar>.a {
     color: #F8F8F8;
-    margin:0 70px 0 70px;
+    margin:0 20px 0 20px;
     font-size: 32px;
     position: relative;
     cursor: pointer;
@@ -78,6 +78,7 @@
     grid-gap: 1rem;
     margin-left: 10%;
     margin-top: 5%;
+    overflow: scroll;
     
     
 }
@@ -91,10 +92,12 @@
         margin:0 30px 0 30px;
     }
     .secNavBar {
-        margin: 0px 10px 0px 15%;
+        margin: 0px 10px 0px 0%;
+        width: 60%;
     }
     .youImg {
         margin: 10vh 0px 0px 15%;
+        width: 60%;
     }
 
 }
@@ -112,6 +115,10 @@
     }
     .secNavBar {
         margin: 0px 10px 0px 18%;
+    }
+    .events{
+        width: 100%;
+        /* overflow: scroll; */
     }
     
 }
