@@ -64,6 +64,7 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
           type="text"
           id="yourName"
           placeholder="Enter Full Name"
+          required
           value={teamName}
           onChange={(e) => setTeamName(e.target.value)}
         />
@@ -72,8 +73,9 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
         <label htmlFor="phone">Phone Number</label>
         <input
           type="tel"
-          
+          required
           id="phone"
+          maxLength={"10"}
           placeholder="Phone Number"
           onChange={(e) => setPhone(e.target.value)}
         />
@@ -81,6 +83,7 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
         <input
           className="reg"
           type="submit"
+          required
           value="Register Now"
           placeholder="Register"
           
@@ -109,6 +112,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
           placeholder="Team Name"
           value={teamName}
           key={542354}
+          required
           onChange={(e) => {
             setTeamName(e.target.value);
             e.currentTarget.click();
@@ -118,6 +122,8 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
         <input
           type="tel"
           id="SAPID"
+          required
+          maxLength={"10"}
           placeholder="Enter Your Phone Number"
           onChange={(e) => setPhone(e.target.value)}
         />
@@ -132,6 +138,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
               id={`memberName${index}`}
               placeholder={`Team Member ${index + 1}`}
               value={members[index]}
+              required
               onChange={(e) => {
                 let data = members;
                 data[index] = e.target.value;
@@ -145,6 +152,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
           className="reg"
           type="submit"
           value="Register Now"
+          required
           placeholder="Register"
           onClick={(e) => {
             e.preventDefault();
@@ -242,7 +250,7 @@ export default function Register() {
         className="youthop"
         src={Youthopia}
         alt=""
-        style={{ margin: "100vh 0px 0px 38%" }}
+        style={{ margin: "10vh 0px 0px 38%" }}
       />
       <div className="eventDet">
         <div className="poster"></div>
