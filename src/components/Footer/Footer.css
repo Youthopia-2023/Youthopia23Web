@@ -156,3 +156,152 @@
     width: 5.60688rem;
     height: 3.34488rem;
 }
+
+
+@media screen and (max-width: 768px) and (min-width: 526px) {
+    .footer {
+        background-size: 80%;
+    }
+    .footer>.footerSocials {
+        gap: 0.5rem;
+    }
+    .footer>.footerSocials>.text {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .footer>.footerSocials>.icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    .footer>.footerSocials>.icons>svg {
+        cursor: pointer;
+        height: 1.5rem;
+        width: 1.3rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.mainHeading {
+        font-size: 1.3rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.subAddress {
+        font-size: 0.97rem;
+    }
+    .footer>.lastRow>.leftLogo>img {
+        width: 4.60688rem;
+        height: 3.34488rem;
+    }
+    .footer>.lastRow>.rightLogo>img {
+        width: 4.60688rem;
+        height: 3.34488rem;
+    }
+}
+
+@media screen and (max-width: 525px) and (min-width: 396px) {
+    .footer {
+        background-size: 80%;
+    }
+    .footer>.footerSocials {
+        gap: 0.5rem;
+    }
+    .footer>.footerSocials>.text {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .footer>.footerSocials>.icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    .footer>.footerSocials>.icons>svg {
+        cursor: pointer;
+        height: 1.5rem;
+        width: 1.3rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.mainHeading {
+        font-size: 1.1rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.subAddress {
+        font-size: 0.8rem;
+    }
+    .footer>.rowTwo {
+        margin-top: 1rem;
+        width: 100vw;
+        padding: 0 1rem;
+    }
+    .footer>.lastRow>.leftLogo>img {
+        width: 3.60688rem;
+        height: 2.34488rem;
+    }
+    .footer>.lastRow>.rightLogo>img {
+        width: 3.60688rem;
+        height: 2.34488rem;
+    }
+    .footer>.lastRow>.copyrights {
+        font-size: 0.5875rem;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .footer {
+        background-size: 90%;
+    }
+    .footer>.footerSocials {
+        gap: 0.5rem;
+    }
+    .footer>.footerSocials>.text {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .footer>.footerSocials>.icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    .footer>.footerSocials>.icons>svg {
+        cursor: pointer;
+        height: 1.5rem;
+        width: 1.3rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.mainHeading {
+        font-size: 1rem;
+    }
+    .footer>.rowTwo>.address>.addressText>.subAddress {
+        font-size: 0.7rem;
+    }
+    .footer>.rowTwo>.contactMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .footer>.rowTwo>.contactMobile>svg {
+        width: 0.8rem;
+        height: 1rem;
+    }
+    .footer>.rowTwo>.contactMobile>.number>a {
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .footer>.rowTwo {
+        margin-top: 1rem;
+        width: 100vw;
+        padding: 0 1rem;
+    }
+    .footer>.lastRow>.leftLogo>img {
+        width: 2.70688rem;
+        height: 1.54488rem;
+    }
+    .footer>.lastRow>.rightLogo>img {
+        width: 2.70688rem;
+        height: 1.54488rem;
+    }
+    .footer>.lastRow>.copyrights {
+        font-size: 0.4875rem;
+    }
+}

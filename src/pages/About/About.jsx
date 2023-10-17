@@ -35,9 +35,9 @@ function About() {
                 />
               </div>
               <div className="sub-hd">
-                <p>Co-Convenor</p>
+                {/* <p>Co-Convenor</p> */}
               </div>
-              <div className="convenors-cnt">
+              {/* <div className="convenors-cnt">
                 <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Soumya.png"
                   name={"Soumya Nilay"}
@@ -46,7 +46,7 @@ function About() {
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Aryan_Rastogi.png"
                   name={"Aryan Rastogi"}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -56,10 +56,10 @@ function About() {
                 <p>Organising</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox
+                {/* <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Priyanshi.png"
                   name={"Priyanshi Kansal"}
-                />
+                /> */}
                 <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/sourabh singh.jpg"
                   name={"Saurabh Kumar Singh"}
@@ -292,10 +292,10 @@ function About() {
                 <p>Sponsor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox
+                {/* <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/aayushi.png"
                   name={"Aayushi Kaushik"}
-                />
+                /> */}
                 <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/harshit munjal.jpg"
                   name={"Harshit Munjal"}
