@@ -116,4 +116,32 @@ a {
     display: block;
     color: transparent;
   }
-  
+  @media (max-width:524px){
+    .hamburger-menu{
+      margin-left: -10%;
+    }
+    .clickme1{
+      width: 50%;
+      height: 30px;
+      font-size: 10px;
+      padding-bottom: 10px;
+      
+      
+    }
+    .clickme2{
+      width: 50%;
+      height: 30px;
+      font-size: 10px;
+      padding-bottom: 10px;
+      
+      
+    }
+    .buttonsNav {
+      display: flex;
+      gap: 0rem;
+      /* margin-left: 60%; */
+  }
+  .navbar{
+    margin-top: 0;
+  }
+  }
