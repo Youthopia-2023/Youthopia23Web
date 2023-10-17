@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -199,5 +199,25 @@ input {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  
+  .signup-form>.nameRow {
+    gap: 1rem;
+  }
+  .signup-form>.email>input {
+    width: 55%;
+  }
+  .signup-form>.college>input {
+    width: 55%;
+  }
+  .signup-form>.identityPhoto>div {
+    width: 55%;
+  }
+  .signup-form>.idNumber>input {
+    width: 55%;
+  }
+  .signup-form>.moreDetails{
+    gap: 1rem;
+  }
+  .signup-form>.password>input {
+    width: 55%;
+  }
 }
