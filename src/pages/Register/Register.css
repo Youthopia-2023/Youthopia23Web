@@ -116,3 +116,29 @@ body{
     color: white;
     border-radius: 5px;
 }
+
+@media (min-width:320px) and (max-width:424px) {
+    .register{
+        border-radius: 10px;
+        font-size: 10%;
+    }
+}
+
+@media (min-width: 425px) and (max-width:524px){
+    
+}
+@media (min-width: 525px) and (max-width:768px) {
+    
+}
+@media (min-width:769px) and (max-width: 1024px) {
+    
+}
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 1600px) {
+    
+}
+@media (min-width: 1800px) {
+    
+}
