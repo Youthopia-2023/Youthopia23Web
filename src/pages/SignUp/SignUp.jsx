@@ -129,7 +129,7 @@ function SignUp() {
     });
   };
   return (
-    <div>
+    <div className="limiter">
       <div className="signUp-container">
         <img className="youthopia-logo" src={Youthopia} />
         <img src={star1} alt="star-1" className="star-1Signup" />
@@ -137,7 +137,9 @@ function SignUp() {
         <img src={star3} alt="star-3" className="star-3Signup" />
         <img src={line} alt="star-3" className="line-4Signup" />
         <img src={ellipse} alt="star-3" className="ellipseSignup" />
+        
         <div className="signup-form">
+        <p className="heading">Sign Up</p>
           <div className="nameRow">
             <input
               type="text"
@@ -255,6 +257,7 @@ function SignUp() {
               fontSize: "1.5rem",
             }}
             onClick={signup}
+            className="signupBtn"
           >
             Signup
           </div>
