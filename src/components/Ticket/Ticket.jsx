@@ -1,11 +1,8 @@
-import React from "react";
 import "./Ticket.css";
 import textYouth from "../../assets/youthopia.png";
 import BGticket from "../../assets/BGticket.svg";
 import youthopiaLogo from "../../assets/youthopiaLogo.svg";
 import ditlogowhite from "../../assets/ditlogowhite.svg";
-import Line from "../../assets/Line.svg";
-import Group from "../../assets/Group.svg";
 import { useLocation } from "react-router";
 
 function Ticket() {
