@@ -13,19 +13,19 @@ function Navbar() {
   };
 
   const [scrolling, setScrolling] = useState(false);
-  const [width,setWidth]=useState(window.innerWidth)
+  const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(()=>{
+  useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth);
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-  },[])
+  }, []);
 
   useEffect(() => {
     // Add an event listener to the window to track scrolling
@@ -81,17 +81,21 @@ function Navbar() {
               About us
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/about" activeClassName="active">
+              {" "}
+              Accomadation
+            </NavLink>
+          </li>
         </ul>
       </div>
     );
   }
-  
-
 
   function Large() {
     return (
       <>
-      <div className="links">
+        <div className="links">
           <NavLink exact to="/" activeClassName="active">
             Home
           </NavLink>
@@ -104,27 +108,29 @@ function Navbar() {
             {" "}
             About us
           </NavLink>
+          <NavLink to="/about" activeClassName="active">
+            {" "}
+            Accomadation
+          </NavLink>
         </div>
-        
       </>
     );
   }
 
   return (
     <div className={`navbar ${scrolling ? "blurred" : ""}`}>
-      {width<720?<Small/>:<Large/>}
+      {width < 720 ? <Small /> : <Large />}
       <div className="buttonsNav">
-          <button className="clickme1" onClick={navigateToLogin}>
-            
-            Log in
-          </button>
-          <button className="clickme2" onClick={navigateToSignup}>
-            {" "}
-            Signup
-          </button>
-        </div>
+        <button className="clickme1" onClick={navigateToLogin}>
+          Log in
+        </button>
+        <button className="clickme2" onClick={navigateToSignup}>
+          {" "}
+          Signup
+        </button>
+      </div>
     </div>
-    );
+  );
 }
 
 export default Navbar;
