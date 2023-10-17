@@ -56,6 +56,7 @@ label{
     margin-top: 20px;
     margin-left: 30%;
 }
+
 label>input{
     margin-top: 0%;
     background-color: transparent;
@@ -96,7 +97,6 @@ label>input{
     position: absolute;
     bottom: 3%;
     left: 0;
-
 }
 
 .line-4{
@@ -109,5 +109,46 @@ label>input{
     position: absolute;
     bottom: 30%;
     right: 4%;
+}
 
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .checkBox {
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 525px) {
+    .checkBox {
+        margin-left: 12%;
+    }
+    .field {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 524px) and (min-width: 425px) {
+    .checkBox {
+        margin-left: 5%;
+    }
+    .field {
+        width: 90%;
+    }
+    .login-btn {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .checkBox {
+        margin-left: 1%;
+    }
+    .field {
+        width: 90%;
+    }
+    .login-btn {
+        margin-top: 60px;
+    }
+    .Login {
+        width: 85vw;
+    }
 }
