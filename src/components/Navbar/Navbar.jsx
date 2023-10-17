@@ -26,7 +26,7 @@ function Navbar() {
   function Logged() {
     return (
       <>
-        <button className="clickme2" onClick={navigateToProfile}>
+        <button className="profilelog" onClick={navigateToProfile}>
           <img src={Yout} alt="" />
         </button>
       </>
@@ -114,7 +114,10 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <a href="example.com" target="_blank">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfzRcaN1hVu3RDR4Je1DPzK9r7N4VXhYIHD3vLWzc9RPw4sug/viewform"
+              target="_blank"
+            >
               {" "}
               Accomadation
             </a>
@@ -140,7 +143,10 @@ function Navbar() {
             {" "}
             About us
           </NavLink>
-          <a href="example.com" target="_blank">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfzRcaN1hVu3RDR4Je1DPzK9r7N4VXhYIHD3vLWzc9RPw4sug/viewform"
+            target="_blank"
+          >
             {" "}
             Accomadation
           </a>

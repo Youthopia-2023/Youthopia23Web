@@ -14,7 +14,7 @@ import axios from "axios";
 import { baseUrl } from "../../url";
 import toast from "react-hot-toast";
 
-function Counter({count,setCount,min,max}) {
+function Counter({ count, setCount, min, max }) {
   function decrement() {
     if (count == min) {
       setCount(min);
@@ -43,8 +43,18 @@ function Counter({count,setCount,min,max}) {
   );
 }
 
-function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,count,setCount}) {
-  console.log(teamName)
+function rawIND({
+  teamName,
+  setTeamName,
+  phone,
+  setPhone,
+  members,
+  setMembers,
+  submitt,
+  count,
+  setCount,
+}) {
+  console.log(teamName);
   return (
     <div className="Ind">
       <img src={star1} alt="star-1" className="star-1"></img>
@@ -53,10 +63,13 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
       <img src={line} alt="star-3" className="line-4"></img>
       <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-      <form action={(e) => {
-            e.preventDefault();
-            submitt();
-          }} method="POST">
+      <form
+        action={(e) => {
+          e.preventDefault();
+          submitt();
+        }}
+        method="POST"
+      >
         <p>Participant Details</p>
         <hr className="horiLine" />
         <label htmlFor="yourName">Your Name</label>
@@ -64,6 +77,7 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
           type="text"
           id="yourName"
           placeholder="Enter Full Name"
+          required
           value={teamName}
           onChange={(e) => setTeamName(e.target.value)}
         />
@@ -72,8 +86,9 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
         <label htmlFor="phone">Phone Number</label>
         <input
           type="tel"
-          
+          required
           id="phone"
+          maxLength={"10"}
           placeholder="Phone Number"
           onChange={(e) => setPhone(e.target.value)}
         />
@@ -81,16 +96,28 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
         <input
           className="reg"
           type="submit"
+          required
           value="Register Now"
           placeholder="Register"
-          
         />
       </form>
     </div>
   );
 }
 
-function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers,submitt,count,setCount}) {
+function rawTeam({
+  teamName,
+  min,
+  max,
+  setTeamName,
+  phone,
+  setPhone,
+  members,
+  setMembers,
+  submitt,
+  count,
+  setCount,
+}) {
   return (
     <div className="Ind">
       <img src={star1} alt="star-1" className="star-1"></img>
@@ -109,6 +136,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
           placeholder="Team Name"
           value={teamName}
           key={542354}
+          required
           onChange={(e) => {
             setTeamName(e.target.value);
             e.currentTarget.click();
@@ -118,6 +146,8 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
         <input
           type="tel"
           id="SAPID"
+          required
+          maxLength={"10"}
           placeholder="Enter Your Phone Number"
           onChange={(e) => setPhone(e.target.value)}
         />
@@ -132,6 +162,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
               id={`memberName${index}`}
               placeholder={`Team Member ${index + 1}`}
               value={members[index]}
+              required
               onChange={(e) => {
                 let data = members;
                 data[index] = e.target.value;
@@ -145,6 +176,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
           className="reg"
           type="submit"
           value="Register Now"
+          required
           placeholder="Register"
           onClick={(e) => {
             e.preventDefault();
@@ -156,8 +188,8 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
   );
 }
 
-const IND=React.memo(rawIND)
-const Team=React.memo(rawTeam)
+const IND = React.memo(rawIND);
+const Team = React.memo(rawTeam);
 
 export default function Register() {
   //   const location = useLocation();
@@ -165,6 +197,7 @@ export default function Register() {
 
   const userData = useSelector((state) => state);
   let props = useLocation();
+  console.log(props);
   const navigate = useNavigate();
   const min = props.state.min;
   const max = props.state.max;
@@ -172,7 +205,6 @@ export default function Register() {
   const [teamName, setTeamName] = useState("");
   const [phone, setPhone] = useState("");
   const [members, setMembers] = useState({});
-  
 
   const promise = () => {
     return new Promise(function (resolve, reject) {
@@ -220,20 +252,21 @@ export default function Register() {
       success: () => {
         navigate("/ticket", {
           state: {
-            ev: `${props.state.id.slice(0, 4)}${userData._id.slice(0, 3)}`,
+            ev: `${props.state.id}${phone.slice(0, 5)}`,
             us: props.state,
           },
         });
         return "registered successfully";
       },
-      error: "some error occured! try again",
+      error: (e) => {
+        console.log(e);
+        return "some error occured! try again";
+      },
     });
   };
 
-  console.log(props.state.min)
-  console.log(max)
-
-    
+  console.log(props.state.min);
+  console.log(max);
 
   return (
     <div className="Register">
@@ -242,7 +275,7 @@ export default function Register() {
         className="youthop"
         src={Youthopia}
         alt=""
-        style={{ margin: "100vh 0px 0px 38%" }}
+        style={{ margin: "10vh 0px 0px 38%" }}
       />
       <div className="eventDet">
         <div className="poster"></div>
@@ -251,7 +284,33 @@ export default function Register() {
 
       <div className="partDet">
         <div className="register">
-          {min === 1 && max === 1 ? <IND teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount}  /> : <Team teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount} min={min} max={max}/>}
+          {min === 1 && max === 1 ? (
+            <IND
+              teamName={teamName}
+              setTeamName={setTeamName}
+              phone={phone}
+              setPhone={setPhone}
+              members={members}
+              setMembers={setMembers}
+              submitt={submitt}
+              count={count}
+              setCount={setCount}
+            />
+          ) : (
+            <Team
+              teamName={teamName}
+              setTeamName={setTeamName}
+              phone={phone}
+              setPhone={setPhone}
+              members={members}
+              setMembers={setMembers}
+              submitt={submitt}
+              count={count}
+              setCount={setCount}
+              min={min}
+              max={max}
+            />
+          )}
         </div>
       </div>
       <Footer />
