@@ -3,39 +3,36 @@ import "./Navbar.css";
 import { useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import { useSelector } from "react-redux";
-import {GoPerson} from 'react-icons/go'
-import Yout from '../../assets/youthopia 2022 white small 1.svg'
-
+import { GoPerson } from "react-icons/go";
+import Yout from "../../assets/youthopia 2022 white small 1.svg";
 
 function Navbar() {
   const userData = useSelector((state) => state);
-  const [loginfo,setLoginfo]=useState(userData.token)
-  
-  function Unlogged(){
-    return(
+  const [loginfo, setLoginfo] = useState(userData.token);
+
+  function Unlogged() {
+    return (
       <>
-          <button className="clickme1" onClick={navigateToLogin}>
-            
-            Log in
-          </button>
-          <button className="clickme2" onClick={navigateToSignup}>
-            {" "}
-            Signup
-          </button>
-          </>
-    )
+        <button className="clickme1" onClick={navigateToLogin}>
+          Log in
+        </button>
+        <button className="clickme2" onClick={navigateToSignup}>
+          {" "}
+          Signup
+        </button>
+      </>
+    );
   }
-  function Logged(){
-    return(
+  function Logged() {
+    return (
       <>
-          <button className="clickme2" onClick={navigateToProfile}>
-            <img src={Yout} alt="" />
-          </button>
-          </>
-    )
+        <button className="clickme2" onClick={navigateToProfile}>
+          <img src={Yout} alt="" />
+        </button>
+      </>
+    );
   }
-  
-  
+
   const navigate = useNavigate();
   const navigateToLogin = () => {
     navigate("/login");
@@ -43,9 +40,9 @@ function Navbar() {
   const navigateToSignup = () => {
     navigate("/signup");
   };
-  const navigateToProfile=()=>{
-    navigate("/profile")
-  }
+  const navigateToProfile = () => {
+    navigate("/profile");
+  };
 
   const [scrolling, setScrolling] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
@@ -117,10 +114,10 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="active">
+            <a href="example.com" target="_blank">
               {" "}
               Accomadation
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -143,10 +140,10 @@ function Navbar() {
             {" "}
             About us
           </NavLink>
-          <NavLink to="/about" activeClassName="active">
+          <a href="example.com" target="_blank">
             {" "}
             Accomadation
-          </NavLink>
+          </a>
         </div>
       </>
     );
@@ -154,14 +151,14 @@ function Navbar() {
 
   return (
     <>
-    <div className={`navbar ${scrolling ? "blurred" : ""}`}>
-
-    {width<720?<Small/>:<Large/>}
-    <div className="buttonsNav">{loginfo!=""?<Logged/>:<Unlogged/>}</div></div>
+      <div className={`navbar ${scrolling ? "blurred" : ""}`}>
+        {width < 720 ? <Small /> : <Large />}
+        <div className="buttonsNav">
+          {loginfo != "" ? <Logged /> : <Unlogged />}
+        </div>
+      </div>
     </>
-    
-    );
-
+  );
 }
 
 export default Navbar;
