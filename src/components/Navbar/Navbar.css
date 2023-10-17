@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     /* transition: background-color 0.5s ease-in-out; */
 }
 
@@ -165,22 +165,30 @@ a {
       display: flex;
       justify-content: none;
       align-items: none;
-      width: 100%;
+      width: 90%;
       
     }
-    .buttonsNav {
+    .profilelog {
       display: flex;
-      position: absolute;
+      
       top: 0;
-      left: 75%;
+      margin-left: 70%;
+      
       gap: 0rem;
+      width: 150px;
       justify-content: center;
       align-items: center;
       /* margin-left: 60%; */
   }
+  .buttonsNav{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    gap: 0;
+  } 
 /* .buttonsNav button{
   padding-right: 25px;
-} */
+}*/
   .navbar{
     margin-top: 0px;
     padding-right: 0;
