@@ -14,20 +14,31 @@ import Footer from "../../components/Footer/Footer";
 import { baseUrl } from "../../url";
 function Events() {
   const [eventdata, setEventdata] = useState([]);
-
+  const [filteredevents, setFilteredevents] = useState([]);
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await axios.get(`${baseUrl}/event/geteventdetails`);
-      setEventdata(data);
+      axios.get(`${baseUrl}/event/geteventdetails`).then((res) => {
+        setEventdata(res);
+        let a = [];
+        res?.data?.details.filter((event) => {
+          if (event.category === cat) {
+            a.push(event);
+            setFilteredevents(a);
+          }
+        });
+      });
       console.log(data.data.details);
     };
     fetchdata();
+    
   }, []);
-  const [cat, setCat] = useState("Technical");
-  const card = eventdata?.data?.details.map((event, index) => {
+  const [cat, setCat] = useState("technical");
+  const card = filteredevents?.map((event, index) => {
     return (
       <Card
-        id={event._id}
+        key={index}
+        id={index}
+
         name={event.event_name}
         venue={event.venue}
         date={event.date}
@@ -46,21 +57,31 @@ function Events() {
     );
   });
   function handleChange(category) {
-    setCat((cat) => category);
+    setCat((cate) => category);
   }
+  useEffect(() => {
+    let a = [];
+    eventdata?.data?.details.filter((event) => {
+      if (event.category === cat) {
+        a.push(event);
+        setFilteredevents(a);
+      }
+    });
+    console.log(filteredevents);
+  }, [cat]);
   return (
     <>
       <Navbar />
       <div className="events">
         <img className="youImg" src={Youthopia} alt="Image not foud" />
         <div className="secNavBar">
-          <div onClick={() => handleChange("Technical")} className="a">
+          <div onClick={() => handleChange("technical")} className="a">
             Technical
           </div>
-          <div onClick={() => handleChange("Cultural")} className="a">
+          <div onClick={() => handleChange("cultural")} className="a">
             Cultural
           </div>
-          <div onClick={() => handleChange("Informal")} className="a">
+          <div onClick={() => handleChange("informal")} className="a">
             Informal
           </div>
         </div>
