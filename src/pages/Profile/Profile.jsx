@@ -39,7 +39,7 @@ const Profile = () => {
           <div className="inner-container-1">
             <img className="youthopia-logo" src={Youthopia} alt="" />
             <img className="profile-img" src={ProfileImg} />
-            <p>{`${userData.firstName} ${userData.lastName}`}</p>
+            <p className="name">{`${userData.firstName} ${userData.lastName}`}</p>
             <hr></hr>
           </div>
           <div className="inner-container-2">

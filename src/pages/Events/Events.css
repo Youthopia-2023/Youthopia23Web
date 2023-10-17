@@ -9,7 +9,7 @@
 }
 
 .youImg {
-    margin: 10vh 0px 0px 38%;
+    margin: 10vh 0px 0px 0%;
 }
 
 .secNavBar {
@@ -20,7 +20,7 @@
 
 .secNavBar>.a {
     color: #F8F8F8;
-    margin:0 70px 0 70px;
+    margin:0 20px 0 20px;
     font-size: 32px;
     position: relative;
     cursor: pointer;
@@ -91,10 +91,10 @@
         margin:0 30px 0 30px;
     }
     .secNavBar {
-        margin: 0px 10px 0px 15%;
+        margin: 0px 10px 0px 0%;
     }
     .youImg {
-        margin: 10vh 0px 0px 15%;
+        margin: 10vh 0px 0px 0%;
     }
 
 }
@@ -112,6 +112,10 @@
     }
     .secNavBar {
         margin: 0px 10px 0px 18%;
+    }
+    .events{
+        width: 100%;
+        /* overflow: scroll; */
     }
     
 }

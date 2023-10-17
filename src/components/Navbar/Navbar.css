@@ -51,6 +51,9 @@ a {
     border-radius: 1.10306rem;
     cursor: pointer;
 }
+.clickme2 img{
+  width: 2.5rem;
+}
 
 .clickme2 {
     padding: 0.6rem 1rem;
@@ -72,33 +75,44 @@ a {
     width: fit-content;
     background-color: transparent;
     margin-left: 1px;
+    color: #FFF;
     
   }
   
   .hamburger-icon {
+    box-decoration-break: none;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     background-color: transparent;
     width: fit-content;
+    background: transparent;
+    
+    
   }
   
   .hamburger-icon.open .bar:nth-child(1) {
+    
     transform: translateY(5px) rotate(45deg);
+    color: #FFF;
   }
   
   .hamburger-icon.open .bar:nth-child(2) {
-    opacity: 0;
+    
+    transform: translateY(-5px) rotate(-45deg);
+    color: #FFF;
   }
   
   .hamburger-icon.open .bar:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg);
+    opacity: 0;
+    color: #fff;
+
   }
   
   .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #fff;
     margin: 3px 0;
     transition: 0.4s;
   }
@@ -116,4 +130,49 @@ a {
     display: block;
     color: transparent;
   }
-  
+  @media (max-width:524px){
+    .hamburger-menu{
+      margin-left: -5%;
+    }
+    .clickme1{
+      width: 70px;
+      height: 30px;
+      font-size: 10px;
+      padding-bottom: 10px;
+      padding-right: 0;
+      
+      
+    }
+    
+    .clickme2{
+      width: 50%;
+      height: 30px;
+      font-size: 10px;
+      padding-bottom: 10px;
+    }
+    .clickme2 img{
+      width: 50rem;
+    }
+
+    .navbar{
+      display: flex;
+      justify-content: none;
+      align-items: none;
+    }
+    .buttonsNav {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 63%;
+      gap: 0rem;
+      justify-content: center;
+      align-items: center;
+      /* margin-left: 60%; */
+  }
+.buttonsNav button{
+  padding-right: 25px;
+}
+  .navbar{
+    margin-top: 0;
+  }
+  }

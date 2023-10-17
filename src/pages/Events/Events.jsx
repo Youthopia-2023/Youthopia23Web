@@ -38,14 +38,19 @@ function Events() {
       <Card
         key={index}
         id={index}
+
         name={event.event_name}
         venue={event.venue}
         date={event.date}
-        time={event.end_time}
+        start_time={event.start_time}
+        end_time={event.end_time}
         discription={event.event_description}
         Coordinator={event.coordinator}
         head={event.overall_head}
-        fees={event.fees1}
+        fees1={event.fees1}
+        fees2={event.fees2}
+        max={event.participant_max}
+        min={event.participant_min}
         imgUrl={event.event_poster}
         category={event.category}
       />
