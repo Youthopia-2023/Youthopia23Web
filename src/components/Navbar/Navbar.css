@@ -1,6 +1,6 @@
 .navbar  {
     height: auto;
-    margin-top: 5px;
+    margin-top: 0px;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -51,11 +51,12 @@ a {
     border-radius: 1.10306rem;
     cursor: pointer;
 }
-.clickme2 img{
+.profilelog img{
   width: 2.5rem;
 }
 
-.clickme2 {
+
+.clickme2,.profilelog {
     padding: 0.6rem 1rem;
     background-color: transparent;
     color: white;
@@ -133,6 +134,7 @@ a {
   @media (max-width:524px){
     .hamburger-menu{
       margin-left: -5%;
+      margin-top: 2px;
     }
     .clickme1{
       width: 70px;
@@ -144,7 +146,7 @@ a {
       
     }
     
-    .clickme2{
+    .clickme2,.profilelog{
       width: 50%;
       height: 30px;
       font-size: 10px;
@@ -152,22 +154,25 @@ a {
       padding-right: 0;
 
     }
-    .clickme2 img{
-      width: 50rem;
+    .profilelog img{
+      width: 90px;
+    }
+    .profilelog{
+      margin-top: 1px;
     }
 
     .navbar{
       display: flex;
       justify-content: none;
       align-items: none;
-      width: 80%;
+      width: 100%;
       
     }
     .buttonsNav {
       display: flex;
       position: absolute;
       top: 0;
-      left: 63%;
+      left: 75%;
       gap: 0rem;
       justify-content: center;
       align-items: center;
@@ -177,7 +182,7 @@ a {
   padding-right: 25px;
 } */
   .navbar{
-    margin-top: 0;
+    margin-top: 0px;
     padding-right: 0;
     padding-left: 5%;
   }
