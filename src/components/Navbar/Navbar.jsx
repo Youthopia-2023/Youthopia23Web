@@ -115,8 +115,8 @@ function Navbar() {
       {width<720?<Small/>:<Large/>}
       <div className="buttonsNav">
           <button className="clickme1" onClick={navigateToLogin}>
-            {" "}
-            Log in{" "}
+            
+            Log in
           </button>
           <button className="clickme2" onClick={navigateToSignup}>
             {" "}
