@@ -157,7 +157,7 @@ input {
   background-color: transparent;
   padding-left: 20px;
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   border-radius: 30px;
   font-family: Stellar;
   font-size: 24px;
@@ -198,6 +198,6 @@ input {
   right: 10%;
 }
 
-.choosefileHidden{
-  display: none;
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  
 }

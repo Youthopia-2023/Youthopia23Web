@@ -1,4 +1,4 @@
-.LoginContainer{
+.LoginContainer {
     background-image: url(../../assets/background.png);
     display: flex;
     justify-content: center;
@@ -9,7 +9,8 @@
     padding: 0;
 
 }
-.Login{
+
+.Login {
     position: relative;
     background-color: rgba(0, 0, 0, 0.71);
     border-radius: 138px;
@@ -25,48 +26,55 @@
     margin-top: 40px;
     /* margin: 0vh 20vh 0vh 25vh; */
 }
-.Login>form{
+
+.Login>form {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin-top: 30px;
 
 }
-input{
+
+input {
     background-color: transparent;
     width: 58%;
     padding-left: 20px;
-    height: 50px;
+    height: auto !important;
     margin: 10px;
     border-radius: 30px;
     font-family: Stellar;
     font-size: 24px;
     border: 2px solid #f8f8f8;
 }
-.login-details{
+
+.login-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-label{
+
+label {
     display: flex;
     font-size: 15px;
     font-family: Stellar-Light;
     margin-top: 20px;
     margin-left: 30%;
 }
+
+
 label>input{
+
     margin-top: 0%;
     background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
+    /* appearance: none;
+    -webkit-appearance: none; */
     border-radius: 50%;
     height: 18px;
     width: 18px;
 }
 
-.login-btn{
+.login-btn {
     border-radius: 35px;
     border: 1px solid #FFF;
     width: 130px;
@@ -78,36 +86,77 @@ label>input{
     margin-top: 50px;
 }
 
-.star-1{
+.star-1 {
     position: absolute;
     top: 0;
     right: 2%;
 
 }
 
-.star-3{
+.star-3 {
     position: absolute;
     top: 18%;
     left: 20%;
     width: 25px;
 }
 
-.star-2{
+.star-2 {
     position: absolute;
     bottom: 3%;
     left: 0;
-
 }
 
-.line-4{
+.line-4 {
     position: absolute;
     bottom: 34%;
     right: -4%;
 }
 
-.ellipse{
+.ellipse {
     position: absolute;
     bottom: 30%;
     right: 4%;
+}
 
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .checkBox {
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 525px) {
+    .checkBox {
+        margin-left: 12%;
+    }
+    .field {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 524px) and (min-width: 425px) {
+    .checkBox {
+        margin-left: 5%;
+    }
+    .field {
+        width: 90%;
+    }
+    .login-btn {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .checkBox {
+        margin-left: 1%;
+    }
+    .field {
+        
+        width: 90%;
+    }
+    .login-btn {
+        margin-top: 60px;
+    }
+    .Login {
+        width: 85vw;
+    }
 }

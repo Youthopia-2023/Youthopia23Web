@@ -1,66 +1,185 @@
-.navbar  {
-    height: 60px;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    padding: 0px 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    /* transition: background-color 0.5s ease-in-out; */
+.navbar {
+  height: auto;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 0px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  /* transition: background-color 0.5s ease-in-out; */
 }
 
-.navbar.blurred{
-    backdrop-filter: blur(10px);
-    /* background-color: rgba(255, 255, 255, 0.1); */
+.navbar.blurred {
+  backdrop-filter: blur(10px);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 a {
-    margin-right: 50px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .active {
-    color: red;
+  color: red;
 }
+
 .buttonsNav {
-    display: flex;
-    gap: 1.8rem;
+  display: flex;
+  gap: 1.8rem;
 }
 
 .clickme1 {
-    padding: 0.6rem 1rem;
-    background-color: transparent;
-    color: white;
-    font-family: Stellar;
-    font-size: 0.975rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    outline: none;
-    border: 1px solid #FFF;
-    border-radius: 1.10306rem;
-    cursor: pointer;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: white;
+  font-family: Stellar;
+  font-size: 0.975rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  border: 1px solid #FFF;
+  border-radius: 1.10306rem;
+  cursor: pointer;
+}
+
+.clickme2 img {
+  width: 2.5rem;
 }
 
 .clickme2 {
-    padding: 0.6rem 1rem;
-    background-color: transparent;
-    color: white;
-    font-family: Stellar;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    outline: none;
-    border: none;
-    cursor: pointer;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: white;
+  font-family: Stellar;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: transparent;
+  margin-left: 1px;
+  color: #FFF;
+
+}
+
+.hamburger-icon {
+  box-decoration-break: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: transparent;
+  width: fit-content;
+  background: transparent;
+
+
+}
+
+.hamburger-icon.open .bar:nth-child(1) {
+
+  transform: translateY(5px) rotate(45deg);
+  color: #FFF;
+}
+
+.hamburger-icon.open .bar:nth-child(2) {
+
+  transform: translateY(-5px) rotate(-45deg);
+  color: #FFF;
+}
+
+.hamburger-icon.open .bar:nth-child(3) {
+  opacity: 0;
+  color: #fff;
+
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+
+
+}
+
+.menu-links.open {
+  display: block;
+  color: transparent;
+}
+
+@media (max-width:524px) {
+  .hamburger-menu {
+    margin-left: -5%;
+  }
+
+  .clickme1 {
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+
+
+  }
+
+  .clickme2 {
+    width: 50%;
+    height: 30px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .clickme2 img {
+    width: 50rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+  }
+
+  .buttonsNav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 63%;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 60%; */
+  }
+
+  .buttonsNav button {
+    padding-right: 25px;
+  }
+
+  .navbar {
+    margin-top: 0;
+  }
 }
