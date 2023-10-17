@@ -3,44 +3,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
 import youthopia from "../../assets/Youthopia.svg";
 import AboutUsImgBox from "../../components/AboutUsImgBox/AboutUsImgBox";
-import shashank from "../../assets/aboutImg/Shashank.png"
-import sanskar from "../../assets/aboutImg/Sanskar.png"
-import jatin from "../../assets/aboutImg/Jatin Sharma.png"
-import vaishnavi from "../../assets/aboutImg/vaishnavi.png"
-import shrishti from "../../assets/aboutImg/Srishti. Jpg.png"
-import danish from "../../assets/aboutImg/Danish Siddiqui .png"
-import sameer from "../../assets/aboutImg/sameer.png"
-import aman from "../../assets/aboutImg/Aman_Casual_Photograph.png"
-import avantika from "../../assets/aboutImg/avantika.png"
-import devishree from "../../assets/aboutImg/devishree.png";
-import maanav from "../../assets/aboutImg/Maanav_Aryan.png"
-import medha from "../../assets/aboutImg/medha.png"
-import som from "../../assets/aboutImg/som kartikey.png"
-import anesha from "../../assets/aboutImg/anesha.png"
-import amit from "../../assets/aboutImg/amit.png"
-import vidit from "../../assets/aboutImg/vidit.png"
-import pradhyum from "../../assets/aboutImg/pradhyum.png"
-import rudrika from "../../assets/aboutImg/rudrika.png"
-import mallika from "../../assets/aboutImg/Mallika-Agarwal .png"
-import rahul from "../../assets/aboutImg/rahul.png"
-import shriya from "../../assets/aboutImg/shriya.png"
-import aamir from "../../assets/aboutImg/aamir.png"
-import prashant from "../../assets/aboutImg/prashant ranjan.png"
-import shubhangi from "../../assets/aboutImg/Shubhangi.png"
-import ekta from "../../assets/aboutImg/ekta.png"
-import tashu from "../../assets/aboutImg/tashu.png"
-import harshit from "../../assets/aboutImg/Harshit Gupta.png"
-import harshitm from "../../assets/aboutImg/harshit munjal.png"
-import aayushi from "../../assets/aboutImg/aayushi.png"
-import tanul from "../../assets/aboutImg/Tanul Khare.png"
-import shoib from "../../assets/aboutImg/shoaib_ali_1302-20211120-0001.png"
-import prashantm from "../../assets/aboutImg/Prashant_Mishra.png"
-import shreya from "../../assets/aboutImg/Shreyaa.png"
-import manish from "../../assets/aboutImg/Manish Adhikari.png"
-import adit from "../../assets/aboutImg/Adit.png"
-import ayushi from "../../assets/aboutImg/ayushi kumar.png"
-import tanishq from "../../assets/aboutImg/Tanishq .png"
-import karan from "../../assets/aboutImg/karan.png"
+
+
 
 
 function About() {
@@ -61,15 +25,27 @@ function About() {
                 <p>Convenor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" name={'Wamiq Khan'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vachaspati.png" name={'Vachaspati Kumar Mishra'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg"
+                  name={"Wamiq Khan"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vachaspati.png"
+                  name={"Vachaspati Kumar Mishra"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Co-Convenor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Soumya.png" name={'Soumya Nilay'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Aryan_Rastogi.png" name={'Aryan Rastogi'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Soumya.png"
+                  name={"Soumya Nilay"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Aryan_Rastogi.png"
+                  name={"Aryan Rastogi"}
+                />
               </div>
             </div>
           </div>
@@ -80,25 +56,49 @@ function About() {
                 <p>Organising</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Priyanshi.png" name={'Priyanshi Kansal'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/sourabh singh.jpg" name={'Saurabh Kumar Singh'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Priyanshi.png"
+                  name={"Priyanshi Kansal"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/sourabh singh.jpg"
+                  name={"Saurabh Kumar Singh"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Event Management</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={jatin} name={'Jatin Sharma'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vipul.jpg" name={'Vipul Saxena'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/akshat dabral.png" name={'Akshat Dabral'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Anubhav Kashyap.jpg" name={'Anubhav Kashyap'} />
+                <AboutUsImgBox img="" name={"Jatin Sharma"} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vipul.jpg"
+                  name={"Vipul Saxena"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/akshat dabral.png"
+                  name={"Akshat Dabral"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Anubhav Kashyap.jpg"
+                  name={"Anubhav Kashyap"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Cultural</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/nehal.jpg" name={'Nehal Nagarkoti'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/kushagra.jpg" name={'Kushagra Nigam'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Gladson.jpg" name={'Gladson Biju Thomas'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/nehal.jpg"
+                  name={"Nehal Nagarkoti"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/kushagra.jpg"
+                  name={"Kushagra Nigam"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Gladson.jpg"
+                  name={"Gladson Biju Thomas"}
+                />
               </div>
             </div>
           </div>
@@ -109,24 +109,48 @@ function About() {
                 <p>Singing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/andrew.jpg" name={'Andrew Joseph'} />
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/divyanshi.jpg" name={'Divyanshi'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/andrew.jpg"
+                  name={"Andrew Joseph"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/divyanshi.jpg"
+                  name={"Divyanshi"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Dancing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Armaan.jpg" name={'Armaanjot Singh'} />
-                <AboutUsImgBox img={vaishnavi} name={'Vaishnavi'} />
-                <AboutUsImgBox img={shrishti} name={'Shrishti Panwar'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Armaan.jpg"
+                  name={"Armaanjot Singh"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/vaishnavi (1).jpg"
+                  name={"Vaishnavi"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Srishti. Jpg.jpg"
+                  name={"Shrishti Panwar"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Fashionista</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Manasvi Bisht.png" name={'Manasvi Bist'} />
-                <AboutUsImgBox img={danish} name={'Danish Siddiqui'} />
-                <AboutUsImgBox img={sameer} name={'Sameer Patel'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Manasvi Bisht.png"
+                  name={"Manasvi Bist"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Danish Siddiqui .jpg"
+                  name={"Danish Siddiqui"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/sameer.png"
+                  name={"Sameer Patel"}
+                />
               </div>
             </div>
           </div>
@@ -137,20 +161,41 @@ function About() {
                 <p>PR/Publicity</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={aman} name={'Aman Kumar'} />
-                <AboutUsImgBox img={avantika} name={'Avantika Rajput'} />
-                <AboutUsImgBox img={devishree} name={'Devishree Rana'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Aman_Casual_Photograph.jpg"
+                  name={"Aman Kumar"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/avantika.png"
+                  name={"Avantika Rajput"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/devishree.png"
+                  name={"Devishree Rana"}
+                />
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={maanav} name={'Maanav Aryan'} />
-                <AboutUsImgBox img={medha} name={'Medha Tiwari'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Maanav_Aryan.png"
+                  name={"Maanav Aryan"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/medha.jpg"
+                  name={"Medha Tiwari"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Sound & Lightning</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={som} name={'S Kartikye'} />
-                <AboutUsImgBox img={karan} name={"Karan Singh"} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/som kartikey.png"
+                  name={"S Kartikye"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/karan.jpg"
+                  name={"Karan Singh"}
+                />
               </div>
             </div>
           </div>
@@ -161,26 +206,56 @@ function About() {
                 <p>Photography & Videography</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={amit} name={'Amit Nautiyal'} />
-                <AboutUsImgBox img={vidit} name={'Vidit Sharma'} />
-                <AboutUsImgBox img={pradhyum} name={'Pradumn Kala'} />
-                <AboutUsImgBox img={anesha} name={'Anusha Malvyia'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/amit.png"
+                  name={"Amit Nautiyal"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/vidit.jpg"
+                  name={"Vidit Sharma"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/pradhyum.jpg"
+                  name={"Pradumn Kala"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/anesha.jpg"
+                  name={"Anusha Malvyia"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Literary & Theater</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={rudrika} name={'Rudrika Singh'} />
-                <AboutUsImgBox img={mallika} name={'Mallika Agarwal'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/rudrika.jpg"
+                  name={"Rudrika Singh"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Mallika-Agarwal .jpg"
+                  name={"Mallika Agarwal"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Informal</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={rahul} name={'Rahul Adhikari'} />
-                <AboutUsImgBox img={aamir} name={'Aamir Qaisheer'} />
-                <AboutUsImgBox img={shriya} name={'Shriya Shrivastava'} />
-                <AboutUsImgBox img={prashant} name={'Prashant Rajan'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/rahul.png"
+                  name={"Rahul Adhikari"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/aamir.png"
+                  name={"Aamir Qaisheer"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/shriya.png"
+                  name={"Shriya Shrivastava"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/prashant ranjan.jpg"
+                  name={"Prashant Rajan"}
+                />
               </div>
             </div>
           </div>
@@ -191,22 +266,40 @@ function About() {
                 <p>Fine Arts</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={tashu} name={'Tashu Mittal'} />
-                <AboutUsImgBox img={shubhangi} name={'Shubhangi Sharma'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/tashu.png"
+                  name={"Tashu Mittal"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Shubhangi.png"
+                  name={"Shubhangi Sharma"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Design</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={harshit} name={'Harshit Gupta'} />
-                <AboutUsImgBox img={ekta} name={'Ekta Soni'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Harshit Gupta.jpg"
+                  name={"Harshit Gupta"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/ekta.jpg"
+                  name={"Ekta Soni"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Sponsor</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={aayushi} name={'Aayushi Kaushik'} />
-                <AboutUsImgBox img={harshitm} name={'Harshit Munjal'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/aayushi.png"
+                  name={"Aayushi Kaushik"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/harshit munjal.jpg"
+                  name={"Harshit Munjal"}
+                />
               </div>
             </div>
           </div>
@@ -217,23 +310,44 @@ function About() {
                 <p>Content & Creative Writing</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={tanul} name={'Tanul Khare'} />
-                <AboutUsImgBox img={shoib} name={'Shoib Ali'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Tanul Khare.png"
+                  name={"Tanul Khare"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/shoaib_ali_1302-20211120-0001.png"
+                  name={"Shoib Ali"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Anchoring</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={prashantm} name={'Prashant Mishra'} />
-                <AboutUsImgBox img={shreya} name={'Shreya Malik'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Prashant_Mishra.png"
+                  name={"Prashant Mishra"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Shreyaa.jpg"
+                  name={"Shreya Malik"}
+                />
               </div>
               <div className="sub-hd">
                 <p>Technical</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={sanskar} name={"Sanskar Saxena"} />
-                <AboutUsImgBox img={shashank} name={"Shashank Rawat"} />
-                <AboutUsImgBox img={manish} name={'Manish Adhikari'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Sanskar.png"
+                  name={"Sanskar Saxena"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Shashank.jpg"
+                  name={"Shashank Rawat"}
+                />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Manish Adhikari.jpg"
+                  name={"Manish Adhikari"}
+                />
               </div>
             </div>
           </div>
@@ -244,9 +358,15 @@ function About() {
                 <p>Lan Gaming</p>
               </div>
               <div className="convenors-cnt">
-                <AboutUsImgBox img={adit} name={'Adit Vaid'} />
-                <AboutUsImgBox img={ayushi} name={'Ayushi Kumar'} />
-                <AboutUsImgBox img={tanishq} name={'Tanishq Singh'} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Adit.jpg"
+                  name={"Adit Vaid"}
+                />
+                <AboutUsImgBox img="" name={"Ayushi Kumar"} />
+                <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Tanishq .png"
+                  name={"Tanishq Singh"}
+                />
               </div>
             </div>
           </div>
