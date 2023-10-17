@@ -30,15 +30,13 @@ function Events() {
       console.log(data.data.details);
     };
     fetchdata();
-    
   }, []);
   const [cat, setCat] = useState("technical");
   const card = filteredevents?.map((event, index) => {
     return (
       <Card
         key={index}
-        id={index}
-
+        id={event.event_id}
         name={event.event_name}
         venue={event.venue}
         date={event.date}
