@@ -118,7 +118,7 @@
     }
     .events{
         width: 100%;
-        overflow: hidden;
+        /* overflow: scroll; */
     }
     
 }
