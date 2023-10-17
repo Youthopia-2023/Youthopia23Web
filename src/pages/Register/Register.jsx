@@ -1,7 +1,7 @@
 import "./Register.css";
 import Youthopia from "../../assets/youthopia.png";
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import star1 from "../../assets/Star 4.svg";
 import star2 from "../../assets/Group 6647.svg";
 // import star3 from "../../assets/Star 4.svg";
@@ -12,6 +12,7 @@ import Footer from "../../components/Footer/Footer";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { baseUrl } from "../../url";
+import toast from "react-hot-toast";
 
 function Counter({count,setCount,min,max}) {
   function decrement() {
@@ -88,6 +89,7 @@ function rawIND({teamName,setTeamName,phone,setPhone,members,setMembers,submitt,
     </div>
   );
 }
+
 function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers,submitt,count,setCount}) {
   return (
     <div className="Ind">
@@ -160,9 +162,10 @@ const Team=React.memo(rawTeam)
 export default function Register() {
   //   const location = useLocation();
   // const searchParams = new URLSearchParams(location.search);
-  
+
   const userData = useSelector((state) => state);
   let props = useLocation();
+  const navigate = useNavigate();
   const min = props.state.min;
   const max = props.state.max;
   const [count, setCount] = useState(min);
@@ -171,72 +174,66 @@ export default function Register() {
   const [members, setMembers] = useState({});
   
 
-  const submitt = () => {
-    let mem = [];
-    let eventID = props.state.id;
-    {
-      Object.keys(members).map(function (key, index) {
-        mem.push(members[key]);
-      });
-    }
-    const data = {
-      teamName,
-      phone,
-      mem,
-      eventID,
-    };
-    console.log(data);
-    axios
-      .post(
-        `${baseUrl}/user/registeruser`,
-        {
-          data,
-        },
-        {
-          headers: {
-            Authorization: `bearer ${userData.token}`,
+  const promise = () => {
+    return new Promise(function (resolve, reject) {
+      let mem = [];
+      let eventID = props.state.id;
+      {
+        Object.keys(members).map(function (key, index) {
+          mem.push(members[key]);
+        });
+      }
+      const data = {
+        teamName,
+        phone,
+        mem,
+        eventID,
+      };
+      console.log(data);
+      axios
+        .post(
+          `${baseUrl}/user/registeruser`,
+          {
+            data,
           },
-        }
-      )
-      .then(function (response) {
-        // console.log(response);
-        alert("registered");
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert("error occured");
-      });
+          {
+            headers: {
+              Authorization: `bearer ${userData.token}`,
+            },
+          }
+        )
+        .then(function (response) {
+          console.log(response);
+          resolve();
+        })
+        .catch(function (error) {
+          console.log(error);
+          // alert("error occured");
+          reject();
+        });
+    });
   };
 
-  function Counter() {
-    function decrement() {
-      if (count == min) {
-        setCount(min);
-      } else {
-        setCount(count - 1);
-      }
-    }
-    function increment() {
-      if (count == max) {
-        setCount(max);
-      } else {
-        setCount(count + 1);
-      }
-    }
+  const submitt = () => {
+    toast.promise(promise(), {
+      loading: "registering...",
+      success: () => {
+        navigate("/ticket", {
+          state: {
+            ev: `${props.state.id.slice(0, 4)}${userData._id.slice(0, 3)}`,
+            us: props.state,
+          },
+        });
+        return "registered successfully";
+      },
+      error: "some error occured! try again",
+    });
+  };
 
-    return (
-      <div className="Counter">
-        <button className="dec" type="button" onClick={decrement}>
-          -
-        </button>
-        <p className="Count">{count}</p>
-        <button className="inc" type="button" onClick={increment}>
-          +
-        </button>
-      </div>
-    );
-  }
   
+
+    
+
   return (
     <div className="Register">
       <Navbar />
