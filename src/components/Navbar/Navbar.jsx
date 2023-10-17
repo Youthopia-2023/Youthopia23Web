@@ -2,8 +2,40 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
+import { useSelector } from "react-redux";
+import {GoPerson} from 'react-icons/go'
+import Yout from '../../assets/youthopia 2022 white small 1.svg'
+
 
 function Navbar() {
+  const userData = useSelector((state) => state);
+  const [loginfo,setLoginfo]=useState(userData.token)
+  
+  function Unlogged(){
+    return(
+      <>
+          <button className="clickme1" onClick={navigateToLogin}>
+            
+            Log in
+          </button>
+          <button className="clickme2" onClick={navigateToSignup}>
+            {" "}
+            Signup
+          </button>
+          </>
+    )
+  }
+  function Logged(){
+    return(
+      <>
+          <button className="clickme2" onClick={navigateToProfile}>
+            <img src={Yout} alt="" />
+          </button>
+          </>
+    )
+  }
+  
+  
   const navigate = useNavigate();
   const navigateToLogin = () => {
     navigate("/login");
@@ -11,6 +43,9 @@ function Navbar() {
   const navigateToSignup = () => {
     navigate("/signup");
   };
+  const navigateToProfile=()=>{
+    navigate("/profile")
+  }
 
   const [scrolling, setScrolling] = useState(false);
   const [width,setWidth]=useState(window.innerWidth)
@@ -111,19 +146,12 @@ function Navbar() {
   }
 
   return (
+    <>
     <div className={`navbar ${scrolling ? "blurred" : ""}`}>
-      {width<720?<Small/>:<Large/>}
-      <div className="buttonsNav">
-          <button className="clickme1" onClick={navigateToLogin}>
-            
-            Log in
-          </button>
-          <button className="clickme2" onClick={navigateToSignup}>
-            {" "}
-            Signup
-          </button>
-        </div>
-    </div>
+    {width<720?<Small/>:<Large/>}
+    <div className="buttonsNav">{loginfo!=""?<Logged/>:<Unlogged/>}</div></div>
+    </>
+    
     );
 }
 
