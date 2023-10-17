@@ -149,6 +149,8 @@ a {
       height: 30px;
       font-size: 10px;
       padding-bottom: 10px;
+      padding-right: 0;
+
     }
     .clickme2 img{
       width: 50rem;
@@ -158,6 +160,8 @@ a {
       display: flex;
       justify-content: none;
       align-items: none;
+      width: 80%;
+      
     }
     .buttonsNav {
       display: flex;
@@ -169,10 +173,12 @@ a {
       align-items: center;
       /* margin-left: 60%; */
   }
-.buttonsNav button{
+/* .buttonsNav button{
   padding-right: 25px;
-}
+} */
   .navbar{
     margin-top: 0;
+    padding-right: 0;
+    padding-left: 5%;
   }
   }
