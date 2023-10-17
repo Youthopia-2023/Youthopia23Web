@@ -29,6 +29,11 @@
     /* margin: 0vh 20vh 0vh 25vh; */
 }
 
+.profile-img {
+    width: 150px;
+    height: 150px;
+}
+
 .star-1{
     position: absolute;
     top: 0;
@@ -112,4 +117,28 @@ hr {
 
 .btn-container {
     margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .inner-container-2 .row .heading {
+        font-size: 18px;
+        padding: 5px 0 5px 0;
+    }
+
+    .inner-container-2 .row .info {
+        font-size: 18px;
+    }
+
+    .btn-container {
+        margin-top: -50px;
+    }
 }
