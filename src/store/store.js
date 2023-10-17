@@ -48,6 +48,7 @@ const userData = createSlice({
     },
     clear(state, payload) {
       state.token = "";
+      window.localStorage.clear();
     },
   },
 });
