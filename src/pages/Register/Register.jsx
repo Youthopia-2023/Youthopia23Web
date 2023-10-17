@@ -1,7 +1,7 @@
 import "./Register.css";
 import Youthopia from "../../assets/youthopia.png";
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import star1 from "../../assets/Star 4.svg";
 import star2 from "../../assets/Group 6647.svg";
 // import star3 from "../../assets/Star 4.svg";
@@ -12,12 +12,15 @@ import Footer from "../../components/Footer/Footer";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { baseUrl } from "../../url";
+import toast from "react-hot-toast";
 
 export default function Register() {
   //   const location = useLocation();
   // const searchParams = new URLSearchParams(location.search);
+  // const userData = useSelector((state) => state);
   const userData = useSelector((state) => state);
   let props = useLocation();
+  const navigate = useNavigate();
   const min = props.state.min;
   const max = props.state.max;
   const [count, setCount] = useState(min);
@@ -25,41 +28,60 @@ export default function Register() {
   const [phone, setPhone] = useState("");
   const [members, setMembers] = useState({});
 
-  const submitt = () => {
-    let mem = [];
-    let eventID = props.state.id;
-    {
-      Object.keys(members).map(function (key, index) {
-        mem.push(members[key]);
-      });
-    }
-    const data = {
-      teamName,
-      phone,
-      mem,
-      eventID,
-    };
-    console.log(data);
-    axios
-      .post(
-        `${baseUrl}/user/registeruser`,
-        {
-          data,
-        },
-        {
-          headers: {
-            Authorization: `bearer ${userData.token}`,
+  const promise = () => {
+    return new Promise(function (resolve, reject) {
+      let mem = [];
+      let eventID = props.state.id;
+      {
+        Object.keys(members).map(function (key, index) {
+          mem.push(members[key]);
+        });
+      }
+      const data = {
+        teamName,
+        phone,
+        mem,
+        eventID,
+      };
+      console.log(data);
+      axios
+        .post(
+          `${baseUrl}/user/registeruser`,
+          {
+            data,
           },
-        }
-      )
-      .then(function (response) {
-        // console.log(response);
-        alert("registered");
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert("error occured");
-      });
+          {
+            headers: {
+              Authorization: `bearer ${userData.token}`,
+            },
+          }
+        )
+        .then(function (response) {
+          console.log(response);
+          resolve();
+        })
+        .catch(function (error) {
+          console.log(error);
+          // alert("error occured");
+          reject();
+        });
+    });
+  };
+
+  const submitt = () => {
+    toast.promise(promise(), {
+      loading: "registering...",
+      success: () => {
+        navigate("/ticket", {
+          state: {
+            ev: `${props.state.id.slice(0, 4)}${userData._id.slice(0, 3)}`,
+            us: props.state,
+          },
+        });
+        return "registered successfully";
+      },
+      error: "some error occured! try again",
+    });
   };
 
   function Counter() {
@@ -117,6 +139,7 @@ export default function Register() {
             type="tel"
             id="phone"
             placeholder="Phone Number"
+            value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
 
@@ -158,6 +181,7 @@ export default function Register() {
           <input
             type="tel"
             id="SAPID"
+            value={phone}
             placeholder="Enter Your Phone Number"
             onChange={(e) => setPhone(e.target.value)}
           />
