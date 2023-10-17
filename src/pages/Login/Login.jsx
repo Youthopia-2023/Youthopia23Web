@@ -89,22 +89,24 @@ export default function Login() {
           <img src={line} alt="star-3" className="line-4"></img>
           <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-          <img src={Youthopia} alt="" />
+          <img src={Youthopia} className="youthopia-logo" alt="" />
           <p>Login</p>
           <form action="#">
             <div className="login-details">
               <input
+                className="field"
                 type="email"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
+                className="field"
                 type="password"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <label>
+            <label className="checkBox">
               <input
                 type="checkbox"
                 value={checked}
