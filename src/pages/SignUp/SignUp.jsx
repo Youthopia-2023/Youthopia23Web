@@ -69,7 +69,7 @@ function SignUp() {
       const uploadTask = uploadBytesResumable(storageRef, photo);
       uploadTask.on(
         "state_changed",
-        (snapshot) => {},
+        (snapshot) => {},           //eslint-disable-line
         (error) => {
           console.log(error);
           reject(error);

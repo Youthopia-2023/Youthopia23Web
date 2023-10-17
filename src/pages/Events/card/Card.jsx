@@ -3,18 +3,18 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 
 export default function Card(props) {
-  const style = {
-    margin: "30px 0 0 20%",
-    fontFamily: "Stellar",
-    height: "50px",
-    color: "black",
-    fontSize: "22px",
-    width: "80%",
-    borderRadius: "8px",
-    bottom: "50px",
-    backgroundColor: "#f8f8f8",
-    border: "2px solid BsSlack",
-  };
+  // const style = {
+  //   margin: "30px 0 0 20%",
+  //   fontFamily: "Stellar",
+  //   height: "50px",
+  //   color: "black",
+  //   fontSize: "22px",
+  //   width: "80%",
+  //   borderRadius: "8px",
+  //   bottom: "50px",
+  //   backgroundColor: "#f8f8f8",
+  //   border: "2px solid BsSlack",
+  // };
   const datatopass = {
     id: props.id,
     name: props.name,

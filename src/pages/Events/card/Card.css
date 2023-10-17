@@ -1,9 +1,8 @@
 .card{
     height: 400px;
-    width: 65%;
+    width: 20rem;
     border-radius: 10px;
     /* margin: 95px; */
-    margin-bottom: 20vh;
     
     background-color: transparent;
 }
@@ -21,8 +20,15 @@
     border-radius: 10px 10px 0 0;
     align-items: center;
     margin-bottom: 20px;
-
 }
+
+.image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
 .revealing_soon{
     background: linear-gradient(to right, #f32170,
                     #ff6b08, #cf23cf, #eedd44);
@@ -39,7 +45,7 @@
     height: 40px;
     color: black;
     font-size: 22px;
-    width: 60%;
+    width: 12rem;
     border-radius: 10px;
     margin-left: 0;
     bottom: 50px;
