@@ -121,7 +121,7 @@ function rawTeam({teamName,min,max,setTeamName,phone,setPhone,members,setMembers
           placeholder="Enter Your Phone Number"
           onChange={(e) => setPhone(e.target.value)}
         />
-        <Counter count={count} setCount={setCount} />
+        <Counter count={count} setCount={setCount} min={min} max={max} />
         {Array.from({ length: count }, (_, index) => (
           <div key={index}>
             <label htmlFor={`memberName${index}`}>
@@ -230,7 +230,8 @@ export default function Register() {
     });
   };
 
-  
+  console.log(props.state.min)
+  console.log(max)
 
     
 
@@ -250,7 +251,7 @@ export default function Register() {
 
       <div className="partDet">
         <div className="register">
-          {min === 1 && max == 1 ? <IND teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount}  /> : <Team teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount} min={min} max={max}/>}
+          {min === 1 && max === 1 ? <IND teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount}  /> : <Team teamName={teamName} setTeamName={setTeamName} phone={phone} setPhone={setPhone} members={members} setMembers={setMembers} submitt={submitt} count={count} setCount={setCount} min={min} max={max}/>}
         </div>
       </div>
       <Footer />
