@@ -197,3 +197,7 @@ input {
   bottom: 30%;
   right: 10%;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  
+}
