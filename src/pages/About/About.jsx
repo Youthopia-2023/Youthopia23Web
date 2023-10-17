@@ -3,11 +3,33 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./About.css";
 import youthopia from "../../assets/Youthopia.svg";
 import AboutUsImgBox from "../../components/AboutUsImgBox/AboutUsImgBox";
-
-
-
+import { baseUrl } from "../../url";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 function About() {
+  const [headsdata, setHeadsdata] = useState([]);
+  useEffect(() => {
+    const fetchdata = async () => {
+      axios.get(`${baseUrl}/a/getheaddetails`).then((res) => {
+        // console.log(res.data.details.length);
+        setHeadsdata(res);
+        let data = res.data.details;
+        var list = new Map();
+        data.forEach(element => {
+          if(list.has(element.index)) {
+            list.set(element.index, [...list.get(element.index), element])
+          } else {
+            list.set(element.index, [element])
+          }
+        });
+        console.log(list);
+      });
+    };
+    fetchdata();
+  }, []);
+
+
   return (
     <div className="about">
       <Navbar />
@@ -20,7 +42,10 @@ function About() {
             <div className="heading">
               <p>MEET OUR TEAM</p>
             </div>
-            <div className="box">
+          </div>
+
+          <div className="about-container">
+          <div className="box">
               <div className="sub-hd">
                 <p>Convenor</p>
               </div>
@@ -50,7 +75,6 @@ function About() {
               </div> */}
             </div>
           </div>
-
           <div className="about-container">
             <div className="box">
               <div className="sub-hd">
