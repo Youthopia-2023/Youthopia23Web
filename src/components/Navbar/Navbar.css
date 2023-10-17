@@ -168,7 +168,7 @@ a {
       width: 100%;
       
     }
-    .buttonsNav {
+    .profilelog {
       display: flex;
       position: absolute;
       top: 0;
@@ -177,6 +177,11 @@ a {
       justify-content: center;
       align-items: center;
       /* margin-left: 60%; */
+  }
+  .buttonsNav{
+    position: absolute;
+    left: 70%;
+    gap: 0;
   }
 /* .buttonsNav button{
   padding-right: 25px;
