@@ -25,14 +25,15 @@ function About() {
                 <p>Convenor</p>
               </div>
               <div className="convenors-cnt">
+              <AboutUsImgBox
+                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vachaspati.png"
+                  name={"Vachaspati Kumar Mishra"}
+                />
                 <AboutUsImgBox
                   img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg"
                   name={"Wamiq Khan"}
                 />
-                <AboutUsImgBox
-                  img="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/Vachaspati.png"
-                  name={"Vachaspati Kumar Mishra"}
-                />
+                
               </div>
               <div className="sub-hd">
                 {/* <p>Co-Convenor</p> */}

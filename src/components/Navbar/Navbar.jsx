@@ -26,7 +26,7 @@ function Navbar() {
   function Logged() {
     return (
       <>
-        <button className="clickme2" onClick={navigateToProfile}>
+        <button className="profilelog" onClick={navigateToProfile}>
           <img src={Yout} alt="" />
         </button>
       </>
