@@ -271,7 +271,7 @@ export default function Register() {
   return (
     <div className="Register">
       <Navbar />
-      <div className="youthopia-logo">
+      <div className="youtlg">
         <img
           className="youthop"
           src={Youthopia}
