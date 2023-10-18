@@ -33,7 +33,7 @@ export default function Card(props) {
     category: props.category,
   };
 
-  // console.log(props)
+  // console.log(props.fees2)
   return (
     <div className="card" id={props.id}>
       <div className="image">

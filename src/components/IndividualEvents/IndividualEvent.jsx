@@ -95,7 +95,7 @@ const IndividualEvent = () => {
 
                 <div>
                   <p className="capitalize">Fees for DIT student: </p>
-                  <p>₹{props.fees1 ? props.fees1 : "N/A"}</p>
+                  <p>₹{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
                 </div>
 
                 <div>
