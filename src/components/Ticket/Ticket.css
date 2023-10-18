@@ -1,40 +1,30 @@
 .Ticket-container{
-    width:100vw;
+    min-width:768px;
+    max-width:768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 3rem;
+    position: relative;
 }
 .rec{
-    width: 100%;
+    width:768px;
     position: absolute;
     top: 0;
     left: 0;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-   
 }
 
 .Logos{
     width: 100%;
-    height: 4vw;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     z-index: 1;
-   top: 3vw;
+   top: 2rem;
    margin-top: 3rem;
 }
-.Ticket{
-    font-size: 1.5vw;
-    font-family: 'Stellar', sans-serif;
-    top:6vh;
-    margin-left: 55vw;
-    position: absolute;
-    z-index: 1;
-    color:white;
-}
+
 
 .elements{
  display: flex;
@@ -46,7 +36,7 @@
 
 .Textyouth {
    
-    width: 50vw;
+    width: 25rem;
     border: 2px;
 
 }
@@ -63,10 +53,9 @@
     width: 30%;
 }
 .Ticket-details p{
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+    font-size:  1.2rem;
+    line-height: 2.5rem;
     text-align: left;
-    /* line-height: 3.5vw; */
     font-family: Stellar , sans-serif;
 }
 .head{
@@ -75,4 +64,20 @@
    padding-bottom: 20px;
    font-size: 2.1rem !important;
     
+}
+@media screen and (min-width: 1px) {
+    .Ticket-details p{
+        font-size:  0.5rem;
+        line-height: 1.5rem;  
+    }
+
+    .head{ 
+        padding-bottom: 10px;
+       font-size: 1rem !important; 
+    }
+
+    .Logos{
+        margin-top:0.2rem;
+    }
+
 }
