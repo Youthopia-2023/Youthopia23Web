@@ -271,12 +271,15 @@ export default function Register() {
   return (
     <div className="Register">
       <Navbar />
-      <img
-        className="youthop"
-        src={Youthopia}
-        alt=""
-        style={{ margin: "10vh 0px 0px 38%" }}
-      />
+      <div className="youthopia-logo">
+        <img
+          className="youthop"
+          src={Youthopia}
+          alt=""
+          // style={{ margin: "10vh 0px 0px 38%" }}
+        />
+      </div>
+
       <div className="eventDet">
         <div className="poster"></div>
         <p className="heading">Technical Event</p>
