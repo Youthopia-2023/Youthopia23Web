@@ -179,7 +179,7 @@
         width: 40%;
     }
     .main-page {
-        height: 80vh   ;
+        height: 40vh   ;
     }
     .clg-logo {
         width: 60px;
@@ -190,7 +190,15 @@
     .RowThree img{
         width: 60%;
     }
+    .logo-container{
+        height: 120%;
+    }
 }
+/* @media (max-height:851px) and (max-width:424px)  {
+    .logo-container{
+        display: none;
+    }
+} */
 
 @media (min-width: 425px) and (max-width:524px){
     .DIT {

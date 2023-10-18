@@ -10,14 +10,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    filter: contrast(1);
+    /* filter: contrast(1); */
     gap: 5rem;
     width: fit-content;
+    z-index: -1;
     /* padding-top: 3rem; */
 }
 
 .events {
     overflow-y: scroll;
+   
 }
 
 .youthopiaImg {
@@ -78,4 +80,9 @@
     align-items: center;
     gap: 8rem;
     margin-bottom: 5rem;
+}
+@media (min-width:320px) and (max-width:524px){
+    .events{
+        padding-top: 12%;
+    }
 }
