@@ -123,6 +123,7 @@
 
   .navbar>.navbar-list>ul {
       display: none;
+      transform: translateX(0);
   }
 
   .navbar>.navbar-list>.menu {
@@ -130,10 +131,12 @@
       font-size: 2rem;
       margin-right: 1rem;
       cursor: pointer;
+      transform: translateX(100%);
   }
 
   .navbar>.navbar-list>.cross {
       display: none;
+      transform: translateX(0);
   }
 
   .navbar>.navbar__logo-open {

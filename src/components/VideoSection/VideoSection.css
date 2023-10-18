@@ -36,3 +36,30 @@
     background-color: #000;
     display: flex;
 }
+@media (min-width:320px)and (max-width:424px){
+    .video-container{
+        width: 90%;
+        margin-bottom: 200px;
+    }
+    .map-heading{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:425px)and (max-width:524px){
+    .video-container{
+        width: 90%;
+        margin-bottom: 200px;
+    }
+    .map-heading{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:524px)and (max-width:768px){
+    .video-container{
+        width: 90%;
+        margin-bottom: 200px;
+    }
+    .map-heading{
+        margin-bottom: 0;
+    }
+}
