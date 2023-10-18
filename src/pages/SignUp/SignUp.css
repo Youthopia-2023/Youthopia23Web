@@ -151,7 +151,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  /* gap: 3rem; */
+  width: 68rem;
 }
 
 .signup-form>.password{
@@ -224,6 +225,12 @@ input {
   .signup-form>.college>input {
     width: 55%;
   }
+  .signup-form>.college>div {
+    width: 55%;
+  }
+  .signup-form>.sapId>input {
+    width: 55%;
+  }
   .signup-form>.identityPhoto>div {
     width: 100%;
   }
@@ -233,11 +240,11 @@ input {
   .signup-form>.idNumber>input {
     width: 55%;
   }
-  .signup-form>.moreDetails{
+  /* .signup-form>.moreDetails{
     gap: 2rem;
-  }
+  } */
   .signup-form>.moreDetails>input{
-    width: 40%;
+    width: 55%;
   }
   .signup-form>.password>input {
     width: 55%;
@@ -282,6 +289,12 @@ input {
   .signup-form>.college>input {
     width: 55%;
   }
+  .signup-form>.college>div {
+    width: 55%;
+  }
+  .signup-form>.sapId>input {
+    width: 55%;
+  }
   .signup-form>.identityPhoto>div {
     width: 90%;
   }
@@ -291,11 +304,11 @@ input {
   .signup-form>.idNumber>input {
     width: 55%;
   }
-  .signup-form>.moreDetails{
+  /* .signup-form>.moreDetails{
     gap: 1rem;
-  }
+  } */
   .signup-form>.moreDetails>input{
-    width: 40%;
+    width: 55%;
   }
   .signup-form>.password>input {
     width: 55%;
@@ -342,6 +355,12 @@ input {
   .signup-form>.college>input {
     width: 60%;
   }
+  .signup-form>.college>div {
+    width: 60%;
+  }
+  .signup-form>.sapId>input {
+    width: 60%;
+  }
   .signup-form>.identityPhoto>div {
     width: 80%;
   }
@@ -351,11 +370,11 @@ input {
   .signup-form>.idNumber>input {
     width: 60%;
   }
-  .signup-form>.moreDetails{
+  /* .signup-form>.moreDetails{
     gap: 0;
-  }
+  } */
   .signup-form>.moreDetails>input{
-    width: 40%;
+    width: 60%;
   }
   .signup-form>.password>input {
     width: 60%;
@@ -406,6 +425,12 @@ input {
   .signup-form>.college>input {
     width: 65%;
   }
+  .signup-form>.college>div {
+    width: 65%;
+  }
+  .signup-form>.sapId>input {
+    width: 65%;
+  }
   .signup-form>.identityPhoto>div {
     width: 90%;
   }
@@ -415,11 +440,11 @@ input {
   .signup-form>.idNumber>input {
     width: 65%;
   }
-  .signup-form>.moreDetails{
+  /* .signup-form>.moreDetails{
     gap: 0;
-  }
+  } */
   .signup-form>.moreDetails>input{
-    width: 40%;
+    width: 55%;
   }
   .signup-form>.password>input {
     width: 55%;

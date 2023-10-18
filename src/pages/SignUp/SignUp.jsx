@@ -230,11 +230,11 @@ function SignUp() {
           )}
 
           <div className="moreDetails">
-            <input
+            {/* <input
               type="text"
               placeholder="Branch"
               onChange={(e) => setBranch(e.target.value)}
-            />
+            /> */}
             <input
               type="number"
               placeholder="Year"
