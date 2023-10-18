@@ -6,7 +6,6 @@ import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
-
   const navigate = useNavigate();
   const [isUserLoggedInState, setIsUserLoggedInState] = useState(false);
   const navigateToProfile = () => {
@@ -43,9 +42,8 @@ function Navbar() {
         setScrolling(false);
       }
     };
+    
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
