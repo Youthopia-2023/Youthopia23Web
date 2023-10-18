@@ -9,6 +9,12 @@
     filter: contrast(1);
 }
 
+.Timer{
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+}
+
 .logo-container {
     width: 100vw;
     height: 100vh;
