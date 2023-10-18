@@ -12,6 +12,7 @@ import elipse from "../../assets/Ellipse.png"
 import lines from "../../assets/Group 23.svg";
 import ball from "../../assets/ball.png"
 import balls from "../../assets/balls.png"
+import Timer from "../Timer/Timer";
 
 function Main() {
   return (
@@ -20,28 +21,11 @@ function Main() {
         <div className="RowOne">
           <img className="DIT" src={img1} alt="Logo 1" />
         </div>
+        <div className="Timer">
+          <Timer/>
+        </div>
         <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
-          {/* <div className="elipse">
-            <div>
-            <img src={elipse} alt="elipse"/>
-           <div> 
-            <div>
-              <div><img src={ball} alt="ball" /></div>
-            </div>
-           </div>
-            </div>
-          </div>
-          <div className="elipse2">
-            <div>
-            <img src={elipse} alt="elipse"/>
-           <div> 
-            <div>
-              <div><img src={balls} alt="ball" /></div>
-            </div>
-           </div>
-            </div>
-          </div> */}
         </div>
         <div className="RowThree">
           <div className="inner-container">

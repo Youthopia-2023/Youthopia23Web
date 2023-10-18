@@ -1,0 +1,51 @@
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    animation: timer 1s linear infinite;
+    gap: 2rem;
+}
+
+.timer>.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.timer>.timer-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.centerLines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.centerLines>div {
+    width: 2px;
+    height: 9.5rem;
+    background-color: #fff;
+}
+
+.centerLines>.line2 {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1000px) {
+    .timer {
+        display: none;
+    }
+}
