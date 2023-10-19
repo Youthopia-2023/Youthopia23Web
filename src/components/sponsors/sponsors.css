@@ -1,7 +1,9 @@
 .main-sponsor {
-    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    position: relative;
     background: url('../../assets/Rectangle12382.png');
     background-size:cover;
     background-color: #000;
@@ -9,13 +11,23 @@
 
     /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,25,191,1) 33%, rgba(186,24,88,1) 60%); */
     background-repeat: no-repeat;
-    overflow: hidden;
-    /* text-align: center; */
-    justify-content: center;
+    color: white;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.sponsor-grid{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    /* width: 100vw; */
+    overflow-x: scroll;
+    gap: 0.5rem;
+}
+
+.sponsor-grid>img{
+    width: 8rem;
+    aspect-ratio: 1/1;
 }
 
 /* .main-container {
