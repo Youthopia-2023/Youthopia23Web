@@ -63,13 +63,7 @@ function rawIND({
       <img src={line} alt="star-3" className="line-4"></img>
       <img src={ellipse} alt="star-3" className="ellipse"></img>
 
-      <form
-        action={(e) => {
-          e.preventDefault();
-          submitt();
-        }}
-        method="POST"
-      >
+      <form>
         <p>Participant Details</p>
         <hr className="horiLine" />
         <label htmlFor="yourName">Your Name</label>
@@ -99,6 +93,10 @@ function rawIND({
           required
           value="Register Now"
           placeholder="Register"
+          onClick={(e) => {
+            e.preventDefault();
+            submitt();
+          }}
         />
       </form>
     </div>
@@ -210,10 +208,16 @@ export default function Register() {
     return new Promise(function (resolve, reject) {
       let mem = [];
       let eventID = props.state.id;
+      if (!teamName || !phone) {
+        reject("Please fill all the deatails");
+        return;
+      }
       {
-        Object.keys(members).map(function (key, index) {
-          mem.push(members[key]);
-        });
+        if (members) {
+          Object.keys(members).map(function (key, index) {
+            mem.push(members[key]);
+          });
+        }
       }
       const data = {
         teamName,
@@ -260,7 +264,7 @@ export default function Register() {
       },
       error: (e) => {
         console.log(e);
-        return "some error occured! try again";
+        return e;
       },
     });
   };
