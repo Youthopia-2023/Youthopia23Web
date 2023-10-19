@@ -19,18 +19,17 @@ function Sponsor() {
 
   return (
     <div className="main-sponsor">
-      <div className="main-container">
-        <h2>SPONSORS</h2>
-        <div className="arrow">
-          <img src={arrow} alt="arrow"></img>
-        </div>
-        <div className="sponsor-grid">
-            {
-              imgUrls?.map((url, index) => (
-                <img src={url} alt="logo-1" className="sponsor-logo" key={index}/>
-              ))
-            }
-          {/* <div className="grids">
+      <h2>SPONSORS</h2>
+      <div className="arrow">
+        <img src={arrow} alt="arrow"></img>
+      </div>
+      <div className="sponsor-grid">
+        {
+          imgUrls?.map((url, index) => (
+            <img src={url} alt="logo-1" className="sponsor-logo" key={index} />
+          ))
+        }
+        {/* <div className="grids">
             <img src={logo2} alt="logo-2" className="sponsor-logo"></img>
           </div>
           <div className="grids">
@@ -48,7 +47,6 @@ function Sponsor() {
           <div className="grids">
             <img src={logo7} alt="logo-7" className="sponsor-logo"></img>
           </div> */}
-        </div>
       </div>
     </div>
   );
