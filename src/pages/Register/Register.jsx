@@ -256,7 +256,7 @@ export default function Register() {
       success: () => {
         navigate("/ticket", {
           state: {
-            ev: `${props.state.id}${phone.slice(0, 5)}`,
+            ev: `${props.state.id}`,
             us: props.state,
           },
         });
