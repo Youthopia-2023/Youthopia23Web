@@ -1,6 +1,6 @@
 import moment from "moment";
 import "./IndividualEvent.css";
-import background from "../../assets/background.png";
+import background from "../../assets/background.webp";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
