@@ -20,6 +20,7 @@ function Events() {
           if (event.category === cat) {
             a.push(event);
             setFilteredevents(a);
+            console.log(filteredevents);
             setLoading(false);
           }
         });
@@ -44,6 +45,8 @@ function Events() {
         head={event.overall_head}
         fees1={event.fees1}
         fees2={event.fees2}
+        rules={event.rules}
+        bots={event.bots}
         max={event.participant_max}
         min={event.participant_min}
         imgUrl={event.event_poster}

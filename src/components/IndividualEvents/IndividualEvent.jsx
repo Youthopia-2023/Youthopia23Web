@@ -10,7 +10,8 @@ import youth from "../../assets/youthopia.png";
 
 const IndividualEvent = () => {
   let props = useLocation();
-  // console.log(props.state);
+    console.log(props.state.rules);
+    console.log(props.state.bots);
 
   return (
     <>
@@ -64,6 +65,27 @@ const IndividualEvent = () => {
             </div>
             <div className="eventDescription">
               <p className="text-justify">{props.state.discription}</p>
+
+              <p className="text-justify">
+                {props.state.rules!==0 && <p className="rulesheading">Rules:</p>}
+                {props.state.rules?.map((i, key) => {
+                  return (
+                    <>
+                      <li key={key}>{i}</li>
+                    </>
+                  );
+                })}
+              </p>
+              <p className="text-justify">
+                {props.state.bots.length!==0 && <p className="rulesheading">Bots:</p>}
+                {props.state.bots?.map((i, key) => {
+                  return (
+                    <>
+                      <li>{i}</li>
+                    </>
+                  );
+                })}
+              </p>
               <div>
                 <div>
                   <p>Event Coordinator: </p>
