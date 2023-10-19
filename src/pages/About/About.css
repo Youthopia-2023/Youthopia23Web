@@ -35,11 +35,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .heading p {
     font-size: 2rem;
     font-weight: 700;
+
 }
 
 
