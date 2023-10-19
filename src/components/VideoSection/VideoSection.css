@@ -30,9 +30,15 @@
 
 .video-container {
     height: 100%;
-    width: 60vw;
+    width: 60rem;
     align-items: center;
     justify-content: center;
     background-color: #000;
     display: flex;
+}
+
+@media screen and (max-width:980px){
+    .video-container {
+        width: 90%;
+    }
 }
