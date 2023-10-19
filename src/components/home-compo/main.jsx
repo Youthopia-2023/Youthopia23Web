@@ -21,11 +21,12 @@ function Main() {
         <div className="RowOne">
           <img className="DIT" src={img1} alt="Logo 1" />
         </div>
-        <div className="Timer">
-          <Timer/>
-        </div>
+        
         <div className="RowTwo">
           <img src={img2} alt="Logo 2" className="youthopia" />
+        </div>
+        <div className="Timer">
+          <Timer/>
         </div>
         <div className="RowThree">
           <div className="inner-container">

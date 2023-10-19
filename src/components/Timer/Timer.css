@@ -44,8 +44,3 @@
     transform: rotate(90deg);
 }
 
-@media screen and (max-width: 1000px) {
-    .timer {
-        display: none;
-    }
-}
