@@ -1,5 +1,5 @@
 .about>.mainBody{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/AboutBg.svg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -15,6 +15,18 @@
     padding-bottom: 1rem;
     width: fit-content;
     padding-top: 3rem;
+    position: relative;
+}
+
+.about .mainBody::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.34);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .about>.mainBody>.innerDiv{
@@ -35,11 +47,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .heading p {
     font-size: 2rem;
     font-weight: 700;
+
 }
 
 

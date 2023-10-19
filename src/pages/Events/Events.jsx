@@ -6,7 +6,9 @@ import Youthopia from "../../assets/youthopia.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { baseUrl } from "../../url";
+import loader from "../../assets/loader.gif"
 function Events() {
+  const [loading, setLoading] = useState(true);
   const [eventdata, setEventdata] = useState([]);
   const [filteredevents, setFilteredevents] = useState([]);
   useEffect(() => {
@@ -18,6 +20,7 @@ function Events() {
           if (event.category === cat) {
             a.push(event);
             setFilteredevents(a);
+            setLoading(false);
           }
         });
       });
@@ -79,6 +82,9 @@ function Events() {
             Informal
           </div>
         </div>
+        {loading&&<div className="loaderDiv">
+          <img src={loader} alt="" />
+        </div>}
         <div className="card-Container">{card}</div>
         <Footer />
       </div>

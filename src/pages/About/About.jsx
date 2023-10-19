@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import loader from "../../assets/loader.gif";
 import "./About.css";
 import youthopia from "../../assets/Youthopia.svg";
 import AboutUsImgBox from "../../components/AboutUsImgBox/AboutUsImgBox";
@@ -9,6 +10,7 @@ import { useState, useEffect } from "react";
 
 function About() {
   const [headsdata, setHeadsdata] = useState([]);
+  const[loading,setLoading]=useState(true);
   useEffect(() => {
     const fetchdata = async () => {
       axios.get(`${baseUrl}/a/getheaddetails`).then((res) => {
@@ -23,6 +25,7 @@ function About() {
           }
         });
         setHeadsdata(list);
+        setLoading(false);
         // console.log(list);
       });
     };
@@ -41,10 +44,11 @@ function About() {
         <div className="innerDiv">
           <div className="about-container">
             <div className="youthopia-logo">
-              <img src={youthopia} alt="youthopia"></img>
+              <img src={youthopia} alt="youthopia"/>
             </div>
             <div className="heading">
               <p>MEET OUR TEAM</p>
+              {loading&&<img src={loader} alt="img not available"/>}
             </div>
           </div>
           <div className="content-heads">
