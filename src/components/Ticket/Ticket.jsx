@@ -9,11 +9,10 @@ import html2canvas from "html2canvas";
 import { useEffect, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function Ticket() {
   let props = useLocation();
   const userData = useSelector((state) => state);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const getPdf = () => {
     const domElement = document.querySelector(".Ticket-container");
@@ -30,7 +29,7 @@ function Ticket() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    navigate("/")
+    navigate("/profile");
   }
 
   useLayoutEffect(() => {
@@ -39,7 +38,6 @@ function Ticket() {
   console.log(props);
   return (
     <div className="Ticket-container">
-
       <img src={BGticket} className="rec" alt="" />
 
       <div className="Logos">
@@ -48,7 +46,6 @@ function Ticket() {
       </div>
 
       <div className="elements">
-
         <div className="image1">
           <img src={textYouth} className="Textyouth" />
         </div>
@@ -61,7 +58,6 @@ function Ticket() {
           <p>Event Time- {props.state.us.start_time}</p>
           <p>Ticket No: {`${props.state.ev}-${userData.phonenumber}`}</p>
         </div>
-
       </div>
     </div>
   );
