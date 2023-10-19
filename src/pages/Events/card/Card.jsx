@@ -1,8 +1,9 @@
 // import IndividualEvent from "../../../components/IndividualEvents/IndividualEvent";
 import "./Card.css";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 export default function Card(props) {
+ const navigate = useNavigate(); 
   // const style = {
   //   margin: "30px 0 0 20%",
   //   fontFamily: "Stellar",
@@ -32,10 +33,13 @@ export default function Card(props) {
     imgUrl: props.imgUrl,
     category: props.category,
   };
+  const cardnav = () => {
+    navigate("/IndividualEvent", { state: datatopass });
+  };
 
   // console.log(props.fees2)
   return (
-    <div className="card" id={props.id}>
+    <div className="card" id={props.id} onClick={cardnav}>
       <div className="image">
         <img src={props.imgUrl}></img>
       </div>
