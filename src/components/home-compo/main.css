@@ -9,11 +9,7 @@
     filter: contrast(1);
 }
 
-.Timer{
-    position: absolute;
-    top: 6rem;
-    right: 5rem;
-}
+
 
 .logo-container {
     width: 100vw;
@@ -179,6 +175,13 @@
     height: auto;
     margin-left: auto;
 }
+@media (max-height:860px) {
+    .main-page{
+        height: 100vh;
+    }
+    
+    
+}
 @media (min-width:320px) and (max-width:424px) {
     .DIT {
         margin-top: 10vh;
@@ -186,7 +189,7 @@
         width: 60%;
     }
     .main-page {
-        height: 128vh   ;
+        height: 95vh   ;
     }
     .clg-logo {
         width: 60px;
@@ -195,6 +198,9 @@
         margin-left: 10%;
         width: 70%;
         margin-top: -27vh;
+    }
+    .Timer{
+        margin-top: -25%;
     }
 }
 
@@ -215,52 +221,94 @@
         width: 70%;
         margin-top: -27vh;
     }
+    .Timer{
+        margin-top: -20%;
+    }
 }
-@media (min-width: 525px) and (max-width:768px) {
+@media (min-width: 525px) and (max-width:767px) {
     .DIT {
         margin-top: 25vh;
         margin-left: 12%;
         width: 80%;
     }
     .main-page {
-        height: 135vh   ;
+        height: 145vh   ;
     }
     .clg-logo {
         width: 60px;
     }
+    
     .RowTwo {
         margin-left: 10%;
         width: 70%;
     }
+    .Timer{
+        
+    }
 }
-@media (min-width:769px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
     .DIT {
-        margin-top: 24vh;
+        margin-top: 32vh;
     }
     .main-page {
-        height: 130vh;
+        height: 125vh;
     }
     .clg-logo {
         width: 60px;
     }
     .RowTwo {
         margin-left: 13%;
-        margin-top: 10px;
+        margin-top: 0;
+    }
+    /* .Timer{
+        display: flex;
+        justify-self: center;
+        position: relative;
+        margin-left: 20%;
+        top: 0%;
+    } */
+    .Timer{
+        margin-top: -20%;
+    }
+    .RowThree{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 1024px){
+    .Timer{
+        position: absolute;
+        top: 6rem;
+        right: 5rem;
     }
 }
 @media (min-width: 1200px) {
     .main-page {
         height: 110vh;
     }
+    .Timer{
+        position: absolute;
+        top: 6rem;
+        right: 5rem;
+    }
 }
 @media (min-width: 1600px) {
     .main-page {
         height: 100vh
     }
+    .Timer{
+        position: absolute;
+        top: 6rem;
+        right: 5rem;
+    }
 }
 @media (min-width: 1800px) {
     .main-page {
         height: 100vh
+    }
+    .Timer{
+        position: absolute;
+        top: 6rem;
+        right: 5rem;
     }
 }
 .youthopia {
