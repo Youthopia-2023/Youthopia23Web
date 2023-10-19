@@ -22,7 +22,8 @@
     justify-content: space-around;
     align-items: center;
     overflow-x: scroll;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 0 0.5rem;
 }
 
 .sponsor-grid>img{
