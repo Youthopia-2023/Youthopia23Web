@@ -82,7 +82,7 @@ function Events() {
             Informal
           </div>
         </div>
-        {loading&&<div className="loaderDiv">
+        {loading && <div className="loaderDiv">
           <img src={loader} alt="" />
         </div>}
         <div className="card-Container">{card}</div>
