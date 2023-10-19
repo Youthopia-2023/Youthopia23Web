@@ -30,7 +30,6 @@ function SignUp() {
   const [identityNumber, setIdentityNumber] = useState("");
   const [photo, setphoto] = useState("");
   const [year, setYear] = useState("");
-  const [branch, setBranch] = useState("");
   const [password, setPassword] = useState("");
   const [phonenumber, setphonenumber] = useState("");
   const [imageName, setimageName] = useState("");
@@ -51,7 +50,6 @@ function SignUp() {
         !lastName ||
         !email ||
         !year ||
-        !branch ||
         !password ||
         !phonenumber ||
         !identityNumber ||
@@ -84,7 +82,6 @@ function SignUp() {
               photo: url,
               identityNumber,
               year,
-              branch,
               password,
               checked,
               phonenumber,
