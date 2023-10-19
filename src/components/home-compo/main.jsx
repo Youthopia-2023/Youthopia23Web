@@ -15,6 +15,7 @@ import balls from "../../assets/balls.png"
 import Timer from "../Timer/Timer";
 
 function Main() {
+  
   return (
     <div className="main-page">
       <div className="logo-container">

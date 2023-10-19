@@ -5,8 +5,22 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import swipe from "../../assets/swipeIcon.png"
 
 import "./HomeCarousel.css"
-
+import { baseUrl } from "../../url";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const HomeCarousel = () => {
+     const [imgUrls, setImgUrls] = useState([]);
+
+     const fetchdata = async () => {
+       axios.get(`${baseUrl}/sponsor/getlandingpagedetails`).then((res) => {
+         setImgUrls(res.data?.details[0].carousel_img);
+         console.log(imgUrls);
+       });
+     };
+
+     useEffect(() => {
+       fetchdata();
+     }, []);
     return (
         <div className="homeCarousel">
             <div className="topBar">
@@ -23,7 +37,12 @@ const HomeCarousel = () => {
                         <CarouselCard/>
                         <CarouselCard/>
                         <CarouselCard/> */}
-                        <div className="CarouselCard"></div>
+                        <div className="CarouselCard">{
+                            imgUrls?.map((url, index) => (
+                                <img src={url} alt="logo-1" className="sponsor-logo" key={index}/>
+                            ))
+                        }
+                        </div>
                         <div className="CarouselCard"></div>
                         <div className="CarouselCard"></div>
                         <div className="CarouselCard"></div>
