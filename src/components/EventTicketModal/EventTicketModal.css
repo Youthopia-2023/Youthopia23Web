@@ -11,3 +11,20 @@
 .download-icon {
     font-size: 18px;
 }
+.modalheading{
+    font-size: 30px;
+    font-weight: 700;
+    color: #4e4d4d;
+    margin-bottom: 1rem;
+}
+.modaldiv{
+    
+    transform: "translate(-50%, -50%)",
+}
+.eventlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}

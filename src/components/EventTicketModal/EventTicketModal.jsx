@@ -16,6 +16,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
+    borderRadius: "1.5rem",
   },
 };
 
@@ -73,14 +74,17 @@ const EventTicketModal = ({ isOpen, closeModal, events }) => {
     <Modal
       isOpen={isOpen}
       onRequestClose={closeModal}
+      centered
+      overflow="inside"
+      overlayBlur="10"
       style={customStyles}
       contentLabel="Event Ticket Modal"
     >
       <div style={{ overflow: "scroll", maxHeight: "80vh" }}>
-        <h2>Your Event Tickets: </h2>
+        <h2 className="modalheading">Your Event Tickets: </h2>
         <ul>
           {eventname?.map((event, index) => (
-            <li key={index}>
+            <li key={index} className="eventlist">
               {event?.event_name}
               <button
                 className="download"
