@@ -1,26 +1,39 @@
 import "./sponsors.css";
 import arrow from "../../assets/Polygon 1.svg";
-import logo1 from "../../assets/Baskin-Robbins-Logo-2020.png";
-import logo2 from "../../assets/ccd-logo-r-.svg"
-import logo3 from "../../assets/ccd-logo-r-.svg";
-import logo4 from "../../assets/Dunkin-donuts-logo.png";
-import logo5 from "../../assets/McDonald's_Golden_Arches.svg.png";
-import logo6 from '../../assets/Starbucks_Corporation_Logo_2011.svg.png';
-import logo7 from "../../assets/Subway-logo.png";
+import { baseUrl } from "../../url";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import loader from "../../assets/loader.gif"
 
 function Sponsor() {
+  const [imgUrls, setImgUrls] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchdata = async () => {
+    axios.get(`${baseUrl}/sponsor/getlandingpagedetails`).then((res) => {
+      setImgUrls(res.data?.details[0]?.sponser_img);
+      setLoading(false);
+    });
+  }
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
   return (
     <div className="main-sponsor">
-      <div className="main-container">
-        <h2>SPONSORS</h2>
-        <div className="arrow">
-          <img src={arrow} alt="arrow"></img>
-        </div>
-        <div className="sponsor-grid">
-          <div className="grids">
-            <img src={logo1} alt="logo-1" className="sponsor-logo"></img>
-          </div>
-          <div className="grids">
+      <h2>SPONSORS</h2>
+      <div className="arrow">
+        <img src={arrow} alt="arrow"></img>
+      </div>
+      <div className="sponsor-grid">
+        {loading && <img src={loader} alt="not available" />}
+        {
+          imgUrls?.map((url, index) => (
+            <img src={url} alt="logo-1" className="sponsor-logo" key={index} />
+          ))
+        }
+        {/* <div className="grids">
             <img src={logo2} alt="logo-2" className="sponsor-logo"></img>
           </div>
           <div className="grids">
@@ -37,8 +50,7 @@ function Sponsor() {
           </div>
           <div className="grids">
             <img src={logo7} alt="logo-7" className="sponsor-logo"></img>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

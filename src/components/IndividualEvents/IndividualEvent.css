@@ -38,7 +38,7 @@
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .eventImage>img {
@@ -195,4 +195,7 @@
 
 .linkToRegister {
     width: fit-content;
+}
+.rulesheading{
+    text-align: left;
 }
