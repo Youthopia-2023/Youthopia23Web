@@ -20,6 +20,7 @@ const HomeCarousel = () => {
 
   useEffect(() => {
     fetchdata();
+    fetchdata();
   }, []);
   return (
     <div className="homeCarousel">
@@ -29,14 +30,6 @@ const HomeCarousel = () => {
       </div>
       <div className="carousel">
         <OwlCarousel loop margin={30} nav autoplay center>
-          {/* <CarouselCard/>
-                        <CarouselCard/>
-                        <CarouselCard/>
-                        <CarouselCard/>
-                        <CarouselCard/>
-                        <CarouselCard/>
-                        <CarouselCard/> */}
-          {/* <div className="CarouselCard">s */}
           {imgUrls?.map((url, index) => (
             <img
               src={url}
@@ -45,13 +38,6 @@ const HomeCarousel = () => {
               key={index}
             />
           ))}
-          {/* </div> */}
-          {/* <div className="CarouselCard"></div>
-                        <div className="CarouselCard"></div>
-                        <div className="CarouselCard"></div>
-                        <div className="CarouselCard"></div>
-                        <div className="CarouselCard"></div>
-                        <div className="CarouselCard"></div> */}
         </OwlCarousel>
       </div>
       <div className="swipe">
