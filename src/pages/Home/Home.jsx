@@ -1,6 +1,6 @@
 import "./Home.css";
 import Main from "../../components/home-compo/main";
-// import Sponsor from "../../components/sponsors/sponsors";
+import Sponsor from "../../components/sponsors/sponsors";
 // import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 // import ComingSoon from "../../components/ComingSoon/ComingSoon";
 import VideoSection from "../../components/VideoSection/VideoSection";
@@ -12,7 +12,7 @@ function Home() {
     <div className="Home">
       <Navbar/>
       <Main />
-      {/* <Sponsor /> */}
+      <Sponsor />
       {/* <HomeCarousel/> */}
       {/* <MapComponent/> */}
       <VideoSection />

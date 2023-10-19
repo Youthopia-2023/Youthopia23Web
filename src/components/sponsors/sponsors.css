@@ -18,7 +18,7 @@
     /* width: 100vw; */
 }
 
-.main-container {
+/* .main-container {
     height: 42vh;
     width: 100vw;
     align-items: center;
@@ -37,25 +37,13 @@ h2 {
 }
 
 .sponsor-grid {
-    width: 100vw;
-    height: 26vh;
     display: flex;
-    flex-direction: row;
-    gap: 45px;
     align-items: center;
     justify-content: center;
-}
-
-.grids {
-    height: 160px;
-    width: 160px;
-    text-align: center;
-    justify-content: center;
-    /* background-color: #fff; */
+    width: 100vw;
 }
 
 .sponsor-logo {
-    width: 100%;
-    height: 90%;
-    margin: 5px 0;
-}
+    width: 8rem;
+    aspect-ratio: 1/1;
+} */
