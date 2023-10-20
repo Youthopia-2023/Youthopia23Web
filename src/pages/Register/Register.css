@@ -254,17 +254,36 @@ body{
     margin: 0;
     padding: 0;
 }
-.venue{
+.venuefont{
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
 }
-.time{
+.timefont{
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
+}
+@media (max-width: 611px) {
+    .registermaindiv{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .venuefont{
+        margin-top: 10px;
+    }
+    .timefont{
+        margin-top: 10px;
+    }
+    .eventTitle{
+        margin-left: 20%
+    }
+    .eventInfo{
+        margin-left: 20%
+    }
 }
