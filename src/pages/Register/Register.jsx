@@ -264,8 +264,10 @@ export default function Register() {
         return "registered successfully";
       },
       error: (e) => {
-        console.log(e);
-        return e;
+        if (!userData.token)
+          return "Please Login to Register for the event";
+        else
+          return e;
       },
     });
   };
@@ -281,7 +283,7 @@ export default function Register() {
           className="youthop"
           src={Youthopia}
           alt=""
-          // style={{ margin: "10vh 0px 0px 38%" }}
+        // style={{ margin: "10vh 0px 0px 38%" }}
         />
       </div>
 
