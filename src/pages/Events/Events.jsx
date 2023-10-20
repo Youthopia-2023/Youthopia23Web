@@ -6,7 +6,7 @@ import Youthopia from "../../assets/youthopia.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { baseUrl } from "../../url";
-import loader from "../../assets/loader.gif"
+import loader from "../../assets/loader.gif";
 function Events() {
   const [loading, setLoading] = useState(true);
   const [eventdata, setEventdata] = useState([]);
@@ -25,7 +25,7 @@ function Events() {
           }
         });
       });
-      console.log(data.data.details);       //eslint-disable-line
+      console.log(data.data.details); //eslint-disable-line
     };
     fetchdata();
   }, []);
@@ -51,12 +51,12 @@ function Events() {
         min={event.participant_min}
         imgUrl={event.event_poster}
         category={event.category}
-        forms={event.forms?event.forms:""}
+        forms={event.forms ? event.forms : ""}
       />
     );
   });
   function handleChange(category) {
-    setCat((cate) => category);         //eslint-disable-line
+    setCat((cate) => category); //eslint-disable-line
   }
   useEffect(() => {
     let a = [];
@@ -76,19 +76,30 @@ function Events() {
           <img src={Youthopia} alt="Image not foud" />
         </div>
         <div className="secNavBar">
-          <div onClick={() => handleChange("technical")} className="a">
+          <div
+            onClick={() => handleChange("technical")}
+            className={`${cat === "technical" ? "activeInnerNav" : ""} a`}
+          >
             Technical
           </div>
-          <div onClick={() => handleChange("cultural")} className="a">
+          <div
+            onClick={() => handleChange("cultural")}
+            className={`${cat === "cultural" ? "activeInnerNav" : ""} a`}
+          >
             Cultural
           </div>
-          <div onClick={() => handleChange("informal")} className="a">
+          <div
+            onClick={() => handleChange("informal")}
+            className={`${cat === "informal" ? "activeInnerNav" : ""} a`}
+          >
             Informal
           </div>
         </div>
-        {loading && <div className="loaderDiv">
-          <img src={loader} alt="" />
-        </div>}
+        {loading && (
+          <div className="loaderDiv">
+            <img src={loader} alt="" />
+          </div>
+        )}
         <div className="card-Container">{card}</div>
         <Footer />
       </div>

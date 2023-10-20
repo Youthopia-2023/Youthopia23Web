@@ -16,6 +16,7 @@
     padding-top: 3rem;
 }
 
+
 .loaderDiv{
     display: flex;
     justify-content: center;
@@ -44,6 +45,11 @@
     margin: 0 !important;
     width: 100%;
     margin-bottom: 2rem !important;
+}
+
+.activeInnerNav{
+    border-bottom: 5px solid #E8257D !important;
+    pointer-events: none;
 }
 
 .a {
