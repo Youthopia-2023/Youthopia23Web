@@ -286,4 +286,32 @@ body{
     .eventInfo{
         margin-left: 20%
     }
+    .eventDetailsTop1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.eventDetailsTop1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.eventTitle1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    text-align: left;
+}
+@media (max-width: 862px) {
+    .eventDetailsTop1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+    
 }
