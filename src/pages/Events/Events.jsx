@@ -51,6 +51,7 @@ function Events() {
         min={event.participant_min}
         imgUrl={event.event_poster}
         category={event.category}
+        forms={event.forms?event.forms:""}
       />
     );
   });

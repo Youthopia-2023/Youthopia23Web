@@ -12,6 +12,8 @@ const IndividualEvent = () => {
   let props = useLocation();
   console.log(props.state.rules);
   console.log(props.state.bots);
+  const forms = props.state.forms;
+  console.log(forms);
 
   return (
     <>
@@ -137,7 +139,7 @@ const IndividualEvent = () => {
             </div>
             <Link
               className="linkToRegister"
-              to={`/registration`}
+              to={forms?`${forms}`:`/registration`}
               state={props.state}
             >
               <button className="eventResgisterButton uppercase rounded-xl">
