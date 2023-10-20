@@ -117,3 +117,7 @@
     background-position: center;
     flex-wrap: wrap;
 }
+.card-container{
+    display: flex;
+
+}

@@ -21,6 +21,7 @@ import { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { user } from "./store/store";
 import { useEffect } from "react";
+import Developers from "./pages/Developers/Developers";
 
 function App() {
   const dispatch = useDispatch();
@@ -61,6 +62,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/ticket" element={<Ticket />} />
           <Route path="/registration" element={<Register />} />
+          <Route path="/developers" element={<Developers/>}/>
 
           <Route path="*" element={<PageNotFound />} />
 

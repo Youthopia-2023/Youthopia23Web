@@ -7,6 +7,7 @@ import naac from "../../assets/NAAC LOGO PNG.svg"
 import years from "../../assets/25_years_logo.svg"
 import youthopia from "../../assets/youthopia 2022 white small 1.svg"
 import Dit from "../../assets/Dit white.svg"
+import { Link } from "react-router-dom"
 function Footer() {
     const moveToInstagram = () => {
         window.open("https://www.instagram.com/ditu.youthopia/")
@@ -50,11 +51,11 @@ function Footer() {
                     <div className="line"></div>
                     <img src={years} alt="" />
                 </div>
-                <div className="copyrights">
+                <Link to="/developers" className="copyrights">
                     Design & Developed By
                     Technical & Design Team
                     YOUTHOPIA 2023
-                </div>
+                </Link>
                 <div className="rightLogo">
                     <img src={youthopia} alt="" />
                     <div className="line"></div>
