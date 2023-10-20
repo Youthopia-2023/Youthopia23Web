@@ -1,4 +1,5 @@
 import "./Register.css";
+import moment from "moment";
 import Youthopia from "../../assets/youthopia.png";
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -203,7 +204,7 @@ export default function Register() {
   const [teamName, setTeamName] = useState("");
   const [phone, setPhone] = useState("");
   const [members, setMembers] = useState({});
-
+  console.log(props.state.name)
   const promise = () => {
     return new Promise(function (resolve, reject) {
       let mem = [];
@@ -284,9 +285,45 @@ export default function Register() {
         />
       </div>
 
-      <div className="eventDet">
+      {/* <div className="eventDet">
         <div className="poster"></div>
-        <p className="heading">Technical Event</p>
+        <p className="heading">{props.state.name}</p>
+      </div> */}
+      <div className="registermaindiv">
+        <div className="eventImage">
+          <img
+            src={
+              props.state.imgUrl
+                ? props.state.imgUrl
+                : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
+            }
+            alt="event"
+          />
+        </div>
+        <div className="eventDetailsTop">
+          <div className="eventTitle capitalize">{props.state.name}</div>
+          <div className="eventInfo">
+            <div>
+              <div></div>
+              <p className="venuefont">
+                {props.state.venue ? props.state.venue : "N/A"}
+              </p>
+            </div>
+            <div>
+              <div></div>
+              <p className="capitalize">{props.state.date}</p>
+            </div>
+            <div>
+              <div></div>
+              <p className="timefont">
+                {moment(props.state.start_time, "hh:mm a").format("hh:mm a")}
+                {" - "}
+                {moment(props.state.end_time, "hh:mm a").format("hh:mm a")}
+                {/* {props.state.date} */}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="partDet">
