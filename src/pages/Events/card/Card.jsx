@@ -34,6 +34,7 @@ export default function Card(props) {
     fees2: props.fees2,
     imgUrl: props.imgUrl,
     category: props.category,
+    forms: props.forms,
   };
   const cardnav = () => {
     navigate("/IndividualEvent", { state: datatopass });
