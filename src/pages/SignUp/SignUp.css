@@ -2,7 +2,7 @@
   max-width: 100vw;
 }
 .signUp-container {
-  background-image: url(../../assets/background.webp);
+  background-image: url("../../assets/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

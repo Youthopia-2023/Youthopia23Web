@@ -1,7 +1,8 @@
 .profile {
-    background-image: url(../../assets/background.webp);
+    background-image: url("../../assets/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

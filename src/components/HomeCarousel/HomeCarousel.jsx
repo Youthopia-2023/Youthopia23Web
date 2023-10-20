@@ -25,7 +25,7 @@ const HomeCarousel = () => {
     <div className="homeCarousel">
       <div className="topBar">
         <div className="topBarLeft">Top Events</div>
-        <div className="topBarRight">Registration Opening Soon</div>
+        <div className="topBarRight">Register Now !!!</div>
       </div>
       <div className="carousel">
         <OwlCarousel loop margin={30} nav autoplay center>
