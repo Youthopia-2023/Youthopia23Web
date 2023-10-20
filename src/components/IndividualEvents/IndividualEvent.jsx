@@ -130,8 +130,7 @@ const IndividualEvent = () => {
                 {props.state.max > 1 && (
                   <div>
                     <p className="text-red-500 text-base">
-                      *Minimum member {props.state.min} and maximum members{" "}
-                      {props.state.max}
+                      {props.state.category==="cultural"?``:`*Minimum member ${props.state.min} and maximum members ${props.state.max}`}
                     </p>
                   </div>
                 )}
