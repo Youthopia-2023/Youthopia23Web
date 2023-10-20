@@ -278,88 +278,90 @@ export default function Register() {
   return (
     <div className="Register">
       <Navbar />
-      <div className="youtlg">
-        <img
-          className="youthop"
-          src={Youthopia}
-          alt=""
-        // style={{ margin: "10vh 0px 0px 38%" }}
-        />
-      </div>
+      <div className="innerRegister">
+        <div className="youtlg">
+          <img
+            className="youthop"
+            src={Youthopia}
+            alt=""
+          // style={{ margin: "10vh 0px 0px 38%" }}
+          />
+        </div>
 
-      {/* <div className="eventDet">
+        {/* <div className="eventDet">
         <div className="poster"></div>
         <p className="heading">{props.state.name}</p>
       </div> */}
-      <div className="registermaindiv">
-        <div className="eventImage">
-          <img
-            src={
-              props.state.imgUrl
-                ? props.state.imgUrl
-                : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
-            }
-            alt="event"
-          />
-        </div>
-        <div className="eventDetailsTop1">
-          <div className="eventTitle1 ">{props.state.name}</div>
-          <div className="eventInfo">
-            <div>
-              <div></div>
-              <p className="venuefont">
-                {props.state.venue ? props.state.venue : "N/A"}
-              </p>
-            </div>
-            <div>
-              <div></div>
-              <p className="capitalize">{props.state.date}</p>
-            </div>
-            <div>
-              <div></div>
-              <p className="timefont">
-                {moment(props.state.start_time, "hh:mm a").format("hh:mm a")}
-                {" - "}
-                {moment(props.state.end_time, "hh:mm a").format("hh:mm a")}
-                {/* {props.state.date} */}
-              </p>
+        <div className="registermaindiv">
+          <div className="eventImage">
+            <img
+              src={
+                props.state.imgUrl
+                  ? props.state.imgUrl
+                  : "https://propertywiselaunceston.com.au/wp-content/themes/property-wise/images/no-image@2x.png"
+              }
+              alt="event"
+            />
+          </div>
+          <div className="eventDetailsTop1">
+            <div className="eventTitle1 ">{props.state.name}</div>
+            <div className="eventInfo">
+              <div>
+                <div></div>
+                <p className="venuefont">
+                  {props.state.venue ? props.state.venue : "N/A"}
+                </p>
+              </div>
+              <div>
+                <div></div>
+                <p className="capitalize">{props.state.date}</p>
+              </div>
+              <div>
+                <div></div>
+                <p className="timefont">
+                  {moment(props.state.start_time, "hh:mm a").format("hh:mm a")}
+                  {" - "}
+                  {moment(props.state.end_time, "hh:mm a").format("hh:mm a")}
+                  {/* {props.state.date} */}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="partDet">
-        <div className="register">
-          {min === 1 && max === 1 ? (
-            <IND
-              teamName={teamName}
-              setTeamName={setTeamName}
-              phone={phone}
-              setPhone={setPhone}
-              members={members}
-              setMembers={setMembers}
-              submitt={submitt}
-              count={count}
-              setCount={setCount}
-            />
-          ) : (
-            <Team
-              teamName={teamName}
-              setTeamName={setTeamName}
-              phone={phone}
-              setPhone={setPhone}
-              members={members}
-              setMembers={setMembers}
-              submitt={submitt}
-              count={count}
-              setCount={setCount}
-              min={min}
-              max={max}
-            />
-          )}
+        <div className="partDet">
+          <div className="register">
+            {min === 1 && max === 1 ? (
+              <IND
+                teamName={teamName}
+                setTeamName={setTeamName}
+                phone={phone}
+                setPhone={setPhone}
+                members={members}
+                setMembers={setMembers}
+                submitt={submitt}
+                count={count}
+                setCount={setCount}
+              />
+            ) : (
+              <Team
+                teamName={teamName}
+                setTeamName={setTeamName}
+                phone={phone}
+                setPhone={setPhone}
+                members={members}
+                setMembers={setMembers}
+                submitt={submitt}
+                count={count}
+                setCount={setCount}
+                min={min}
+                max={max}
+              />
+            )}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

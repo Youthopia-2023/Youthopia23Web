@@ -1,33 +1,57 @@
-body{
-    background-image: url('../../assets/background.webp');
-    height:400px ;
-}
-.eventDet{
+.Register {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../../assets/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    height: 100vh;
+    background-color: black !important;
+    background-position: center;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    filter: contrast(1);
+    gap: 5rem;
+    padding-bottom: 1rem;
+    width: fit-content;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.innerRegister {
+    overflow-y: scroll;
+}
+
+.eventDet {
+    display: flex;
+    justify-content: space-between;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
 }
+
 .youtlg {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-top: 5% ;
+    padding-top: 5%;
 }
-.poster{
+
+.poster {
     background-color: white;
     height: 250px;
     width: 206px;
     border-radius: 5px;
 }
-.heading{
+
+.heading {
     font-size: 3rem;
     font-weight: 900;
-    
+
 }
-.partDet{
+
+.partDet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +60,8 @@ body{
     margin: 0;
     padding: 0;
 }
-.register{
+
+.register {
     position: relative;
     background-color: rgba(0, 0, 0, 0.71);
     border-radius: 138px;
@@ -48,48 +73,57 @@ body{
     color: #f8f8f8;
     margin: 40px 0;
 }
-.register form{
+
+.register form {
     width: 95%;
 }
-.register p{
+
+.register p {
     position: relative;
     left: 5%;
     width: fit-content;
 }
-.horiLine{
+
+.horiLine {
     margin-bottom: 40px;
     width: 85%;
     position: relative;
     left: 5%;
 }
-.register input{
+
+.register input {
     border-radius: 10px;
     border-width: 1px;
     margin-left: 5%;
     width: 85%;
 }
-.register label{
+
+.register label {
     margin-left: 5%;
     font-size: 24px;
     font-weight: 900;
 }
-.register .reg{
+
+.register .reg {
     background-color: white;
     color: black;
     width: 30%;
     text-align: center;
 }
-.register .Ind{
+
+.register .Ind {
     width: 90%;
     margin-left: 5%;
 }
-.register .Counter{
+
+.register .Counter {
     display: flex;
     justify-content: space-between;
     width: fit-content;
     margin-left: 5%;
 }
-.register .Counter button{
+
+.register .Counter button {
     margin: 5px;
     background-color: white;
     height: 50px;
@@ -99,7 +133,8 @@ body{
     font-size: 30px;
     padding: 0;
 }
-.register .Counter p{
+
+.register .Counter p {
     margin-top: 10px;
     margin-right: 25px;
     padding-left: 2px;
@@ -124,120 +159,147 @@ body{
     .register {
         padding: 5vh;
     }
-    .register form{
+
+    .register form {
         width: 100%;
     }
+
     .register .reg {
         width: 70%;
         text-align: center;
     }
-    .register .Ind{
+
+    .register .Ind {
         width: 100%;
         margin-left: 5%;
     }
+
     .youthopia-logo {
         margin-top: 20%;
     }
-    .eventDet{
-        justify-content:space-between;
+
+    .eventDet {
+        justify-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 5%;
     }
-    .poster{
+
+    .poster {
         height: 180px;
         width: 160px;
         border-radius: 5px;
     }
-    .heading{
+
+    .heading {
         height: fit-content;
         font-size: 40px;
     }
+
     .Ind .line-4 {
         display: none;
     }
+
     .Ind .ellipse {
         display: none;
     }
+
     /* .register .Counter button {
         height: 40px;
         width: 20px;
         margin: 0;
     } */
 }
-@media (min-width: 425px) and (max-width:524px){
+
+@media (min-width: 425px) and (max-width:524px) {
     .register {
         padding: 5vh;
     }
-    .register form{
+
+    .register form {
         width: 100%;
     }
+
     .register .reg {
         width: 70%;
         text-align: center;
     }
-    .register .Ind{
+
+    .register .Ind {
         width: 100%;
         margin-left: 5%;
     }
+
     .youthopia-logo {
         margin-top: 20%;
     }
-    .eventDet{
-        justify-content:space-between;
+
+    .eventDet {
+        justify-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 5%;
     }
-    .poster{
+
+    .poster {
         height: 200px;
         width: 180px;
         border-radius: 5px;
     }
-    .heading{
+
+    .heading {
         height: fit-content;
         font-size: 50px;
         /* margin: 0 20px; */
     }
 }
+
 @media (min-width: 525px) and (max-width:769px) {
-    .register form{
+    .register form {
         width: 100%;
     }
+
     .register .reg {
         width: 60%;
         text-align: center;
     }
+
     .Register {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .eventDet{
-        justify-content:space-between;
+
+    .eventDet {
+        justify-content: space-between;
         margin-left: 15%;
         margin-right: 15%;
     }
-    .poster{
+
+    .poster {
         height: 200px;
         width: 200px;
         border-radius: 5px;
     }
-    .heading{
+
+    .heading {
         height: fit-content;
         /* margin: 0 20px; */
     }
 }
+
 @media (min-width:769px) and (max-width: 1024px) {
-    .register form{
+    .register form {
         width: 100%;
     }
+
     .register .reg {
         width: 40%;
         text-align: center;
     }
 }
+
 /* @media (min-width: 1200px) {
     
 }
@@ -247,56 +309,65 @@ body{
 @media (min-width: 1800px) {
     
 } */
-.registermaindiv{
+.registermaindiv {
     display: flex;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
 }
-.venuefont{
+
+.venuefont {
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
 }
-.timefont{
+
+.timefont {
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
 }
+
 @media (max-width: 611px) {
-    .registermaindiv{
+    .registermaindiv {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .venuefont{
+
+    .venuefont {
         margin-top: 10px;
     }
-    .eventInfo{
+
+    .eventInfo {
         display: flex;
         justify-content: center;
     }
-    .eventDetailsTop1{
+
+    .eventDetailsTop1 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .eventTitle1{
+
+    .eventTitle1 {
         margin-left: 30%;
     }
 }
-.eventDetailsTop1{
+
+.eventDetailsTop1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.eventTitle1{
+
+.eventTitle1 {
     font-size: 3rem;
     font-weight: 900;
     margin-top: 0;
@@ -304,21 +375,23 @@ body{
     color: white;
     text-align: left;
 }
+
 @media (max-width: 862px) {
-    .eventDetailsTop1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+    .eventDetailsTop1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
 }
-    
-}
+
 @media (max-width: 970px) {
-    .eventDetailsTop1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-}
-    
+    .eventDetailsTop1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
 }
