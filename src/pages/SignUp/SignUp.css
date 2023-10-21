@@ -250,7 +250,7 @@ input {
     width: 55%;
   }
   .signup-form>.checkbox-signup {
-    width: 35rem;
+    width: 30rem;
   }
   .star-1Signup{
     top: 24%;
@@ -275,7 +275,7 @@ input {
 
 @media screen and (max-width: 768px) and (min-width: 526px) {
   .signup-form>.checkbox-signup {
-    width: 25rem;
+    width: 20rem;
   }
   .signup-form>.nameRow {
     gap: 1rem;
