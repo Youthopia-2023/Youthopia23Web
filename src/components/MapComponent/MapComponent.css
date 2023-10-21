@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   text-align: center;
+  align-items: center;
   justify-content: center;
 }
 .map-heading {

@@ -1,5 +1,5 @@
 .mainEventBody {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../../assets/background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../../assets/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -15,6 +15,7 @@
     width: fit-content;
     padding-top: 3rem;
 }
+
 
 .loaderDiv{
     display: flex;
@@ -44,6 +45,11 @@
     margin: 0 !important;
     width: 100%;
     margin-bottom: 2rem !important;
+}
+
+.activeInnerNav{
+    border-bottom: 5px solid #E8257D !important;
+    pointer-events: none;
 }
 
 .a {

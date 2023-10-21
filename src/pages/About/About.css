@@ -1,5 +1,5 @@
 .about>.mainBody{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -116,4 +116,8 @@
     align-items: center;
     background-position: center;
     flex-wrap: wrap;
+}
+.card-container{
+    display: flex;
+
 }

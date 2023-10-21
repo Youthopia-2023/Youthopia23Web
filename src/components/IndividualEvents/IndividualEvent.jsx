@@ -1,6 +1,6 @@
 import moment from "moment";
 import "./IndividualEvent.css";
-import background from "../../assets/background.png";
+import background from "../../assets/background.webp";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
@@ -10,8 +10,10 @@ import youth from "../../assets/youthopia.png";
 
 const IndividualEvent = () => {
   let props = useLocation();
-    console.log(props.state.rules);
-    console.log(props.state.bots);
+  console.log(props.state.rules);
+  console.log(props.state.bots);
+  const forms = props.state.forms;
+  console.log(forms);
 
   return (
     <>
@@ -67,7 +69,7 @@ const IndividualEvent = () => {
               <p className="text-justify">{props.state.discription}</p>
 
               <p className="text-justify">
-                {props.state.rules!==0 && <p className="rulesheading">Rules:</p>}
+                {props.state.rules !== 0 && <p className="rulesheading">Rules:</p>}
                 {props.state.rules?.map((i, key) => {
                   return (
                     <>
@@ -77,7 +79,7 @@ const IndividualEvent = () => {
                 })}
               </p>
               <p className="text-justify">
-                {props.state.bots.length!==0 && <p className="rulesheading">Bots:</p>}
+                {props.state.bots.length !== 0 && <p className="rulesheading">Bots:</p>}
                 {props.state.bots?.map((i, key) => {
                   return (
                     <>
@@ -128,8 +130,7 @@ const IndividualEvent = () => {
                 {props.state.max > 1 && (
                   <div>
                     <p className="text-red-500 text-base">
-                      *Minimum member {props.state.min} and maximum members{" "}
-                      {props.state.max}
+                      {props.state.category==="cultural"?``:`*Minimum member ${props.state.min} and maximum members ${props.state.max}`}
                     </p>
                   </div>
                 )}
@@ -137,7 +138,7 @@ const IndividualEvent = () => {
             </div>
             <Link
               className="linkToRegister"
-              to={`/registration`}
+              to={forms?`${forms}`:`/registration`}
               state={props.state}
             >
               <button className="eventResgisterButton uppercase rounded-xl">
