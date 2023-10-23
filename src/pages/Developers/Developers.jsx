@@ -22,6 +22,15 @@ export default function Developers() {
   const moveToRudra = () => {
     window.open("https://www.linkedin.com/in/rudraksh-gupta-664b591b2/");
   }
+
+  const moveToMuskan = () =>{
+    window.open("https://www.linkedin.com/in/muskan-verma-919803268/");
+  }
+
+  const moveToAshu = () =>{
+    window.open("https://www.linkedin.com/in/ashu-shah-5578a3275/");
+  }
+
   return (
     <div className="developers">
       <Navbar />
@@ -57,6 +66,14 @@ export default function Developers() {
             <div className="member" onClick={moveToRudra}>
               <img src="https://youthopiaimageblob.blob.core.windows.net/developers/DSC_0434 (1).jpg" alt="" />
               <p className="con">Rudraksh Gupta</p>
+            </div>
+            <div className="member" onClick={moveToAshu}>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Screenshot_2023-10-20-18-18-19-44_99c04817c0de5652397fc8b56c3b3817.jpg" alt="" />
+              <p className="con">Ashu Shah</p>
+            </div>
+            <div className="member" onClick={moveToMuskan}>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/IMG-20231023-WA0035.jpg" alt="" />
+              <p className="con">Muskan Verma</p>
             </div>
           </div>
           {/* <p className="heading">DESIGN TEAM</p>
