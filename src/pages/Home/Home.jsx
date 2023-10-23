@@ -6,7 +6,7 @@ import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer"
-import MapComponent from "../../components/MapComponent/MapComponent";
+// import MapComponent from "../../components/MapComponent/MapComponent";
 function Home() {
   return (
     <div className="Home">
@@ -14,7 +14,7 @@ function Home() {
       <Main />
       <Sponsor />
       <HomeCarousel/>
-      <MapComponent/>
+      {/* <MapComponent/> */}
       <VideoSection />
       {/* <ComingSoon /> */}
       <Footer/>
