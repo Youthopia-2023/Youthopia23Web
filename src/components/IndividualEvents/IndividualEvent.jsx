@@ -121,12 +121,12 @@ const IndividualEvent = () => {
 
                 <div>
                   <p className="capitalize">Fees for DIT student: </p>
-                  <p>₹{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
+                  <p>{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
                 </div>
 
                 <div>
                   <p className="capitalize">Fees for outsiders: </p>
-                  <p>₹{props.state.fees2 ? props.state.fees2 : "N/A"}</p>
+                  <p>{props.state.fees2 ? props.state.fees2 : "N/A"}</p>
                 </div>
 
                 {props.state.max > 1 && (
