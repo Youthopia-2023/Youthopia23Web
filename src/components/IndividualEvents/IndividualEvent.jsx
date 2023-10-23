@@ -63,7 +63,7 @@ const IndividualEvent = () => {
                 </div>
               </div>
             </div>
-            <div className="eventDescription">
+            <div className="eventDescription" style={{whiteSpace: "pre-line"}}>
               <p className="text-justify">{props.state.discription}</p>
 
               <p className="text-justify">
@@ -72,9 +72,9 @@ const IndividualEvent = () => {
                 )}
                 {props.state.rules?.map((i, key) => {
                   return (
-                    <>
+                    <div style={{whiteSpace: "pre-line"}}>
                       <li key={key}>{i}</li>
-                    </>
+                    </div>
                   );
                 })}
               </p>
@@ -92,24 +92,24 @@ const IndividualEvent = () => {
               </p>
               <div>
                 <div>
-                  <p>Event Coordinator: </p>
+                  <p className="cordinatorHeading">Event Coordinators: </p>
                   {Object.keys(props.state.Coordinator).map(function (
                     key,
                     index
                   ) {
                     return (
-                      <p
+                      <p className="cordinaters"
                         key={index}
                       >{`${key}: ${props.state.Coordinator[key]}`}</p>
                     );
                   })}
                 </div>
                 <div>
-                  <p>Over All Heads: </p>
+                  <p className="cordinatorHeading">Over All Heads: </p>
 
                   {Object.keys(props.state.head).map(function (key, index) {
                     return (
-                      <p key={index}>{`${key}: ${props.state.head[key]}`}</p>
+                      <p className="cordinaters" key={index}>{`${key}: ${props.state.head[key]}`}</p>
                     );
                   })}
                 </div>
@@ -121,12 +121,12 @@ const IndividualEvent = () => {
 
                 <div>
                   <p className="capitalize">Fees for DIT student: </p>
-                  <p>₹{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
+                  <p>{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
                 </div>
 
                 <div>
                   <p className="capitalize">Fees for outsiders: </p>
-                  <p>₹{props.state.fees2 ? props.state.fees2 : "N/A"}</p>
+                  <p>{props.state.fees2 ? props.state.fees2 : "N/A"}</p>
                 </div>
 
                 {props.state.max > 1 && (
