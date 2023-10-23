@@ -76,29 +76,25 @@ export default function Developers() {
               <p className="con">Muskan Verma</p>
             </div>
           </div>
-          {/* <p className="heading">DESIGN TEAM</p>
+          <p className="heading designHeading">DESIGN TEAM</p>
           <div className="developersSec">
             <div className="member">
-              <img src="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" alt="" />
-              <p className="con">Member 1</p>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Saumya.JPG" alt="" />
+              <p className="con">Saumya Negi</p>
             </div>
             <div className="member">
-              <img src="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" alt="" />
-              <p className="con">Member 1</p>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Divya.JPG" alt="" />
+              <p className="con">Divya Dvivedy</p>
             </div>
             <div className="member">
-              <img src="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" alt="" />
-              <p className="con">Member 1</p>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Shristi.JPG" alt="" />
+              <p className="con">Srishti Singhal</p>
             </div>
             <div className="member">
-              <img src="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" alt="" />
-              <p className="con">Member 1</p>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Ayush.JPG" alt="" />
+              <p className="con">Ayush Goswami</p>
             </div>
-            <div className="member">
-              <img src="https://youthopiaimageblob.blob.core.windows.net/youthopia-heads/wamiq (1).jpg" alt="" />
-              <p className="con">Member 1</p>
-            </div>
-          </div> */}
+          </div>
         </div>
       </div>
       <Footer />
