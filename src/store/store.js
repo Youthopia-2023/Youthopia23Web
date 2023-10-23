@@ -13,6 +13,8 @@ const userData = createSlice({
     year: "",
     college: "",
     _id: "",
+    data: [],
+    category: "technical",
   },
   reducers: {
     setToken(state, action) {
@@ -45,6 +47,12 @@ const userData = createSlice({
     setYear(state, action) {
       window.localStorage.setItem("year", JSON.stringify(action.payload));
       state.year = action.payload;
+    },
+    setData(state, action) {
+      state.data = action.payload;
+    },
+    setCategorie(state, action) {
+      state.category = action.payload;
     },
     clear(state, payload) {
       state.token = "";
