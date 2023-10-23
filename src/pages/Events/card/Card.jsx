@@ -50,12 +50,12 @@ export default function Card(props) {
         <div className="event-name">{props.name}</div>
         <div className="detail">
           <p>{props.venue}</p>
-          <p>{props.date}</p>
+          {/* <p>{props.date}</p> */}
         </div>
-        <div className="detail">
+        {/* <div className="detail">
           <p>{props.fees1}</p>
           <p>{props.start_time}</p>
-        </div>
+        </div> */}
       </div>
 
       <Link
