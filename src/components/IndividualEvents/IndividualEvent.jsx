@@ -63,7 +63,7 @@ const IndividualEvent = () => {
                 </div>
               </div>
             </div>
-            <div className="eventDescription">
+            <div className="eventDescription" style={{whiteSpace: "pre-line"}}>
               <p className="text-justify">{props.state.discription}</p>
 
               <p className="text-justify">
@@ -72,9 +72,9 @@ const IndividualEvent = () => {
                 )}
                 {props.state.rules?.map((i, key) => {
                   return (
-                    <>
+                    <div style={{whiteSpace: "pre-line"}}>
                       <li key={key}>{i}</li>
-                    </>
+                    </div>
                   );
                 })}
               </p>
