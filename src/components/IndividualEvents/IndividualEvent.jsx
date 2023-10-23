@@ -1,4 +1,4 @@
-import moment from "moment";
+// import moment from "moment";
 import "./IndividualEvent.css";
 import background from "../../assets/background.webp";
 import { useLocation } from "react-router";
@@ -55,11 +55,9 @@ const IndividualEvent = () => {
                 <div>
                   <div></div>
                   <p>
-                    {moment(props.state.start_time, "hh:mm a").format(
-                      "hh:mm a"
-                    )}
+                    {props.state.start_time}
                     {" - "}
-                    {moment(props.state.end_time, "hh:mm a").format("hh:mm a")}
+                    {props.state.end_time}
                     {/* {props.state.date} */}
                   </p>
                 </div>
@@ -69,7 +67,9 @@ const IndividualEvent = () => {
               <p className="text-justify">{props.state.discription}</p>
 
               <p className="text-justify">
-                {props.state.rules !== 0 && <p className="rulesheading">Rules:</p>}
+                {props.state.rules !== 0 && (
+                  <p className="rulesheading">Rules:</p>
+                )}
                 {props.state.rules?.map((i, key) => {
                   return (
                     <>
@@ -79,7 +79,9 @@ const IndividualEvent = () => {
                 })}
               </p>
               <p className="text-justify">
-                {props.state.bots.length !== 0 && <p className="rulesheading">Bots:</p>}
+                {props.state.bots.length !== 0 && (
+                  <p className="rulesheading">Bots:</p>
+                )}
                 {props.state.bots?.map((i, key) => {
                   return (
                     <>
@@ -130,7 +132,9 @@ const IndividualEvent = () => {
                 {props.state.max > 1 && (
                   <div>
                     <p className="text-red-500 text-base">
-                      {props.state.category==="cultural"?``:`*Minimum member ${props.state.min} and maximum members ${props.state.max}`}
+                      {props.state.category === "cultural"
+                        ? ``
+                        : `*Minimum member ${props.state.min} and maximum members ${props.state.max}`}
                     </p>
                   </div>
                 )}
@@ -138,7 +142,7 @@ const IndividualEvent = () => {
             </div>
             <Link
               className="linkToRegister"
-              to={forms?`${forms}`:`/registration`}
+              to={forms ? `${forms}` : `/registration`}
               state={props.state}
             >
               <button className="eventResgisterButton uppercase rounded-xl">
