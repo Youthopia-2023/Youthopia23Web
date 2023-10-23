@@ -200,3 +200,13 @@
 .rulesheading{
     text-align: left;
 }
+
+.cordinaters{
+    margin: 0.3rem 0;
+    color: white;
+}
+
+.cordinatorHeading{
+    border-bottom: 3px solid #1bbee9;
+    padding-bottom: 1rem;
+}

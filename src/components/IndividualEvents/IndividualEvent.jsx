@@ -92,24 +92,24 @@ const IndividualEvent = () => {
               </p>
               <div>
                 <div>
-                  <p>Event Coordinator: </p>
+                  <p className="cordinatorHeading">Event Coordinators: </p>
                   {Object.keys(props.state.Coordinator).map(function (
                     key,
                     index
                   ) {
                     return (
-                      <p
+                      <p className="cordinaters"
                         key={index}
                       >{`${key}: ${props.state.Coordinator[key]}`}</p>
                     );
                   })}
                 </div>
                 <div>
-                  <p>Over All Heads: </p>
+                  <p className="cordinatorHeading">Over All Heads: </p>
 
                   {Object.keys(props.state.head).map(function (key, index) {
                     return (
-                      <p key={index}>{`${key}: ${props.state.head[key]}`}</p>
+                      <p className="cordinaters" key={index}>{`${key}: ${props.state.head[key]}`}</p>
                     );
                   })}
                 </div>

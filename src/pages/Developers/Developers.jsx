@@ -31,6 +31,10 @@ export default function Developers() {
     window.open("https://www.linkedin.com/in/ashu-shah-5578a3275/");
   }
 
+  const moveToAachman = () =>{
+    window.open("https://www.linkedin.com/in/aachman-agarwal-1a434b19a/");
+  }
+
   return (
     <div className="developers">
       <Navbar />
@@ -70,6 +74,10 @@ export default function Developers() {
             <div className="member" onClick={moveToAshu}>
               <img src="https://youthopiaimageblob.blob.core.windows.net/developers/Screenshot_2023-10-20-18-18-19-44_99c04817c0de5652397fc8b56c3b3817.jpg" alt="" />
               <p className="con">Ashu Shah</p>
+            </div>
+            <div className="member" onClick={moveToAachman}>
+              <img src="https://youthopiaimageblob.blob.core.windows.net/developers/aanchman.jpg" alt="" />
+              <p className="con">Aachman Agarwal</p>
             </div>
             <div className="member" onClick={moveToMuskan}>
               <img src="https://youthopiaimageblob.blob.core.windows.net/developers/IMG-20231023-WA0035.jpg" alt="" />
