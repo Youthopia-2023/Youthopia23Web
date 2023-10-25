@@ -124,7 +124,7 @@ const IndividualEvent = () => {
                   <p>{props.state.fees1 ? props.state.fees1 : "N/A"}</p>
                 </div>
 
-                <div>
+                <div className="alignIt">
                   <p className="capitalize">Fees for outsiders: </p>
                   <p>{props.state.fees2 ? props.state.fees2 : "N/A"}</p>
                 </div>
