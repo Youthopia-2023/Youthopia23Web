@@ -303,7 +303,7 @@ export default function Register() {
               alt="event"
             />
           </div>
-          <div className="eventDetailsTop">
+          <div className="eventDetailsTop1">
               <div className="eventTitle capitalize">{props.state.name}</div>
               <div className="eventInfo">
                 <div>
