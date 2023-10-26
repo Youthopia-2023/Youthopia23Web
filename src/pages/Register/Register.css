@@ -147,6 +147,9 @@
     color: white;
     border-radius: 5px;
 }
+.eventDetailsTop1{
+    color: white;
+}
 
 /* @media (min-width:320px) and (max-width:424px) {
     .register{
