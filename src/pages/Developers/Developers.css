@@ -1,9 +1,9 @@
-.dev-container{
+.developers{
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('../../assets/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: hidden;
-    min-height: 100vh;
+    height: 100vh;
     background-color: black !important;
     background-position: center;
     display: flex;
@@ -12,11 +12,18 @@
     align-items: center;
     filter: contrast(1);
     gap: 5rem;
-    padding-bottom: 1rem;
     /* width: fit-content; */
     padding-top: 0rem;
     color: white;
-    
+}
+
+.innerDevlopers{
+    overflow-y: scroll;
+    margin-top: 3rem;
+}
+
+.dev-container{
+    padding-bottom: 2rem;
 }
 
 .dev-container{
