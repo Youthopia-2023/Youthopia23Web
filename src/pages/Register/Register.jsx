@@ -303,30 +303,30 @@ export default function Register() {
               alt="event"
             />
           </div>
-          <div className="eventDetailsTop1">
-            <div className="eventTitle1 ">{props.state.name}</div>
-            <div className="eventInfo">
-              <div>
-                <div></div>
-                <p className="venuefont">
-                  {props.state.venue ? props.state.venue : "N/A"}
-                </p>
-              </div>
-              <div>
-                <div></div>
-                <p className="capitalize">{props.state.date}</p>
-              </div>
-              <div>
-                <div></div>
-                <p className="timefont">
-                  {moment(props.state.start_time, "hh:mm a").format("hh:mm a")}
-                  {" - "}
-                  {moment(props.state.end_time, "hh:mm a").format("hh:mm a")}
-                  {/* {props.state.date} */}
-                </p>
+          <div className="eventDetailsTop">
+              <div className="eventTitle capitalize">{props.state.name}</div>
+              <div className="eventInfo">
+                <div>
+                  <div></div>
+                  <p className="capitalize">
+                    {props.state.venue ? props.state.venue : "N/A"}
+                  </p>
+                </div>
+                <div>
+                  <div></div>
+                  <p className="capitalize">{props.state.date}</p>
+                </div>
+                <div>
+                  <div></div>
+                  <p>
+                    {props.state.start_time}
+                    {" - "}
+                    {props.state.end_time}
+                    {/* {props.state.date} */}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div className="partDet">
