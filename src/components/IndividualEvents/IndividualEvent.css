@@ -210,3 +210,12 @@
     border-bottom: 3px solid #1bbee9;
     padding-bottom: 1rem;
 }
+
+.alignIt{
+    align-items: flex-start !important;
+    margin-top: 1rem;
+}
+
+.alignIt>p{
+    margin-top: 1rem !important;
+}

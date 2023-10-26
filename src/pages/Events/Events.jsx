@@ -7,29 +7,33 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { baseUrl } from "../../url";
 import loader from "../../assets/loader.gif";
+import { user } from "../../store/store";
+import { useDispatch, useSelector } from "react-redux";
 function Events() {
-  const [loading, setLoading] = useState(true);
-  const [eventdata, setEventdata] = useState([]);
   const [filteredevents, setFilteredevents] = useState([]);
+  const eventData = useSelector((state) => state);
+  const [loading, setLoading] = useState(
+    eventData?.data?.data?.details[0] ? false : true
+  );
+  const dispatch = useDispatch();
   useEffect(() => {
     const fetchdata = async () => {
       axios.get(`${baseUrl}/event/geteventdetails`).then((res) => {
-        setEventdata(res);
+        dispatch(user.setData(res));
         let a = [];
         res?.data?.details.filter((event) => {
-          if (event.category === cat) {
+          if (event.category === eventData.category) {
             a.push(event);
             setFilteredevents(a);
-            console.log(filteredevents);
             setLoading(false);
           }
         });
       });
-      console.log(data.data.details); //eslint-disable-line
     };
-    fetchdata();
+    if (!eventData?.data?.data?.details[0]) {
+      fetchdata();
+    }
   }, []);
-  const [cat, setCat] = useState("technical");
   const card = filteredevents?.map((event, index) => {
     return (
       <Card
@@ -56,18 +60,17 @@ function Events() {
     );
   });
   function handleChange(category) {
-    setCat((cate) => category); //eslint-disable-line
+    dispatch(user.setCategorie(category)); //eslint-disable-line
   }
   useEffect(() => {
     let a = [];
-    eventdata?.data?.details.filter((event) => {
-      if (event.category === cat) {
+    eventData?.data?.data?.details.filter((event) => {
+      if (event.category === eventData.category) {
         a.push(event);
         setFilteredevents(a);
       }
     });
-    console.log(filteredevents);
-  }, [cat]);
+  }, [eventData.category]);
   return (
     <div className="mainEventBody">
       <Navbar />
@@ -78,19 +81,25 @@ function Events() {
         <div className="secNavBar">
           <div
             onClick={() => handleChange("technical")}
-            className={`${cat === "technical" ? "activeInnerNav" : ""} a`}
+            className={`${
+              eventData.category === "technical" ? "activeInnerNav" : ""
+            } a`}
           >
             Technical
           </div>
           <div
             onClick={() => handleChange("cultural")}
-            className={`${cat === "cultural" ? "activeInnerNav" : ""} a`}
+            className={`${
+              eventData.category === "cultural" ? "activeInnerNav" : ""
+            } a`}
           >
             Cultural
           </div>
           <div
             onClick={() => handleChange("informal")}
-            className={`${cat === "informal" ? "activeInnerNav" : ""} a`}
+            className={`${
+              eventData.category === "informal" ? "activeInnerNav" : ""
+            } a`}
           >
             Informal
           </div>
