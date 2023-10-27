@@ -234,7 +234,7 @@ function SignUp() {
             /> */}
             <input
               type="number"
-              placeholder="Year"
+              placeholder="Academic Year"
               onChange={(e) => setYear(e.target.value)}
             />
           </div>
