@@ -54,6 +54,7 @@ function About() {
           <div className="content-heads">
             {
               Array.from(headsdata).map(([index, elements]) => (
+                console.log(elements),
                 <div key={index} className="category">
                   <p className="designations">{elements[0].designation}</p>
                   <div className="image-row">
@@ -63,6 +64,7 @@ function About() {
                       img={element.image}
                       name={element.name}
                       role={element.designation}
+                      phone={element.number}
                     />
                   ))}
                   </div>

@@ -7,6 +7,7 @@ function AboutUsImgBox(props) {
         <img src={props.img} alt="" />
       </div>
       <p>{props.name}</p>
+      <p>{props.phone}</p>
     </div>
   );
 }
