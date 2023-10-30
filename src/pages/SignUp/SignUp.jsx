@@ -62,6 +62,22 @@ function SignUp() {
         reject("please upload photo of identity proof!");
         return;
       }
+      if(phonenumber.length!==10){
+        reject("please enter valid phone number");
+        return;
+      }
+      if(password.length<8){
+        reject("password should be atleast 8 characters long");
+        return;
+      }
+      if(isNaN(phonenumber)){
+        reject("please enter valid phone number");
+        return;
+      }
+      if(isNaN(year)){
+        reject("please enter Academic year without characters");
+        return;
+      }
       const filename = Date.now() + photo.name;
       const storageRef = ref(storage, `/identityDocuments/${filename}`);
       const uploadTask = uploadBytesResumable(storageRef, photo);
@@ -204,7 +220,7 @@ function SignUp() {
               </div>
               <div className="idNumber">
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Identity proof Number (Aadhar, DL, etc)"
                   onChange={(e) => setIdentityNumber(e.target.value)}
                 />
