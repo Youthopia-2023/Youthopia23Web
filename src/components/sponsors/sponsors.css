@@ -1,34 +1,34 @@
 .main-sponsor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    background: url('../../assets/Rectangle12382.png');
-    background-size:cover;
-    background-color: #000;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: url("../../assets/Rectangle12382.png");
+  background-size: cover;
+  background-color: #000;
+  background-position: center;
 
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,25,191,1) 33%, rgba(186,24,88,1) 60%); */
-    background-repeat: no-repeat;
-    color: white;
-    gap: 2rem;
-    padding: 1rem 0;
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,25,191,1) 33%, rgba(186,24,88,1) 60%); */
+  background-repeat: no-repeat;
+  color: white;
+  gap: 2rem;
+  padding: 1rem 0;
 }
 
-.sponsor-grid{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    overflow-x: scroll;
-    gap: 1rem;
-    padding: 0 0.5rem;
+.sponsor-grid {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 1rem;
+  padding: 0 0.5rem;
 }
 
-.sponsor-grid>img{
-    width: 8rem;
-    aspect-ratio: 1/1;
+.sponsor-grid > img {
+  width: 8rem;
+  aspect-ratio: 1/1;
 }
 
 /* .main-container {
@@ -60,3 +60,9 @@ h2 {
     width: 8rem;
     aspect-ratio: 1/1;
 } */
+
+@media screen and (max-width: 500px) {
+  .sponsor-grid {
+    justify-content: flex-start;
+  }
+}
