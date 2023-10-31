@@ -28,7 +28,14 @@ const HomeCarousel = () => {
         <div className="topBarRight">Register Now !!!</div>
       </div>
       <div className="carousel">
-        <OwlCarousel loop margin={30} nav autoplay center>
+        <OwlCarousel
+          loop
+          margin={30}
+          nav
+          autoplay
+          center
+          items={window.innerWidth > 557 ? 3 : 1}
+        >
           {imgUrls?.map((url, index) => (
             <img
               src={url}
